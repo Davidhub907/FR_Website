@@ -1,77 +1,99 @@
-export default function Home() {
+export const metadata = {
+  title: "Water Damage Restoration in Fairbanks, AK | Frontier Restoration LLC",
+  description:
+    "Frontier Restoration LLC provides water damage restoration, fire damage restoration, and mold remediation in Fairbanks, Alaska. Call (907) 987-2916 for emergency service.",
+};
+
+const phoneNumber = "(907) 987-2916";
+const phoneHref = "tel:+19079872916";
+
+function TopEmergencyBar() {
   return (
-    <main className="min-h-screen bg-white text-slate-900">
-      <section className="bg-slate-950 px-6 py-20 text-white">
-        <div className="mx-auto max-w-6xl">
-          <p className="mb-4 text-sm font-bold uppercase tracking-wide text-orange-400">
-            24/7 Emergency Restoration in Fairbanks, AK
+    <div className="bg-red-700 text-white">
+      <div className="mx-auto flex max-w-7xl items-center justify-center px-4 py-2 text-sm font-semibold">
+        24/7 Emergency Restoration Services —{" "}
+        <a className="ml-1 underline" href={phoneHref}>
+          Call {phoneNumber}
+        </a>
+      </div>
+    </div>
+  );
+}
+
+function Header() {
+  return (
+    <header className="border-b bg-white">
+      <div className="mx-auto flex max-w-7xl items-center justify-between px-4 py-4">
+        <div>
+          <p className="text-lg font-bold text-slate-900">
+            Frontier Restoration LLC
           </p>
-
-          <h1 className="max-w-3xl text-4xl font-bold leading-tight md:text-6xl">
-            Water, Fire, and Mold Damage Restoration When You Need Help Fast
-          </h1>
-
-          <p className="mt-6 max-w-2xl text-lg text-slate-300">
-            Frontier Restoration LLC helps Fairbanks homeowners and businesses
-            recover after water damage, fire damage, mold problems, and other
-            property emergencies.
-          </p>
-
-          <div className="mt-8 flex flex-col gap-4 sm:flex-row">
-            <a
-              href="tel:19079872916"
-              className="rounded-md bg-orange-500 px-6 py-3 text-center font-bold text-white hover:bg-orange-600"
-            >
-              Call Now: (907) 987-2916
-            </a>
-
-            <a
-              href="#services"
-              className="rounded-md border border-white px-6 py-3 text-center font-bold text-white hover:bg-white hover:text-slate-950"
-            >
-              See Services
-            </a>
-          </div>
+          <p className="text-sm text-slate-600">Fairbanks, Alaska</p>
         </div>
-      </section>
 
-      <section id="services" className="px-6 py-16">
-        <div className="mx-auto max-w-6xl">
-          <p className="text-sm font-bold uppercase tracking-wide text-orange-600">
-            Our Services
-          </p>
+        <nav className="hidden gap-6 text-sm font-medium text-slate-700 md:flex">
+          <a href="#services">Services</a>
+          <a href="#process">How It Works</a>
+          <a href="#contact">Contact</a>
+        </nav>
 
-          <h2 className="mt-3 text-3xl font-bold md:text-4xl">
-            Emergency restoration services for Interior Alaska
-          </h2>
+        <a
+          href={phoneHref}
+          className="rounded-md bg-red-700 px-4 py-2 text-sm font-bold text-white"
+        >
+          Call Now
+        </a>
+      </div>
+    </header>
+  );
+}
 
-          <div className="mt-10 grid gap-6 md:grid-cols-3">
-            <article className="rounded-xl border border-slate-200 p-6 shadow-sm">
-              <h3 className="text-xl font-bold">Water Damage Restoration</h3>
-              <p className="mt-3 text-slate-600">
-                Fast response for leaks, flooding, extraction, drying, and
-                moisture control.
-              </p>
-            </article>
+function Hero() {
+  return (
+    <section className="bg-slate-950 text-white">
+      <div className="mx-auto max-w-7xl px-4 py-20">
+        <p className="mb-4 text-sm font-bold uppercase tracking-wide text-red-400">
+          Emergency Restoration Services in Fairbanks, AK
+        </p>
 
-            <article className="rounded-xl border border-slate-200 p-6 shadow-sm">
-              <h3 className="text-xl font-bold">Fire Damage Restoration</h3>
-              <p className="mt-3 text-slate-600">
-                Cleanup and restoration support after smoke, soot, and fire
-                damage.
-              </p>
-            </article>
+        <h1 className="max-w-3xl text-4xl font-extrabold leading-tight md:text-6xl">
+          Water, Fire, and Mold Damage Restoration When You Need Help Fast
+        </h1>
 
-            <article className="rounded-xl border border-slate-200 p-6 shadow-sm">
-              <h3 className="text-xl font-bold">Mold Remediation</h3>
-              <p className="mt-3 text-slate-600">
-                Mold inspection, containment, removal, and prevention-focused
-                remediation.
-              </p>
-            </article>
-          </div>
+        <p className="mt-6 max-w-2xl text-lg text-slate-300">
+          Frontier Restoration LLC helps Fairbanks homeowners recover from water
+          damage, fire damage, and mold problems with fast emergency service.
+        </p>
+
+        <div className="mt-8 flex flex-col gap-3 sm:flex-row">
+          <a
+            href={phoneHref}
+            className="rounded-md bg-red-700 px-6 py-4 text-center font-bold text-white"
+          >
+            Call {phoneNumber}
+          </a>
+
+          <a
+            href="#contact"
+            className="rounded-md border border-white/30 px-6 py-4 text-center font-bold text-white"
+          >
+            Request Help
+          </a>
         </div>
-      </section>
-    </main>
+      </div>
+    </section>
+  );
+}
+
+export default function HomePage() {
+  return (
+    <>
+      <TopEmergencyBar />
+      <Header />
+
+      <main>
+        <Hero />
+      </main>
+    </>
   );
 }
