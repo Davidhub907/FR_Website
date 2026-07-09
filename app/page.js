@@ -1,8 +1,12 @@
+import image from "next/image";
 export const metadata = {
   title: "Water Damage Restoration in Fairbanks, AK | Frontier Restoration LLC",
   description:
     "Frontier Restoration LLC provides water damage restoration, fire damage restoration, and mold remediation in Fairbanks, Alaska. Call (907) 987-2916 for emergency service.",
 };
+
+const emailAddress = "office@frontierrestorationllc.com"
+const emailHref = 'mailto${emailAdress}';
 
 const phoneNumber = "(907) 987-2916";
 const phoneHref = "tel:+19079872916";
