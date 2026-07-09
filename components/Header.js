@@ -1,7 +1,17 @@
 import Image from "next/image"
 
-const emailAddress = "office@frontierrestorationllc.com"
-const emailHref = `mailto:${emailAddress}`;
+
+// Keeping this data at the top makes the component easier to update later.
+// If the client's phone number or email changes, you only edit it once here.
+
+const emailAddress = "office@frontierrestorationllc.com";
+const emailSubject = "Restoration Service Request";
+const emailBody =
+  "Hello Frontier Restoration,%0A%0AI would like help with:%0A%0AMy name:%0AMy phone number:%0AMy property address:%0A";
+
+const emailHref = `https://mail.google.com/mail/?view=cm&fs=1&to=${encodeURIComponent(
+  emailAddress
+)}&su=${encodeURIComponent(emailSubject)}&body=${emailBody}`;
 
 const phoneNumber = "(907) 987-2916";
 const phoneHref = "tel:+19079872916";
@@ -9,12 +19,12 @@ const phoneHref = "tel:+19079872916";
 
 export default function Header() {
   return (
-
     <header className="bg-white">
+
       {/* Desktop / tablet header */}
       <div className="mx-auto hidden max-w-7xl items-center justify-between px-6 py-6 md:flex lg:py-8">
         {/* Full desktop logo */}
-        <a href="/" className="flex shrink-0 items-center">
+        <a href="/" className="flex shrink-0 items-center transition-transform duration-300 ease-in-out hover:-translate-y-1 hover:drop-shadow-md cursor-pointer">
           <Image
             src="/frontier-logo.png"
             alt="Frontier Restoration LLC"
@@ -25,11 +35,13 @@ export default function Header() {
           />
         </a>
 
+        {/* space between the buttons */}
+        <div className="flex items-center gap-12">
 
-        <div className="flex items-center gap-3">
+          {/* Phone button */}
           <a
             href={phoneHref}
-            className="flex items-center gap-3 rounded-md bg-orange-400 px-6 py-4 text-black"
+            className="flex items-center gap-3 rounded-md bg-orange-400 px-6 py-4 text-black transition hover:bg-orange-500 transition-transform duration-300 ease-in-out hover:-translate-y-1 hover:drop-shadow-md cursor-pointer"
           >
             <DesktopPhoneIcon />
 
@@ -37,19 +49,22 @@ export default function Header() {
               <p className="text-sm font-semibold uppercase tracking-wide">
                 Call Now 24/7
               </p>
-              <p className="text-m font-bold">{phoneNumber}</p>
+              <p className="text-base font-bold">{phoneNumber}</p>
             </div>
           </a>
 
+          {/* Email button */}
           <a
             href={emailHref}
-            className="flex items-center gap-3 rounded-md border border-slate-900 px-6 py-4 text-slate-900"
+            target="_blank"
+            rel="noopener noreferrer"
+            className="flex items-center gap-3 rounded-md border border-slate-900 px-6 py-4 text-slate-900 transition hover:bg-slate-100 transition-transform duration-300 ease-in-out hover:-translate-y-1 hover:drop-shadow-md cursor-pointer"
           >
             <EmailIcon />
 
-            <div className="hidden text-left lg:block">
+            <div className="hidden text-center lg:block">
               <p className="text-sm font-semibold uppercase tracking-wide">
-                Email Us
+                Gmail Us
               </p>
               <p className="text-sm font-bold">{emailAddress}</p>
             </div>
