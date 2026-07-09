@@ -1,4 +1,4 @@
-import image from "next/image";
+import Image from "next/image";
 export const metadata = {
   title: "Water Damage Restoration in Fairbanks, AK | Frontier Restoration LLC",
   description:
