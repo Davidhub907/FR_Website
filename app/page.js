@@ -7,23 +7,11 @@ export const metadata = {
 const phoneNumber = "(907) 987-2916";
 const phoneHref = "tel:+19079872916";
 
-function TopEmergencyBar() {
-  return (
-    <div className="bg-red-700 text-white">
-      <div className="mx-auto flex max-w-7xl items-center justify-center px-4 py-2 text-sm font-semibold">
-        24/7 Emergency Restoration Services —{" "}
-        <a className="ml-1 underline" href={phoneHref}>
-          Call {phoneNumber}
-        </a>
-      </div>
-    </div>
-  );
-}
 
 function Header() {
   return (
     <header className="border-b bg-white">
-      <div className="mx-auto flex max-w-7xl items-center justify-between px-4 py-4">
+      <div className="mx-auto flex max-w-7xl items-center justify-between px-4 py-14">
         <div>
           <p className="text-lg font-bold text-slate-900">
             Frontier Restoration LLC
@@ -88,11 +76,10 @@ function Hero() {
 export default function HomePage() {
   return (
     <>
-      <TopEmergencyBar />
       <Header />
 
       <main>
-        <Hero />
+        <Hero />  
       </main>
     </>
   );
