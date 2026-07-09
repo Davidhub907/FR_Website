@@ -73,10 +73,12 @@ export default function Header() {
 
         <a
           href={phoneHref}
-          aria-label="Call Frontier Restoration"
-          className="flex h-12 w-50 items-center justify-center rounded-full bg-orange-500 text-white shadow-md"
+          aria-label="Call Frontier Restoration 24/7 line"
+          className="flex h-12 w-[200px] items-center justify-center gap-3 rounded-full bg-orange-400 font-bold text-black shadow-md"
         >
           <MobilePhoneIcon />
+
+          <span>CALL NOW 24/7</span>
         </a>
       </div>
 
