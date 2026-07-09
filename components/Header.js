@@ -1,7 +1,7 @@
 import Image from "next/image"
 
 const emailAddress = "office@frontierrestorationllc.com"
-const emailHref = 'mailto${emailAdress}';
+const emailHref = `mailto:${emailAddress}`;
 
 const phoneNumber = "(907) 987-2916";
 const phoneHref = "tel:+19079872916";
