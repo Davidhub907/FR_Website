@@ -8,16 +8,30 @@ const phoneHref = "tel:+19079872916";
 
 
 export default function Header() {
-    return(
+  return (
 
-    <header className="border-b bg-white">
-      <div className="mx-auto flex max-w-7xl items-center justify-between px-40 py-6">
-        <a href="/" className="flex items-center">
+    <header className="bg-white">
+      {/* Desktop / tablet header */}
+      <div className="mx-auto flex max-w-7xl items-center justify-between px-25 py-6 md:flex lg:py-8">
+        {/* Full desktop logo */}
+        <a href="/" className="flex items-center shrink-0 hidden md:block">
           <Image
             src="/frontier-logo.png"
             alt="Frontier Restoration LLC"
             width={220}
             height={120}
+            className="h-20 w-auto md:h-28"
+            priority
+          />
+        </a>
+
+        {/* Mobile logo */}
+        <a href="/" className="flex items-center shrink-0 block md:hidden">
+          <Image
+            src="/frontier-logo-small.png"
+            alt="Frontier Restoration LLC"
+            width={40}
+            height={40}
             className="h-20 w-auto md:h-28"
             priority
           />
@@ -46,7 +60,7 @@ export default function Header() {
 
             <div className="hidden text-left lg:block">
               <p className="text-sm font-semibold uppercase tracking-wide">
-                Email Us 
+                Email Us
               </p>
               <p className="text-sm font-bold">{emailAddress}</p>
             </div>
