@@ -12,9 +12,9 @@ export default function Header() {
 
     <header className="bg-white">
       {/* Desktop / tablet header */}
-      <div className="mx-auto flex max-w-7xl items-center justify-between px-25 py-6 md:flex lg:py-8 hidden md:block">
+      <div className="mx-auto hidden max-w-7xl items-center justify-between px-6 py-6 md:flex lg:py-8">
         {/* Full desktop logo */}
-        <a href="/" className="flex items-center shrink-0 hidden md:block">
+        <a href="/" className="flex shrink-0 items-center">
           <Image
             src="/frontier-logo.png"
             alt="Frontier Restoration LLC"
