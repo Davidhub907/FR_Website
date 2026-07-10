@@ -1,0 +1,70 @@
+"use client";
+
+import { useState } from "react";
+import Link from "next/link";
+
+const navLinks = [
+    { label: "Home", href: "/"},
+    { label: "Water Damage", href: "/water-damage" },
+    { label: "Fire & Smoke Damage", href: "/fire-damage" },
+    { label: "Mold Remediation", href: "/mold-remediation" },
+    { label: "Storm Damage", href: "/storm-damage" },
+    { label: "About", href: "/about" },
+    { label: "Contact", href: "/contact" },
+];
+
+export default function NavigationBar() {
+    const [isOpen, setIsOpen] = useState(false);
+
+    return (
+        <nav className="bg-orange-400 text-white">
+            <div className="mx-auto max-w-7xl px-6">
+                {/* Desktop nav */}
+                <div className="hidden md:flex items-center justify-center gap-8 py-4" >
+                    {navLinks.map((link) => (
+                        <Link
+                            key={link.label}
+                            href={link.href}
+                            className="text-sm font-semibold uppercase tracking-wide hover:text-orange-100"
+                        >
+                            {link.label}
+                        </Link>
+                    ))}
+                </div>
+
+                {/* Mobile nav top row */}
+                <div className="flex items-center justify-between py-4 md:hidden">
+                    <span className="text-sm font-semibold uppercase tracking-wide">
+                        Menu
+                    </span>
+
+                    <button
+                        type="button"
+                        onClick={() => setIsOpen(!isOpen)}
+                        className="rounded-md border border-white/40 px-3 py-2 text-2xl leading-none"
+                        aria-label="Toggle navigation menu"
+                        aria-expanded={isOpen}
+                    >
+                        ☰
+                    </button>
+                </div>
+
+                {/* Mobile dropdown */}
+                {isOpen && (
+                    <div className="flex flex-col gap-1 border-t border-white/30 pb-4 md:hidden">
+                        {navLinks.map((link) => (
+                            <Link
+                                key={link.label}
+                                href={link.href}
+                                onClick={() => setIsOpen(false)}
+                                className="rounded-md px-2 py-3 text-sm font-semibold uppercase tracking-wide hover:bg-orange-700"
+                            >
+                                {link.label}
+                            </Link>
+                        ))}
+                    </div>
+                )}
+            </div>
+        </nav>
+    );
+}

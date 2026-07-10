@@ -1,5 +1,6 @@
 import Header from "@/components/Header";
 import Hero from "@/components/Hero"
+import NavigationBar from "@/components/NavigationBar"; 
 
 export const metadata = {
   title: "Water Damage Restoration in Fairbanks, AK | Frontier Restoration LLC",
@@ -11,7 +12,7 @@ export default function HomePage() {
   return (
     <>
       <Header />
-
+      <NavigationBar />
       <main>
         <Hero />  
       </main>
