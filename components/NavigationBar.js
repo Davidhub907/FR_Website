@@ -25,7 +25,7 @@ export default function NavigationBar() {
             <Link
               key={link.label}
               href={link.href}
-              className="text-base font-bold tracking-wide uppercase transition-colors duration-200 hover:text-gray-500"
+              className="text-base font-bold tracking-wide uppercase transition-colors duration-200 hover:text-orange-200"
             >
               {link.label}
             </Link>
