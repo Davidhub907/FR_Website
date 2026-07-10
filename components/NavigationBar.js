@@ -4,7 +4,7 @@ import { useState } from "react";
 import Link from "next/link";
 
 const navLinks = [
-    { label: "Home", href: "/"},
+    { label: "Home", href: "/" },
     { label: "Water Damage", href: "/water-damage" },
     { label: "Fire & Smoke Damage", href: "/fire-damage" },
     { label: "Mold Remediation", href: "/mold-remediation" },
@@ -17,7 +17,7 @@ export default function NavigationBar() {
     const [isOpen, setIsOpen] = useState(false);
 
     return (
-        <nav className="bg-orange-400 text-white">
+        <nav className="bg-orange-500 text-white">
             <div className="mx-auto max-w-7xl px-6">
                 {/* Desktop nav */}
                 <div className="hidden md:flex items-center justify-center gap-8 py-4" >
@@ -25,7 +25,7 @@ export default function NavigationBar() {
                         <Link
                             key={link.label}
                             href={link.href}
-                            className="text-sm font-semibold uppercase tracking-wide hover:text-orange-100"
+                            className="text-base font-bold uppercase tracking-wide transition-colors duration-200 hover:text-gray-500"
                         >
                             {link.label}
                         </Link>
@@ -35,13 +35,13 @@ export default function NavigationBar() {
                 {/* Mobile nav top row */}
                 <div className="flex items-center justify-between py-4 md:hidden">
                     <span className="text-sm font-semibold uppercase tracking-wide">
-                        Menu
+                        Services Menu
                     </span>
 
                     <button
                         type="button"
                         onClick={() => setIsOpen(!isOpen)}
-                        className="rounded-md border border-white/40 px-3 py-2 text-2xl leading-none"
+                        className="rounded-md border border-black px-4 py-2 text-2xl leading-none"
                         aria-label="Toggle navigation menu"
                         aria-expanded={isOpen}
                     >
