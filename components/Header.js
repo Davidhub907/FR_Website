@@ -1,5 +1,4 @@
-import Image from "next/image"
-
+import Image from "next/image";
 
 // Keeping this data at the top makes the component easier to update later.
 // If the client's phone number or email changes, you only edit it once here.
@@ -10,21 +9,22 @@ const emailBody =
   "Hello Frontier Restoration,%0A%0AI would like help with:%0A%0AMy name:%0AMy phone number:%0AMy property address:%0A";
 
 const emailHref = `https://mail.google.com/mail/?view=cm&fs=1&to=${encodeURIComponent(
-  emailAddress
+  emailAddress,
 )}&su=${encodeURIComponent(emailSubject)}&body=${emailBody}`;
 
 const phoneNumber = "(907) 987-2916";
 const phoneHref = "tel:+19079872916";
 
-
 export default function Header() {
   return (
     <header className="bg-white">
-
       {/* Desktop / tablet header */}
       <div className="mx-auto hidden max-w-7xl items-center justify-between px-6 py-6 md:flex lg:py-8">
         {/* Full desktop logo */}
-        <a href="/" className="flex shrink-0 items-center transition-transform duration-300 ease-in-out hover:-translate-y-1 hover:drop-shadow-md cursor-pointer">
+        <a
+          href="/"
+          className="flex shrink-0 cursor-pointer items-center transition-transform duration-300 ease-in-out hover:-translate-y-1 hover:drop-shadow-md"
+        >
           <Image
             src="/frontier-logo.png"
             alt="Frontier Restoration LLC"
@@ -37,16 +37,15 @@ export default function Header() {
 
         {/* space between the buttons */}
         <div className="flex items-center gap-12">
-
           {/* Phone button */}
           <a
             href={phoneHref}
-            className="flex items-center gap-3 rounded-md bg-orange-400 px-6 py-4 text-black transition hover:bg-orange-500 transition-transform duration-300 ease-in-out hover:-translate-y-1 hover:drop-shadow-md cursor-pointer"
+            className="flex cursor-pointer items-center gap-3 rounded-md bg-orange-400 px-6 py-4 text-black transition transition-transform duration-300 ease-in-out hover:-translate-y-1 hover:bg-orange-500 hover:drop-shadow-md"
           >
             <DesktopPhoneIcon />
 
             <div className="hidden text-center lg:block">
-              <p className="text-sm font-semibold uppercase tracking-wide">
+              <p className="text-sm font-semibold tracking-wide uppercase">
                 Call Now 24/7
               </p>
               <p className="text-base font-bold">{phoneNumber}</p>
@@ -58,12 +57,12 @@ export default function Header() {
             href={emailHref}
             target="_blank"
             rel="noopener noreferrer"
-            className="flex items-center gap-3 rounded-md border border-slate-900 px-6 py-4 text-slate-900 transition hover:bg-slate-100 transition-transform duration-300 ease-in-out hover:-translate-y-1 hover:drop-shadow-md cursor-pointer"
+            className="flex cursor-pointer items-center gap-3 rounded-md border border-slate-900 px-6 py-4 text-slate-900 transition transition-transform duration-300 ease-in-out hover:-translate-y-1 hover:bg-slate-100 hover:drop-shadow-md"
           >
             <EmailIcon />
 
             <div className="hidden text-center lg:block">
-              <p className="text-sm font-semibold uppercase tracking-wide">
+              <p className="text-sm font-semibold tracking-wide uppercase">
                 Gmail Us
               </p>
               <p className="text-sm font-bold">{emailAddress}</p>
@@ -75,7 +74,7 @@ export default function Header() {
       {/*Mobile header*/}
       <div className="mx-auto flex max-w-7xl items-center justify-between px-5 py-4 md:hidden">
         {/* Mobile logo */}
-        <a href="/" className="flex items-center shrink-0 block md:hidden">
+        <a href="/" className="block flex shrink-0 items-center md:hidden">
           <Image
             src="/frontier-logo-small.png"
             alt="Frontier Restoration LLC"
@@ -96,12 +95,9 @@ export default function Header() {
           <span>CALL NOW 24/7</span>
         </a>
       </div>
-
-
     </header>
   );
 }
-
 
 function DesktopPhoneIcon() {
   return (
@@ -121,8 +117,6 @@ function DesktopPhoneIcon() {
     </svg>
   );
 }
-
-
 
 function MobilePhoneIcon() {
   return (
@@ -161,5 +155,3 @@ function EmailIcon() {
     </svg>
   );
 }
-
-
