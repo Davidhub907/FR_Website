@@ -8,7 +8,8 @@ const navLinks = [
   { label: "Water Damage", href: "/water-damage" },
   { label: "Fire & Smoke Damage", href: "/fire-damage" },
   { label: "Mold Remediation", href: "/mold-remediation" },
-  { label: "Storm Damage", href: "/storm-damage" },
+  { label: "Sewer back up", href: "/sewer" },
+  { label: "content restoration", href: "/content" },
   { label: "About", href: "/about" },
   { label: "Contact", href: "/contact" },
 ];
@@ -18,7 +19,7 @@ export default function NavigationBar() {
 
   return (
     <nav className="bg-orange-500 text-white">
-      <div className="mx-auto max-w-7xl px-6">
+      <div className="max-w-8xl mx-auto px-6">
         {/* Desktop nav */}
         <div className="hidden items-center justify-center gap-8 py-4 md:flex">
           {navLinks.map((link) => (
