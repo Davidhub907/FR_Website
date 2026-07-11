@@ -21,6 +21,16 @@ const emailHref = `https://mail.google.com/mail/?view=cm&fs=1&to=${encodeURIComp
   emailAddress,
 )}`;
 
+const businessAddress = "Frontier Restoration LLC";
+
+const googleMapsEmbedUrl = `https://www.google.com/maps?q=${encodeURIComponent(
+  businessAddress,
+)}&output=embed`;
+
+const googleMapsDirectionsUrl = `https://www.google.com/maps/search/?api=1&query=${encodeURIComponent(
+  businessAddress,
+)}`;
+
 export default function Footer() {
   const currentYear = new Date().getFullYear();
 
@@ -126,6 +136,49 @@ export default function Footer() {
                   Fairbanks and surrounding communities
                 </p>
               </div>
+            </div>
+          </div>
+        </div>
+
+        {/* Location section */}
+        <div className="mt-12 border-t border-white/10 pt-10">
+          <div className="grid gap-8 lg:grid-cols-[1fr_2fr] lg:items-center">
+            {/* Address */}
+            <div>
+              <h3 className="text-sm font-bold tracking-wider text-orange-500 uppercase">
+                Our Location
+              </h3>
+
+              <p className="mt-4 text-lg font-semibold text-white">
+                Frontier Restoration LLC
+              </p>
+
+              <address className="mt-2 leading-7 text-zinc-300 not-italic">
+                {businessAddress}
+              </address>
+
+              <a
+                href={googleMapsDirectionsUrl}
+                target="_blank"
+                rel="noopener noreferrer"
+                className="mt-5 inline-flex rounded-md bg-orange-500 px-5 py-3 text-sm font-bold tracking-wide text-white uppercase transition hover:bg-orange-600"
+              >
+                Get Directions
+              </a>
+            </div>
+
+            {/* Google Map */}
+            <div className="overflow-hidden rounded-lg border border-white/10">
+              <iframe
+                src={googleMapsEmbedUrl}
+                title="Frontier Restoration LLC location"
+                width="100%"
+                height="300"
+                loading="lazy"
+                allowFullScreen
+                referrerPolicy="no-referrer-when-downgrade"
+                className="block w-full"
+              />
             </div>
           </div>
         </div>
