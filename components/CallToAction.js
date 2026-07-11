@@ -5,7 +5,8 @@ const services = [
   "Water Damage",
   "Fire & Smoke Damage",
   "Mold Remediation",
-  "Storm Damage",
+  "Sewer backup",
+  "Content restoration",
   "Other",
 ];
 
