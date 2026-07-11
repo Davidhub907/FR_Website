@@ -25,7 +25,7 @@ const businessAddress = "Frontier Restoration LLC";
 
 const googleMapsEmbedUrl = `https://www.google.com/maps?q=${encodeURIComponent(
   businessAddress,
-)}&output=embed`;
+)}&z=11&output=embed`;
 
 const googleMapsDirectionsUrl = `https://www.google.com/maps/search/?api=1&query=${encodeURIComponent(
   businessAddress,
