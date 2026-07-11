@@ -8,8 +8,8 @@ const navLinks = [
   { label: "Water Damage", href: "/water-damage" },
   { label: "Fire & Smoke Damage", href: "/fire-damage" },
   { label: "Mold Remediation", href: "/mold-remediation" },
-  { label: "Sewer backup", href: "/sewer" },
-  { label: "content restoration", href: "/content" },
+  { label: "Sewer backup", href: "/sewer-backup" },
+  { label: "content restoration", href: "/content-restoration" },
   { label: "About", href: "/about" },
   { label: "Contact", href: "/contact" },
 ];
