@@ -1,37 +1,56 @@
+import Image from "next/image";
+import Link from "next/link";
+
 const phoneNumber = "(907) 987-2916";
 const phoneHref = "tel:+19079872916";
 
-export default function Hero() {
+export default function HeroSection() {
   return (
-    <section className="bg-slate-950 text-white">
-      <div className="mx-auto max-w-7xl px-4 py-20">
-        <p className="mb-4 text-sm font-bold tracking-wide text-red-400 uppercase">
-          Emergency Restoration Services in Fairbanks, AK
+    <section className="relative isolate flex min-h-[650px] items-center overflow-hidden md:min-h-[620px] lg:min-h-[920px]">
+      {/* Background image */}
+      <Image
+        src="/images/gptimage2.png"
+        alt="Frontier Restoration water damage restoration project"
+        fill
+        priority
+        sizes="100vw"
+        className="object-cover object-[center_60%]"
+      />
+
+      {/* Dark filter */}
+      <div className="absolute inset-0 bg-black/20" />
+
+      {/* Hero content */}
+      <div className="relative z-10 mx-auto w-full max-w-7xl px-6 py-24 text-center text-white lg:px-8">
+        <p className="mb-6 text-sm font-bold tracking-wider uppercase sm:text-base lg:text-lg">
+          Frontier Restoration of Fairbanks
         </p>
 
-        <h1 className="max-w-3xl text-4xl leading-tight font-extrabold md:text-6xl">
-          Water, Fire, and Mold Damage Restoration When You Need Help Fast
+        <h1 className="mx-auto max-w-7xl text-4xl leading-none font-extrabold tracking-wide uppercase sm:text-5xl md:text-6xl lg:text-7xl">
+          <span className="block">24/7 water & fire damage</span>
+          <span className="mt-2 block">Restoration</span>
         </h1>
 
-        <p className="mt-6 max-w-2xl text-lg text-slate-300">
-          Frontier Restoration LLC helps Fairbanks homeowners recover from water
-          damage, fire damage, and mold problems with fast emergency service.
+        <p className="mx-auto mt-8 max-w-4xl text-base leading-relaxed text-white/90 sm:text-lg md:text-xl">
+          Professional water damage restoration for homes and businesses
+          throughout Fairbanks and the surrounding areas. Our experienced team
+          is ready to help you recover quickly and safely.
         </p>
 
-        <div className="mt-8 flex flex-col gap-3 sm:flex-row">
+        <div className="mt-10 flex flex-col items-stretch justify-center gap-4 sm:flex-row sm:items-center">
           <a
             href={phoneHref}
-            className="rounded-md bg-red-700 px-6 py-4 text-center font-bold text-white"
+            className="bg-orange-500 px-8 py-5 text-lg font-extrabold uppercase transition-colors hover:bg-orange-600 focus-visible:outline-2 focus-visible:outline-offset-4 focus-visible:outline-white sm:text-xl"
           >
             Call {phoneNumber}
           </a>
 
-          <a
-            href="#contact"
-            className="rounded-md border border-white/30 px-6 py-4 text-center font-bold text-white"
+          <Link
+            href="/water-damage"
+            className="bg-white px-8 py-5 text-lg font-bold text-slate-950 uppercase transition-colors hover:bg-slate-200 focus-visible:outline-2 focus-visible:outline-offset-4 focus-visible:outline-white"
           >
-            Request Help
-          </a>
+            Learn More
+          </Link>
         </div>
       </div>
     </section>
