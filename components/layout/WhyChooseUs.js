@@ -1,23 +1,29 @@
+import { ShieldCheck, BadgeCheck, Award, Clock } from "lucide-react";
+
 const reasons = [
   {
     title: "Insurance Backed",
     description:
       "We work closely with insurance companies to ensure a seamless claims process and provide insurance-backed services.",
+    icon: ShieldCheck,
   },
   {
     title: "Satisfaction Guarantee",
     description:
       "We stand behind the quality of our work and make sure each restoration is completed correctly.",
+    icon: BadgeCheck,
   },
   {
     title: "Professional Experience",
     description:
       "Our experienced restoration team knows how to assess damage, create a clear plan, and restore your property efficiently.",
+    icon: Award,
   },
   {
     title: "Fast, Reliable Response",
     description:
       "Property damage can become worse quickly. We respond promptly and keep you informed throughout the restoration process.",
+    icon: Clock,
   },
 ];
 
@@ -84,24 +90,31 @@ export default function WhyChooseUs() {
             </p>
 
             <div className="mt-8 grid gap-6 sm:grid-cols-2">
-              {reasons.map((reason, index) => (
-                <div key={reason.title} className="flex gap-4">
-                  {/* Temporary numbered icon */}
-                  <div className="flex h-10 w-10 shrink-0 items-center justify-center rounded-full bg-orange-500 font-bold text-white">
-                    {index + 1}
-                  </div>
+              {reasons.map((reason) => {
+                const Icon = reason.icon;
 
-                  <div>
-                    <h3 className="text-lg font-bold text-slate-900">
-                      {reason.title}
-                    </h3>
+                return (
+                  <div key={reason.title} className="flex gap-4">
+                    <div className="flex h-12 w-12 shrink-0 items-center justify-center rounded-full bg-orange-500 text-white">
+                      <Icon
+                        className="h-6 w-6"
+                        strokeWidth={2}
+                        aria-hidden="true"
+                      />
+                    </div>
 
-                    <p className="mt-2 leading-7 text-slate-600">
-                      {reason.description}
-                    </p>
+                    <div>
+                      <h3 className="text-lg font-bold text-slate-900">
+                        {reason.title}
+                      </h3>
+
+                      <p className="mt-2 leading-7 text-slate-600">
+                        {reason.description}
+                      </p>
+                    </div>
                   </div>
-                </div>
-              ))}
+                );
+              })}
             </div>
           </div>
         </div>
