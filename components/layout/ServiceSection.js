@@ -23,7 +23,7 @@ const services = [
     description:
       "Professional mold removal and moisture control to protect your property.",
     href: "/mold-remediation",
-    image: "/images/services/mold-remediation.jpg",
+    image: "/images/services/mold-damage.jpg",
     alt: "Professional mold remediation service",
   },
   {
@@ -39,7 +39,7 @@ const services = [
     description:
       "Careful cleaning and restoration of furniture, belongings, and other valuable contents.",
     href: "/content-restoration",
-    image: "/images/services/contents-restoration.jpg",
+    image: "/images/services/content-restoration.jpg",
     alt: "Contents being cleaned after property damage",
   },
 
