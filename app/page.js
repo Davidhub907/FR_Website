@@ -1,5 +1,5 @@
-import Hero from "@/components/Hero";
-import CallToAction from "@/components/CallToAction";
+import Hero from "@/components/home/Hero-Home";
+import CallToAction from "@/components/home/CallToAction-Home";
 
 export const metadata = {
   title: "Water Damage Restoration in Fairbanks, AK | Frontier Restoration LLC",
