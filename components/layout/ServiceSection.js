@@ -42,6 +42,15 @@ const services = [
     image: "/images/services/contents-restoration.jpg",
     alt: "Contents being cleaned after property damage",
   },
+
+  {
+    title: "About us",
+    description:
+      "Learn more about the expert team behind every frontier restoration job.",
+    href: "/about",
+    image: "/images/services/about-us.jpg",
+    alt: "about us image",
+  },
 ];
 
 export default function ServicesSection() {
