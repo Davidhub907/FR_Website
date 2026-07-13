@@ -41,7 +41,7 @@ const testimonials = [
     quote:
       "Frontier Restoration LLC is truly exceptional! Josh and his team are punctual and deliver great results. Their attention to detail is impeccable and they communicate every step of the way. I was completely impressed by their professionalism and dedication to quality work. Their outstanding customer service is second to none. Highly recommend!",
     name: "Robert",
-    location: "Interior Alaska",
+    location: "Fairbanks Alaska",
     service: "Restoration",
   },
   {
