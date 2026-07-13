@@ -5,7 +5,7 @@ const reasons = [
       "We work closely with insurance companies to ensure a seamless claims process and provide insurance-backed services.",
   },
   {
-    title: "Workmanship Guarantee",
+    title: "Satisfaction Guarantee",
     description:
       "We stand behind the quality of our work and make sure each restoration is completed correctly.",
   },
@@ -23,18 +23,21 @@ const reasons = [
 
 const testimonials = [
   {
+    id: 1,
     quote:
       "Add a real customer testimonial here describing their experience with Frontier Restoration.",
     name: "Customer Name",
     location: "Fairbanks, Alaska",
   },
   {
+    id: 2,
     quote:
       "Add another testimonial focusing on communication, professionalism, or the quality of the completed work.",
     name: "Customer Name",
     location: "Interior Alaska",
   },
   {
+    id: 3,
     quote:
       "Add a testimonial explaining how the team helped during a stressful water, fire, mold, or sewer damage situation.",
     name: "Customer Name",
@@ -123,7 +126,7 @@ export default function WhyChooseUs() {
           <div className="mt-10 grid gap-6 md:grid-cols-3">
             {testimonials.map((testimonial) => (
               <article
-                key={`${testimonial.name}-${testimonial.location}`}
+                key={testimonial.id}
                 className="flex h-full flex-col rounded-2xl bg-white p-7 shadow-sm ring-1 ring-slate-200"
               >
                 {/* Temporary star rating */}
