@@ -5,6 +5,7 @@ import Header from "@/components/layout/Header";
 import NavigationBar from "@/components/layout/NavigationBar";
 import Footer from "@/components/layout/Footer";
 import WhyChooseUs from "@/components/layout/WhyChooseUs";
+import ServicesSection from "@/components/layout/ServiceSection";
 
 const geistSans = Geist({
   variable: "--font-geist-sans",
@@ -32,6 +33,7 @@ export default function RootLayout({ children }) {
         <NavigationBar />
 
         <main className="flex-1">{children}</main>
+        <ServicesSection />
         <WhyChooseUs />
         <Footer />
       </body>
