@@ -2,7 +2,7 @@ import { ShieldCheck, BadgeCheck, Award, Clock } from "lucide-react";
 
 const reasons = [
   {
-    title: "Insurance Backed",
+    title: "100% Insurance Backed",
     description:
       "We work closely with insurance companies to ensure a seamless claims process and provide insurance-backed services.",
     icon: ShieldCheck,
@@ -34,6 +34,7 @@ const testimonials = [
       "Add a real customer testimonial here describing their experience with Frontier Restoration.",
     name: "Customer Name",
     location: "Fairbanks, Alaska",
+    service: "Mold inspection & remediation",
   },
   {
     id: 2,
@@ -41,6 +42,7 @@ const testimonials = [
       "Add another testimonial focusing on communication, professionalism, or the quality of the completed work.",
     name: "Customer Name",
     location: "Interior Alaska",
+    service: "Add the service here",
   },
   {
     id: 3,
@@ -48,6 +50,7 @@ const testimonials = [
       "Add a testimonial explaining how the team helped during a stressful water, fire, mold, or sewer damage situation.",
     name: "Customer Name",
     location: "Fairbanks, Alaska",
+    service: "Add the service here",
   },
 ];
 
@@ -75,7 +78,7 @@ export default function WhyChooseUs() {
 
           {/* Reasons */}
           <div>
-            <p className="text-sm font-bold tracking-widest text-orange-600 uppercase">
+            <p className="text-m font-bold tracking-widest text-orange-600 uppercase">
               Why Choose Frontier Restoration?
             </p>
 
@@ -155,7 +158,13 @@ export default function WhyChooseUs() {
                 </blockquote>
 
                 <div className="mt-6 border-t border-slate-100 pt-5">
-                  <p className="font-bold text-slate-900">{testimonial.name}</p>
+                  <span className="inline-flex rounded-full bg-orange-100 px-3 py-1 text-xs font-bold tracking-wide text-orange-700 uppercase">
+                    {testimonial.service}
+                  </span>
+
+                  <p className="mt-4 font-bold text-slate-900">
+                    {testimonial.name}
+                  </p>
 
                   <p className="mt-1 text-sm text-slate-500">
                     {testimonial.location}
