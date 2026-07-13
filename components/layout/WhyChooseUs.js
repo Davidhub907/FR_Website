@@ -1,8 +1,8 @@
 const reasons = [
   {
-    title: "Licensed and Insured",
+    title: "Insurance Backed",
     description:
-      "Our team carries the appropriate insurance and follows professional restoration standards throughout every project.",
+      "We work closely with insurance companies to ensure a seamless claims process and provide insurance-backed services.",
   },
   {
     title: "Workmanship Guarantee",
