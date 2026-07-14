@@ -16,7 +16,7 @@ export default function CallToAction() {
       <div className="mx-auto max-w-7xl px-6 lg:px-8">
         <div className="grid gap-12 lg:grid-cols-[0.9fr_1.1fr] lg:items-start">
           {/* CTA information */}
-          <div className="lg:sticky lg:top-8">
+          <div className="lg:top-8">
             <p className="text-sm font-bold tracking-widest text-orange-500 uppercase">
               Request restoration services
             </p>
