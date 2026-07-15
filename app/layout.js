@@ -7,6 +7,7 @@ import Footer from "@/components/layout/Footer";
 import WhyChooseUs from "@/components/layout/WhyChooseUs";
 import ServicesSection from "@/components/layout/ServiceSection";
 import EmergencyCTA from "@/components/layout/EmergencyCTA";
+import CommonQuestions from "@/components/layout/CommonQuestions";
 
 const geistSans = Geist({
   variable: "--font-geist-sans",
@@ -37,6 +38,7 @@ export default function RootLayout({ children }) {
         <ServicesSection />
         <EmergencyCTA />
         <WhyChooseUs />
+        <CommonQuestions />
         <Footer />
       </body>
     </html>
