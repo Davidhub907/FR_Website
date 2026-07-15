@@ -9,12 +9,12 @@ export default function HeroSection() {
     <section className="relative isolate flex min-h-[650px] items-center overflow-hidden md:min-h-[620px] lg:min-h-[920px]">
       {/* Background image */}
       <Image
-        src="/gptimage2.png"
+        src="/Downtown-Fairbanks3.png"
         alt="Frontier Restoration water damage restoration project"
         fill
         priority
         sizes="100vw"
-        className="object-cover object-[center_60%]"
+        className="object-cover object-[center_60%] blur-[1px]"
       />
 
       {/* Dark filter */}
