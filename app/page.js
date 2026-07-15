@@ -1,5 +1,6 @@
 import Hero from "@/components/home/Hero-Home";
 import CallToAction from "@/components/home/CallToAction-Home";
+import InsuranceScroller from "@/components/layout/InsuranceScroller";
 
 export const metadata = {
   title: "Water Damage Restoration in Fairbanks, AK | Frontier Restoration LLC",
@@ -12,6 +13,7 @@ export default function HomePage() {
     <>
       <main>
         <Hero />
+        <InsuranceScroller />
       </main>
       <CallToAction />
     </>
