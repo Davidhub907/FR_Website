@@ -9,7 +9,7 @@ export default function HeroSection() {
     <section className="relative isolate flex min-h-[650px] items-center overflow-hidden md:min-h-[620px] lg:min-h-[920px]">
       {/* Background image */}
       <Image
-        src="/Downtown-Fairbanks3.png"
+        src="/Downtown-Fairbanks.png"
         alt="Frontier Restoration water damage restoration project"
         fill
         priority
