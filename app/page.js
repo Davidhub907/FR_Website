@@ -1,7 +1,9 @@
 import Hero from "@/components/home/Hero-Home";
 import CallToAction from "@/components/home/CallToAction-Home";
-import InsuranceScroller from "@/components/layout/InsuranceScroller";
-import ServicesSection from "@/components/layout/ServiceSection";
+import InsuranceScroller from "@/components/home/InsuranceScroller";
+import ServicesSection from "@/components/home/ServiceSection";
+import CommonQuestions from "@/components/home/CommonQuestions";
+import EmergencyCTA from "@/components/layout/EmergencyCTA";
 
 export const metadata = {
   title: "Water Damage Restoration in Fairbanks, AK | Frontier Restoration LLC",
@@ -17,6 +19,8 @@ export default function HomePage() {
         <InsuranceScroller />
         <CallToAction />
         <ServicesSection />
+        <EmergencyCTA />
+        <CommonQuestions />
       </main>
     </>
   );
