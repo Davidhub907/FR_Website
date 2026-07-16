@@ -36,7 +36,7 @@ export default function CommonQuestions() {
     <section className="bg-slate-100 px-6 py-20">
       <div className="mx-auto max-w-7xl">
         {/* Section heading */}
-        <div className="mb-12 text-center">
+        <div className="mb-12 text-left md:text-center">
           <p className="mb-3 text-sm font-bold tracking-widest text-orange-500 uppercase">
             Frequently Asked Questions
           </p>
