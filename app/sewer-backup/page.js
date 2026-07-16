@@ -1,8 +1,14 @@
+import ServiceHero from "@/components/service-page/ServiceHero";
+
 export default function SewerBackupPage() {
   return (
     <main>
-      <h1>Sewer backup Restoration</h1>
-      <p>This page is currently under construction.</p>
+      <ServiceHero
+        title="Sewer Backup Restoration in Fairbanks, Alaska"
+        description="fast"
+        imageSrc="/images/sewer-backup-hero.jpg"
+        imageAlt="Sewer backup being proffesionaly cleaned and restored"
+      />
     </main>
   );
 }
