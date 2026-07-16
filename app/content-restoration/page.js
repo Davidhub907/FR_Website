@@ -1,8 +1,367 @@
-export default function ContentRestorationPage() {
+import ServiceHero from "@/components/service-page/ServiceHero";
+import ServiceOverview from "@/components/service-page/ServiceOverview";
+import ServiceSituations from "@/components/service-page/ServiceSituations";
+import ServiceSigns from "@/components/service-page/ServiceSigns";
+import ServiceProcess from "@/components/service-page/ServiceProcess";
+import ServiceUrgency from "@/components/service-page/ServiceUrgency";
+import ServiceSafety from "@/components/service-page/ServiceSafety";
+import ServiceInsurance from "@/components/service-page/ServiceInsurance";
+import ServiceAudience from "@/components/service-page/ServiceAudience";
+import RelatedServices from "@/components/service-page/RelatedServices";
+
+import WhyChooseUs from "@/components/WhyChooseUs";
+import EmergencyCTA from "@/components/EmergencyCTA";
+import CommonQuestions from "@/components/CommonQuestions";
+
+const contentsRestorationSituations = [
+  {
+    title: "Water-Damaged Belongings",
+    description:
+      "Evaluation and cleaning of furniture, household items, equipment, and other belongings affected by leaks, flooding, or plumbing failures.",
+    icon: "water",
+  },
+  {
+    title: "Fire and Smoke Damage",
+    description:
+      "Cleaning and restoration of salvageable belongings affected by smoke, soot, fire residue, or lingering odors.",
+    icon: "fire",
+  },
+  {
+    title: "Sewer Backup Damage",
+    description:
+      "Evaluation and documentation of belongings exposed to sewage or other contaminated water.",
+    icon: "sewer",
+  },
+  {
+    title: "Mold and Moisture Damage",
+    description:
+      "Assessment and cleaning of appropriate contents affected by prolonged moisture or mold contamination.",
+    icon: "mold",
+  },
+  {
+    title: "Residential Contents",
+    description:
+      "Contents services for furniture, clothing, household goods, decorations, personal belongings, and other residential property.",
+    icon: "home",
+  },
+  {
+    title: "Commercial Contents",
+    description:
+      "Documentation and restoration support for office furniture, equipment, inventory, records, and other commercial property.",
+    icon: "building",
+  },
+];
+
+const contentsRestorationSigns = [
+  {
+    title: "Visible Water or Moisture",
+    description:
+      "Furniture, boxes, fabrics, equipment, or personal belongings that are wet or damp may require immediate evaluation.",
+  },
+  {
+    title: "Smoke or Soot Residue",
+    description:
+      "Black, gray, oily, or powdery residue may settle on furniture, decorations, equipment, and belongings throughout the property.",
+  },
+  {
+    title: "Persistent Odors",
+    description:
+      "Smoke, sewage, mildew, and other odors may remain trapped inside fabrics, furniture, boxes, and porous materials.",
+  },
+  {
+    title: "Staining or Discoloration",
+    description:
+      "Water lines, soot stains, yellowing, dark spots, or color changes can indicate damage to the material.",
+  },
+  {
+    title: "Warping or Swelling",
+    description:
+      "Wood furniture, cabinets, books, boxes, and other absorbent materials may swell, warp, separate, or lose their shape.",
+  },
+  {
+    title: "Contamination Exposure",
+    description:
+      "Belongings exposed to sewage, mold, chemicals, or heavy fire residue should be professionally evaluated before reuse.",
+  },
+];
+
+const contentsRestorationProcess = [
+  {
+    number: "01",
+    title: "Inspection and Evaluation",
+    description:
+      "Affected belongings are inspected to determine the type and extent of damage and whether individual items may be salvageable.",
+  },
+  {
+    number: "02",
+    title: "Documentation and Inventory",
+    description:
+      "Items may be photographed, categorized, and documented to support restoration planning and the insurance claim.",
+  },
+  {
+    number: "03",
+    title: "Sorting and Prioritization",
+    description:
+      "Contents are separated based on condition, material, contamination level, restoration potential, and customer priorities.",
+  },
+  {
+    number: "04",
+    title: "Cleaning and Odor Treatment",
+    description:
+      "Salvageable items are cleaned using methods appropriate for their materials and the type of damage involved.",
+  },
+  {
+    number: "05",
+    title: "Drying and Condition Review",
+    description:
+      "Wet or damp contents are dried when appropriate and reviewed to determine whether additional cleaning or treatment is needed.",
+  },
+  {
+    number: "06",
+    title: "Return or Restoration Coordination",
+    description:
+      "Cleaned contents are prepared for return after the affected building areas are safe, clean, and ready to receive them.",
+  },
+];
+
+const contentsUrgencyPoints = [
+  "Separate wet contents from dry and unaffected belongings",
+  "Reduce prolonged exposure to moisture, smoke, soot, or odors",
+  "Identify potentially salvageable items early",
+  "Document damaged belongings for the insurance claim",
+  "Prevent residues from transferring to unaffected surfaces",
+  "Prioritize valuable, important, or time-sensitive belongings",
+];
+
+const contentsDos = [
+  "Photograph damaged rooms and belongings when it is safe",
+  "Move dry, unaffected items away from the damaged area when possible",
+  "Separate wet fabrics and clothing from dry belongings",
+  "Create a list of especially important or valuable items",
+  "Contact Frontier Restoration for a professional contents evaluation",
+];
+
+const contentsDonts = [
+  "Do not discard damaged belongings before documenting them",
+  "Do not place wet items into sealed bags or containers",
+  "Do not wipe soot-covered items with household cleaners",
+  "Do not use visibly contaminated belongings before evaluation",
+  "Do not assume an item is unsalvageable based only on its appearance",
+];
+
+const contentsAudiences = [
+  {
+    title: "Residential Contents",
+    description:
+      "Evaluation, documentation, cleaning, and restoration support for furniture, clothing, household goods, and personal belongings.",
+    imageSrc: "/images/contents-restoration/residential.jpg",
+    imageAlt: "Residential belongings being evaluated for contents restoration",
+    href: "/contact",
+  },
+  {
+    title: "Commercial Contents",
+    description:
+      "Contents services for office furniture, equipment, inventory, records, fixtures, and other commercial property.",
+    imageSrc: "/images/contents-restoration/commercial.jpg",
+    imageAlt:
+      "Commercial equipment and contents being prepared for restoration",
+    href: "/commercial",
+  },
+];
+
+const relatedContentsServices = [
+  {
+    title: "Fire and Smoke Damage",
+    description:
+      "Professional fire, smoke, soot, and odor cleanup for affected structures and belongings.",
+    imageSrc: "/images/services/fire-damage.jpg",
+    imageAlt: "Fire and smoke damage restoration",
+    href: "/fire-damage",
+  },
+  {
+    title: "Water Damage Restoration",
+    description:
+      "Professional water extraction and structural drying after leaks, flooding, or plumbing failures.",
+    imageSrc: "/images/services/water-damage.jpg",
+    imageAlt: "Water damage restoration equipment drying a room",
+    href: "/water-damage",
+  },
+  {
+    title: "Mold Remediation",
+    description:
+      "Professional remediation when moisture contributes to mold growth on building materials or belongings.",
+    imageSrc: "/images/services/mold-remediation.jpg",
+    imageAlt: "Professional mold remediation service",
+    href: "/mold-remediation",
+  },
+];
+
+const contentsQuestions = [
+  {
+    question: "What does contents restoration include?",
+    answer:
+      "Contents restoration involves evaluating, documenting, cleaning, drying, deodorizing, and coordinating the return of belongings affected by water, fire, smoke, soot, mold, or other property damage.",
+  },
+  {
+    question: "What types of belongings can be restored?",
+    answer:
+      "Restoration may be possible for certain furniture, clothing, household goods, decorations, equipment, and personal belongings. The outcome depends on the material, condition, contamination, and type of damage.",
+  },
+  {
+    question: "How do you decide whether an item is salvageable?",
+    answer:
+      "The decision depends on the item's material, value, condition, level of contamination, replacement cost, sentimental importance, and likelihood of successful cleaning or restoration.",
+  },
+  {
+    question: "Should I throw damaged belongings away?",
+    answer:
+      "Do not discard damaged belongings before photographing and documenting them unless they present an immediate safety hazard. Premature disposal may make the insurance claim more difficult.",
+  },
+  {
+    question: "Can smoke odors be removed from belongings?",
+    answer:
+      "Smoke odors can often be reduced or removed from appropriate salvageable items, but results depend on the material, amount of residue, heat exposure, and length of exposure.",
+  },
+  {
+    question: "Can sewage-contaminated belongings be restored?",
+    answer:
+      "Some nonporous items may be cleanable, but heavily contaminated porous belongings may not be safely salvageable. Each item should be evaluated based on its material and level of exposure.",
+  },
+  {
+    question: "What happens to my belongings during building repairs?",
+    answer:
+      "Depending on the project, affected belongings may be documented, moved to a protected area, cleaned, or prepared for temporary storage until the property is ready for their return.",
+  },
+  {
+    question: "How long does contents restoration take?",
+    answer:
+      "The timeline depends on the number of items, the type of damage, the cleaning methods required, the building-restoration schedule, and whether items must remain away from the property during repairs.",
+  },
+  {
+    question: "Does insurance cover contents restoration?",
+    answer:
+      "Coverage depends on the cause of the loss and the personal-property or business-property provisions in your policy. Your insurance carrier makes the final decision regarding coverage and payment.",
+  },
+  {
+    question: "Do you work with insurance companies?",
+    answer:
+      "Yes. We can document affected belongings, prepare estimates, and communicate with your insurance adjuster. Your insurance company makes the final decision regarding coverage and payment.",
+  },
+];
+
+export const metadata = {
+  title: "Contents Restoration in Fairbanks, Alaska",
+  description:
+    "Professional contents evaluation, documentation, cleaning, drying, and restoration services for homes and businesses in Fairbanks, Alaska.",
+};
+
+export default function ContentsRestorationPage() {
   return (
     <main>
-      <h1>Content Restoration</h1>
-      <p>This page is currently under construction.</p>
+      <ServiceHero
+        title="Contents Restoration in Fairbanks, Alaska"
+        description="Professional evaluation, documentation, cleaning, and restoration of belongings affected by water, fire, smoke, mold, or contamination."
+        imageSrc="/images/contents-restoration/hero.jpg"
+        imageAlt="Restoration technicians evaluating damaged household contents"
+        primaryButtonText="Request Service"
+        primaryButtonHref="/contact"
+        secondaryButtonText="Call (907) 987-2916"
+        secondaryButtonHref="tel:+19079872916"
+      />
+
+      <ServiceOverview
+        eyebrow="Contents Restoration Services"
+        heading="Helping Restore the Belongings Inside Your Property"
+        paragraphs={[
+          "Property damage affects more than walls, floors, and ceilings. Furniture, clothing, household goods, equipment, inventory, and personal belongings may also be exposed to water, smoke, soot, mold, or contamination.",
+          "Frontier Restoration evaluates affected belongings, documents their condition, identifies items that may be salvageable, and uses appropriate cleaning and restoration procedures based on the material and type of damage.",
+        ]}
+        imageSrc="/images/contents-restoration/evaluation.jpg"
+        imageAlt="Technician documenting and evaluating damaged belongings"
+        imagePosition="right"
+      />
+
+      <ServiceSituations
+        eyebrow="Damage We Handle"
+        heading="Contents Damage Problems We Address"
+        description="Our team evaluates residential and commercial belongings affected by several types of property damage."
+        items={contentsRestorationSituations}
+      />
+
+      <ServiceSigns
+        eyebrow="When to Call"
+        heading="Signs Your Belongings May Need Professional Restoration"
+        description="Damage may not always be limited to visible staining. Moisture, odors, residues, and contamination can remain inside or on affected items."
+        items={contentsRestorationSigns}
+      />
+
+      <ServiceProcess
+        eyebrow="Our Process"
+        heading="Our Contents Restoration Process"
+        description="Every contents loss is different, but professional restoration generally follows these core stages."
+        steps={contentsRestorationProcess}
+      />
+
+      <ServiceUrgency
+        eyebrow="Protect What Can Be Saved"
+        heading="Why Damaged Contents Should Be Evaluated Promptly"
+        paragraphs={[
+          "Moisture, smoke, soot, odors, and contamination can continue affecting belongings after the original property-damage event has ended.",
+          "Early evaluation allows salvageable items to be separated, documented, dried, cleaned, and prioritized before additional deterioration occurs.",
+        ]}
+        points={contentsUrgencyPoints}
+        imageSrc="/images/contents-restoration/documentation.jpg"
+        imageAlt="Technician photographing and documenting damaged belongings"
+      />
+
+      <ServiceSafety
+        eyebrow="What to Do"
+        heading="What to Do With Damaged Belongings"
+        description="Protect your belongings and insurance claim by documenting the damage and avoiding cleaning methods that could cause additional harm."
+        dos={contentsDos}
+        donts={contentsDonts}
+      />
+
+      <ServiceInsurance
+        eyebrow="Insurance Assistance"
+        heading="Help Documenting Your Contents Claim"
+        paragraphs={[
+          "Frontier Restoration can photograph affected belongings, document their condition, prepare restoration estimates, and communicate with your insurance adjuster.",
+          "Coverage for belongings depends on the cause of the damage, policy limits, deductibles, exclusions, and whether the property is covered under residential or commercial contents provisions.",
+        ]}
+        points={[
+          "Photographs of affected belongings",
+          "Itemized contents documentation",
+          "Condition and damage notes",
+          "Cleaning and restoration estimates",
+          "Documentation of unsalvageable items",
+          "Communication with insurance adjusters",
+        ]}
+        buttonText="Request Service"
+        buttonHref="/contact"
+      />
+
+      <ServiceAudience
+        eyebrow="Who We Serve"
+        heading="Residential and Commercial Contents Restoration"
+        audiences={contentsAudiences}
+      />
+
+      <WhyChooseUs />
+
+      <RelatedServices
+        eyebrow="Related Services"
+        heading="Other Restoration Services"
+        services={relatedContentsServices}
+      />
+
+      <EmergencyCTA />
+
+      <CommonQuestions
+        eyebrow="Common Questions"
+        heading="Contents Restoration FAQs"
+        questions={contentsQuestions}
+      />
     </main>
   );
 }
