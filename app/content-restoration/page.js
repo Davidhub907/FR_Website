@@ -9,9 +9,9 @@ import ServiceInsurance from "@/components/service-page/ServiceInsurance";
 import ServiceAudience from "@/components/service-page/ServiceAudience";
 import RelatedServices from "@/components/service-page/RelatedServices";
 
-import WhyChooseUs from "@/components/WhyChooseUs";
-import EmergencyCTA from "@/components/EmergencyCTA";
-import CommonQuestions from "@/components/CommonQuestions";
+import WhyChooseUs from "@/components/layout/WhyChooseUs";
+import EmergencyCTA from "@/components/layout/EmergencyCTA";
+import CommonQuestions from "@/components/layout/CommonQuestions";
 
 const contentsRestorationSituations = [
   {
