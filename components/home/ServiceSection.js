@@ -58,7 +58,7 @@ export default function ServicesSection() {
     <section className="bg-slate-100 py-16 md:py-24">
       <div className="mx-auto max-w-7xl px-6">
         {/* Section heading */}
-        <div className="mx-auto mb-10 max-w-3xl text-center md:mb-14">
+        <div className="mx-auto mb-10 max-w-3xl text-left md:mb-14 md:text-center">
           <p className="mb-3 text-sm font-bold tracking-widest text-orange-500 uppercase">
             What We Do
           </p>
