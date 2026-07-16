@@ -56,7 +56,7 @@ const testimonials = [
 
 export default function WhyChooseUs() {
   return (
-    <section className="bg-slate-50 py-16 sm:py-20 lg:py-24">
+    <section className="bg-slate-100 py-16 sm:py-20 lg:py-24">
       <div className="mx-auto max-w-7xl px-6">
         {/* Main why-choose-us content */}
         <div className="grid items-center gap-10 lg:grid-cols-2 lg:gap-16">
@@ -124,7 +124,7 @@ export default function WhyChooseUs() {
 
         {/* Testimonials */}
         <div className="mt-20 border-t border-slate-200 pt-16">
-          <div className="mx-auto max-w-3xl text-center">
+          <div className="mx-auto max-w-3xl text-left md:text-center">
             <p className="text-sm font-bold tracking-widest text-orange-600 uppercase">
               Customer Testimonials
             </p>
