@@ -8,9 +8,8 @@ import ServiceSafety from "@/components/service-page/ServiceSafety";
 import ServiceInsurance from "@/components/service-page/ServiceInsurance";
 import CommercialServices from "@/components/service-page/CommercialServices";
 
-import WhyChooseUs from "@/components/layout/WhyChooseUs";
 import EmergencyCTA from "@/components/layout/EmergencyCTA";
-import CommonQuestions from "@/components/layout/CommonQuestions";
+import ServiceQuestions from "@/components/service-page/ServiceQuestions";
 
 const commercialPropertyTypes = [
   {
@@ -346,11 +345,9 @@ export default function CommercialPage() {
         buttonHref="/contact"
       />
 
-      <WhyChooseUs />
-
       <EmergencyCTA />
 
-      <CommonQuestions
+      <ServiceQuestions
         eyebrow="Common Questions"
         heading="Commercial Restoration FAQs"
         questions={commercialQuestions}

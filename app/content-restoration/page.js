@@ -9,9 +9,8 @@ import ServiceInsurance from "@/components/service-page/ServiceInsurance";
 import ServiceAudience from "@/components/service-page/ServiceAudience";
 import RelatedServices from "@/components/service-page/RelatedServices";
 
-import WhyChooseUs from "@/components/layout/WhyChooseUs";
 import EmergencyCTA from "@/components/layout/EmergencyCTA";
-import CommonQuestions from "@/components/layout/CommonQuestions";
+import ServiceQuestions from "@/components/service-page/ServiceQuestions";
 
 const contentsRestorationSituations = [
   {
@@ -347,8 +346,6 @@ export default function ContentsRestorationPage() {
         audiences={contentsAudiences}
       />
 
-      <WhyChooseUs />
-
       <RelatedServices
         eyebrow="Related Services"
         heading="Other Restoration Services"
@@ -357,7 +354,7 @@ export default function ContentsRestorationPage() {
 
       <EmergencyCTA />
 
-      <CommonQuestions
+      <ServiceQuestions
         eyebrow="Common Questions"
         heading="Contents Restoration FAQs"
         questions={contentsQuestions}
