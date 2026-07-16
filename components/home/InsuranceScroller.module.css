@@ -1,0 +1,134 @@
+.scroller {
+  width: 88%;
+  max-width: 1500px;
+  margin: 1.5rem auto 0;
+  overflow: hidden;
+
+  /* Logos gradually appear on the left and disappear on the right */
+  -webkit-mask-image: linear-gradient(
+    to right,
+    transparent 0%,
+    black 8%,
+    black 92%,
+    transparent 100%
+  );
+
+  mask-image: linear-gradient(
+    to right,
+    transparent 0%,
+    black 8%,
+    black 92%,
+    transparent 100%
+  );
+}
+
+.track {
+  display: flex;
+  width: max-content;
+  animation: scrollRight 40s linear infinite;
+  will-change: transform;
+}
+
+/*
+Each copy takes up at least the full browser width.
+
+This prevents empty areas from appearing when the combined logos
+are narrower than the screen.
+*/
+.group {
+  display: flex;
+  flex-shrink: 0;
+  align-items: center;
+  justify-content: flex-start;
+
+  gap: 4.5rem;
+  padding-right: 4.5rem;
+}
+
+.logoContainer {
+  display: flex;
+  width: auto;
+  height: 55px;
+  flex: 0 0 auto;
+  align-items: center;
+  justify-content: center;
+}
+
+.logo {
+  display: block;
+  width: auto;
+  height: 42px;
+  max-width: 180px;
+  object-fit: contain;
+  filter: none;
+  opacity: 1;
+}
+
+@keyframes scrollRight {
+  from {
+    transform: translate3d(-50%, 0, 0);
+  }
+
+  to {
+    transform: translate3d(0, 0, 0);
+  }
+}
+
+@media (max-width: 640px) {
+  .scroller {
+    -webkit-mask-image: linear-gradient(
+      to right,
+      transparent 0%,
+      black 12%,
+      black 88%,
+      transparent 100%
+    );
+
+    mask-image: linear-gradient(
+      to right,
+      transparent 0%,
+      black 12%,
+      black 88%,
+      transparent 100%
+    );
+  }
+
+  .group {
+    min-width: max-content;
+    gap: 1.75rem;
+    padding-right: 1.75rem;
+  }
+
+  .logoContainer {
+    width: auto;
+    height: 46px;
+    flex: 0 0 auto;
+  }
+
+  .logo {
+    width: auto;
+    max-width: 145px;
+    max-height: 36px;
+    object-fit: contain;
+  }
+
+  .track {
+    animation-duration: 30s;
+  }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .track {
+    animation: none;
+    transform: none;
+  }
+
+  .group[aria-hidden="true"] {
+    display: none;
+  }
+
+  .group {
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+}
