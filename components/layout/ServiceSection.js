@@ -44,12 +44,12 @@ const services = [
   },
 
   {
-    title: "About us",
+    title: "Commercial",
     description:
-      "Learn more about the expert team behind every frontier restoration job.",
-    href: "/about",
+      "We work closely with businesses to get their commercial property restored.",
+    href: "/commercial",
     image: "/images/services/about-us.jpg",
-    alt: "about us image",
+    alt: "Commercial building",
   },
 ];
 

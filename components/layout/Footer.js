@@ -5,7 +5,8 @@ const serviceLinks = [
   { label: "Fire & Smoke Damage", href: "/fire-damage" },
   { label: "Mold Remediation", href: "/mold-remediation" },
   { label: "Sewer backup", href: "/sewer-backup" },
-  { label: "content restoration", href: "/content-restoration" },
+  { label: "Content Restoration", href: "/content-restoration" },
+  { label: "Commercial", href: "/commercial" },
 ];
 
 const companyLinks = [

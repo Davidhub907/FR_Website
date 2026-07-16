@@ -6,11 +6,11 @@ import Link from "next/link";
 const navLinks = [
   { label: "Home", href: "/" },
   { label: "Water Damage", href: "/water-damage" },
-  { label: "Fire & Smoke Damage", href: "/fire-damage" },
+  { label: "Fire & Smoke", href: "/fire-damage" },
   { label: "Mold Remediation", href: "/mold-remediation" },
   { label: "Sewer backup", href: "/sewer-backup" },
-  { label: "content restoration", href: "/content-restoration" },
-  { label: "About", href: "/about" },
+  { label: "Content Restoration", href: "/content-restoration" },
+  { label: "Commercial", href: "/commercial" },
   { label: "Contact", href: "/contact" },
 ];
 
