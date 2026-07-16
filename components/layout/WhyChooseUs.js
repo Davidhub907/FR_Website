@@ -60,29 +60,13 @@ export default function WhyChooseUs() {
       <div className="mx-auto max-w-7xl px-6">
         {/* Main why-choose-us content */}
         <div className="grid items-center gap-10 lg:grid-cols-2 lg:gap-16">
-          {/* Team image placeholder */}
-          <div className="overflow-hidden rounded-2xl bg-slate-200 shadow-sm">
-            <div className="flex aspect-[4/3] items-center justify-center px-8 text-center">
-              <div>
-                <p className="text-lg font-bold text-slate-700">
-                  Frontier Restoration Team Photo
-                </p>
-
-                <p className="mt-2 text-sm text-slate-500">
-                  Replace this placeholder with a professional photo of the
-                  team.
-                </p>
-              </div>
-            </div>
-          </div>
-
           {/* Reasons */}
           <div>
             <p className="text-m font-bold tracking-widest text-orange-600 uppercase">
               Why Choose Frontier Restoration?
             </p>
 
-            <h2 className="mt-3 text-3xl font-bold tracking-tight text-slate-900 sm:text-4xl">
+            <h2 className="mt-3 text-3xl font-bold tracking-tight text-slate-900 uppercase sm:text-4xl">
               Local restoration professionals you can depend on
             </h2>
 
@@ -120,6 +104,22 @@ export default function WhyChooseUs() {
               })}
             </div>
           </div>
+
+          {/* Team image placeholder */}
+          <div className="overflow-hidden rounded-2xl bg-slate-200 shadow-sm">
+            <div className="flex aspect-[4/3] items-center justify-center px-8 text-center">
+              <div>
+                <p className="text-lg font-bold text-slate-700">
+                  Frontier Restoration Team Photo
+                </p>
+
+                <p className="mt-2 text-sm text-slate-500">
+                  Replace this placeholder with a professional photo of the
+                  team.
+                </p>
+              </div>
+            </div>
+          </div>
         </div>
 
         {/* Testimonials */}
@@ -129,7 +129,7 @@ export default function WhyChooseUs() {
               Customer Testimonials
             </p>
 
-            <h2 className="mt-3 text-3xl font-bold tracking-tight text-slate-900 sm:text-4xl">
+            <h2 className="mt-3 text-3xl font-bold tracking-tight text-slate-900 uppercase sm:text-4xl">
               Trusted by homeowners and businesses
             </h2>
 

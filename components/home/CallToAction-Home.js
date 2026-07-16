@@ -24,7 +24,7 @@ export default function CallToAction() {
               Get in touch
             </p>
 
-            <h2 className="mt-3 text-3xl font-bold tracking-tight text-zinc-950 sm:text-4xl">
+            <h2 className="mt-3 text-3xl font-bold tracking-tight text-zinc-950 uppercase sm:text-4xl">
               Tell us how we can help
             </h2>
 

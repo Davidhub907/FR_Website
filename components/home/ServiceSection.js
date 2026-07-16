@@ -63,8 +63,10 @@ export default function ServicesSection() {
             What We Do
           </p>
 
-          <h2 className="text-3xl font-bold text-slate-900 md:text-4xl">
-            Professional Restoration Services
+          <h2 className="text-3xl font-bold text-slate-900 uppercase md:text-4xl">
+            Professional
+            <br />
+            Restoration Services
           </h2>
 
           <p className="mt-4 text-base leading-7 text-slate-600 md:text-lg">

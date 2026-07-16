@@ -61,9 +61,9 @@ export default function InsuranceAssistance({
 
             <h2
               id="insurance-assistance-heading"
-              className="max-w-2xl text-3xl font-bold tracking-tight text-gray-900 sm:text-4xl lg:text-5xl"
+              className="max-w-2xl text-3xl font-bold tracking-tight text-gray-900 uppercase sm:text-4xl lg:text-5xl"
             >
-              We help make the insurance process easier
+              We make the insurance process easier
             </h2>
 
             <p className="mt-6 max-w-2xl text-base leading-7 text-gray-600 sm:text-lg">

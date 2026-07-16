@@ -41,14 +41,11 @@ export default function CommonQuestions() {
             Frequently Asked Questions
           </p>
 
-          <h2 className="text-3xl font-bold text-slate-900 md:text-4xl">
-            Common Questions Answered
+          <h2 className="text-3xl font-bold text-slate-900 uppercase md:text-4xl">
+            Common Questions,
+            <br />
+            Answered
           </h2>
-
-          <p className="mx-left mt-4 max-w-2xl text-lg leading-relaxed text-slate-600">
-            Learn what to expect before, during, and after the restoration
-            process.
-          </p>
         </div>
 
         <div className="grid grid-cols-1 items-start gap-5 lg:grid-cols-2">
