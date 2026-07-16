@@ -48,7 +48,7 @@ const insuranceCompanies = [
 
 export default function InsuranceScroller() {
   return (
-    <section className="border-y border-gray-200 bg-white py-5">
+    <section className="border-y border-gray-200 bg-[#faf9f7] py-5">
       <div className="mx-auto max-w-7xl px-6 text-center">
         <p className="text-xs font-bold tracking-[0.18em] text-gray-700 uppercase sm:text-xs">
           We work with your insurance
