@@ -12,13 +12,16 @@ const services = [
 
 export default function CallToAction() {
   return (
-    <section id="request-service" className="bg-white py-16 sm:py-20">
+    <section
+      id="request-service"
+      className="bg-white py-16 text-center sm:py-20 md:text-left"
+    >
       <div className="mx-auto max-w-7xl px-6 lg:px-8">
         <div className="grid gap-12 lg:grid-cols-[0.9fr_1.1fr] lg:items-start">
           {/* CTA information */}
           <div className="lg:top-8">
             <p className="text-sm font-bold tracking-widest text-orange-500 uppercase">
-              Request restoration services
+              Get in touch
             </p>
 
             <h2 className="mt-3 text-3xl font-bold tracking-tight text-zinc-950 sm:text-4xl">
