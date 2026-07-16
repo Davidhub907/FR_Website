@@ -36,7 +36,7 @@ export default function CommonQuestions() {
     <section className="bg-slate-100 px-6 py-20">
       <div className="mx-auto max-w-7xl">
         {/* Section heading */}
-        <div className="mb-12 text-left md:text-center">
+        <div className="mb-12 text-left">
           <p className="mb-3 text-sm font-bold tracking-widest text-orange-500 uppercase">
             Frequently Asked Questions
           </p>
@@ -45,7 +45,7 @@ export default function CommonQuestions() {
             Common Questions Answered
           </h2>
 
-          <p className="mx-auto mt-4 max-w-2xl text-lg leading-relaxed text-slate-600">
+          <p className="mx-left mt-4 max-w-2xl text-lg leading-relaxed text-slate-600">
             Learn what to expect before, during, and after the restoration
             process.
           </p>
