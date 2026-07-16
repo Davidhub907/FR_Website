@@ -1,3 +1,22 @@
+import {
+  Building2,
+  CircleHelp,
+  Droplets,
+  Home,
+  Layers,
+  WashingMachine,
+  Wrench,
+} from "lucide-react";
+
+const situationIcons = {
+  pipe: Wrench,
+  appliance: WashingMachine,
+  roof: Home,
+  basement: Layers,
+  water: Droplets,
+  building: Building2,
+};
+
 export default function ServiceSituations({
   eyebrow,
   heading,
@@ -15,9 +34,11 @@ export default function ServiceSituations({
             </p>
           )}
 
-          <h2 className="mt-3 text-3xl font-bold tracking-tight text-gray-900 sm:text-4xl">
-            {heading}
-          </h2>
+          {heading && (
+            <h2 className="mt-3 text-3xl font-bold tracking-tight text-gray-900 sm:text-4xl">
+              {heading}
+            </h2>
+          )}
 
           {description && (
             <p className="mt-5 text-base leading-8 text-gray-600 sm:text-lg">
@@ -28,19 +49,21 @@ export default function ServiceSituations({
 
         {/* Situation cards */}
         <div className="mt-10 grid gap-6 sm:grid-cols-2 lg:mt-14 lg:grid-cols-3">
-          {items.map((item, index) => {
-            const Icon = item.icon;
+          {items.map((item) => {
+            const Icon = situationIcons[item.icon] ?? CircleHelp;
 
             return (
               <article
-                key={`${item.title}-${index}`}
-                className="rounded-2xl border border-gray-200 bg-white p-7 shadow-sm transition duration-300 hover:-translate-y-1 hover:shadow-lg"
+                key={item.title}
+                className="group rounded-2xl border border-gray-200 bg-white p-7 shadow-sm transition duration-300 hover:-translate-y-1 hover:shadow-lg"
               >
-                {Icon && (
-                  <div className="flex h-12 w-12 items-center justify-center rounded-xl bg-orange-100 text-orange-600">
-                    <Icon aria-hidden="true" className="h-6 w-6" />
-                  </div>
-                )}
+                <div className="flex h-12 w-12 items-center justify-center rounded-xl bg-orange-100 text-orange-600 transition-colors duration-300 group-hover:bg-orange-600 group-hover:text-white">
+                  <Icon
+                    aria-hidden="true"
+                    className="h-6 w-6"
+                    strokeWidth={2}
+                  />
+                </div>
 
                 <h3 className="mt-5 text-xl font-bold text-gray-900">
                   {item.title}
