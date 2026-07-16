@@ -4,6 +4,7 @@ import InsuranceScroller from "@/components/home/InsuranceScroller";
 import ServicesSection from "@/components/home/ServiceSection";
 import CommonQuestions from "@/components/home/CommonQuestions";
 import EmergencyCTA from "@/components/layout/EmergencyCTA";
+import InsuranceAssistance from "@/components/home/InsuranceAssistance";
 
 export const metadata = {
   title: "Water Damage Restoration in Fairbanks, AK | Frontier Restoration LLC",
@@ -19,6 +20,7 @@ export default function HomePage() {
         <InsuranceScroller />
         <CallToAction />
         <ServicesSection />
+        <InsuranceAssistance />
         <EmergencyCTA />
         <CommonQuestions />
       </main>
