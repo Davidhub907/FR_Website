@@ -115,7 +115,7 @@ export default function InsuranceAssistance({
           </div>
 
           {/* Process card */}
-          <div className="overflow-hidden rounded-3xl bg-gray-900 shadow-xl">
+          <div className="overflow-hidden rounded-3xl bg-[#1f1f1c] shadow-xl">
             <div className="border-b border-white/10 p-7 sm:p-9">
               <p className="text-sm font-bold tracking-[0.16em] text-orange-400 uppercase">
                 What to Expect
