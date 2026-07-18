@@ -17,6 +17,7 @@ import ServiceInsurance from "@/components/service-page/ServiceInsurance";
 import ServiceAudience from "@/components/service-page/ServiceAudience";
 
 import ServiceQuestions from "@/components/service-page/ServiceQuestions";
+import EmergencyCTA from "@/components/layout/EmergencyCTA";
 
 const waterDamageSituations = [
   {
@@ -288,6 +289,8 @@ export default function WaterDamagePage() {
         heading="Residential and Commercial Water Damage Restoration"
         audiences={waterDamageAudiences}
       />
+
+      <EmergencyCTA />
 
       <ServiceQuestions
         eyebrow="Common Questions"
