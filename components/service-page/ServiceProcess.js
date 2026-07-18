@@ -5,7 +5,7 @@ export default function ServiceProcess({
   steps = [],
 }) {
   return (
-    <section className="bg-gray-950 py-16 text-white sm:py-20 lg:py-24">
+    <section className="bg-[#1f1f1c] py-16 text-white sm:py-20 lg:py-24">
       <div className="mx-auto max-w-7xl px-6">
         {/* Section heading */}
         <div className="mx-auto max-w-3xl text-center">
@@ -33,7 +33,7 @@ export default function ServiceProcess({
           {steps.map((step, index) => (
             <article
               key={`${step.number}-${step.title}`}
-              className="group relative overflow-hidden rounded-2xl border border-gray-800 bg-gray-900 p-7"
+              className="group relative overflow-hidden rounded-2xl border border-gray-800 bg-[#696969] p-7"
             >
               {/* Large background number */}
               <span
