@@ -33,7 +33,7 @@ export default function ServiceProcess({
           {steps.map((step, index) => (
             <article
               key={`${step.number}-${step.title}`}
-              className="group relative overflow-hidden rounded-2xl border border-gray-800 bg-gray-900 p-7 transition duration-300 hover:-translate-y-1 hover:border-orange-500/60 hover:bg-gray-800"
+              className="group relative overflow-hidden rounded-2xl border border-gray-800 bg-gray-900 p-7"
             >
               {/* Large background number */}
               <span

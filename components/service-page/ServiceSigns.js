@@ -35,7 +35,7 @@ export default function ServiceSigns({
           {items.map((item, index) => (
             <article
               key={item.title}
-              className="relative overflow-hidden rounded-2xl border border-gray-200 bg-gray-50 p-7 transition duration-300 hover:-translate-y-1 hover:border-orange-200 hover:bg-white hover:shadow-lg"
+              className="relative overflow-hidden rounded-2xl border border-gray-200 bg-gray-50 p-7"
             >
               {/* Icon */}
               <div className="flex h-11 w-11 items-center justify-center rounded-full bg-orange-100 text-orange-600">
