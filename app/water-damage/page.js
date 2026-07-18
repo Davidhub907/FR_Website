@@ -1,3 +1,12 @@
+import {
+  Building2,
+  Droplets,
+  Home,
+  Layers,
+  WashingMachine,
+  Wrench,
+} from "lucide-react";
+
 import ServiceHero from "@/components/service-page/ServiceHero";
 import ServiceOverview from "@/components/service-page/ServiceOverview";
 import ServiceSituations from "@/components/service-page/ServiceSituations";
@@ -16,37 +25,37 @@ const waterDamageSituations = [
     title: "Burst and Frozen Pipes",
     description:
       "Water removal and structural drying after frozen, leaking, or broken plumbing lines.",
-    icon: "pipe",
+    icon: Wrench,
   },
   {
     title: "Appliance Leaks",
     description:
       "Cleanup after washing machines, dishwashers, refrigerators, water heaters, and other appliances leak or overflow.",
-    icon: "appliance",
+    icon: WashingMachine,
   },
   {
     title: "Roof and Ceiling Leaks",
     description:
       "Moisture removal and drying when water enters through roofs, ceilings, ice dams, or exterior openings.",
-    icon: "roof",
+    icon: Home,
   },
   {
     title: "Basement and Crawlspace Flooding",
     description:
       "Water extraction and drying for flooded basements, crawlspaces, utility rooms, and lower levels.",
-    icon: "basement",
+    icon: Layers,
   },
   {
     title: "Plumbing Overflows",
     description:
       "Cleanup after sinks, tubs, toilets, or plumbing fixtures overflow and damage surrounding materials.",
-    icon: "water",
+    icon: Droplets,
   },
   {
     title: "Commercial Water Damage",
     description:
       "Water extraction and drying for offices, retail spaces, rental properties, warehouses, and other commercial buildings.",
-    icon: "building",
+    icon: Building2,
   },
 ];
 
