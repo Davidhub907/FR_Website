@@ -37,14 +37,6 @@ export default function ServiceSigns({
               key={item.title}
               className="relative overflow-hidden rounded-2xl border border-gray-200 bg-gray-50 p-7 transition duration-300 hover:-translate-y-1 hover:border-orange-200 hover:bg-white hover:shadow-lg"
             >
-              {/* Card number */}
-              <span
-                aria-hidden="true"
-                className="absolute top-4 right-5 text-5xl font-black text-gray-200"
-              >
-                {String(index + 1).padStart(2, "0")}
-              </span>
-
               {/* Icon */}
               <div className="flex h-11 w-11 items-center justify-center rounded-full bg-orange-100 text-orange-600">
                 <AlertTriangle
