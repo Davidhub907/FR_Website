@@ -229,11 +229,13 @@ export default function ContentsRestorationPage() {
   return (
     <main>
       <ServiceHero
-        title="Contents Restoration in Fairbanks, Alaska"
-        description="Professional evaluation, documentation, cleaning, and restoration of belongings affected by water, fire, smoke, mold, or contamination."
-        imageSrc="/images/contents-restoration/hero.jpg"
-        imageAlt="Restoration technicians evaluating damaged household contents"
-        primaryButtonText="Request Service"
+        eyebrow="CONTENTS CLEANING AND RECOVERY · FAIRBANKS, ALASKA"
+        title="Fairbanks Content"
+        highlightedTitle="Restoration Team."
+        description="Furniture, electronics, documents, clothing, and personal belongings may be recoverable after water, fire, smoke, or mold damage. Our team carefully inventories, packs, cleans, deodorizes, stores, and returns restorable contents."
+        imageSrc="/images/content-restoration/hero.jpg"
+        imageAlt="Restoration professionals cleaning and organizing damaged personal belongings"
+        primaryButtonText="Request Content Restoration"
         primaryButtonHref="/contact"
         secondaryButtonText="Call (907) 987-2916"
         secondaryButtonHref="tel:+19079872916"

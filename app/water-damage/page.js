@@ -212,8 +212,10 @@ export default function WaterDamagePage() {
   return (
     <main>
       <ServiceHero
-        title="Water Damage Restoration in Fairbanks, Alaska"
-        description="Professional water extraction, structural drying, cleanup, and restoration for homes and businesses."
+        eyebrow="24/7 EMERGENCY RESTORATION · FAIRBANKS, ALASKA"
+        title="Fairbanks Water Damage"
+        highlightedTitle="Restoration Team."
+        description="Standing water can damage flooring, drywall, insulation, and structural materials within hours. Our local team provides professional extraction, structural drying, cleanup, and restoration for homes and businesses."
         imageSrc="/images/water-damage/hero.jpg"
         imageAlt="Professional drying equipment inside a water-damaged property"
         primaryButtonText="Request Emergency Service"

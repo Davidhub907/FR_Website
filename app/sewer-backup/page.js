@@ -225,10 +225,12 @@ export default function SewerBackupPage() {
   return (
     <main>
       <ServiceHero
-        title="Sewer Backup Cleanup in Fairbanks, Alaska"
-        description="Professional sewage removal, cleaning, sanitization, structural drying, and restoration for homes and businesses."
+        eyebrow="24/7 EMERGENCY RESTORATION · FAIRBANKS, ALASKA"
+        title="Fairbanks Sewer Backup"
+        highlightedTitle="Cleanup Team."
+        description="Sewage and contaminated water can create serious health risks and damage flooring, walls, and personal belongings. Our team provides professional extraction, removal of contaminated materials, cleaning, sanitization, drying, and restoration."
         imageSrc="/images/sewer-backup/hero.jpg"
-        imageAlt="Restoration technicians performing professional sewer backup cleanup"
+        imageAlt="Restoration professionals cleaning a property affected by a sewer backup"
         primaryButtonText="Request Emergency Service"
         primaryButtonHref="/contact"
         secondaryButtonText="Call (907) 987-2916"

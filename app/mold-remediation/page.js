@@ -223,11 +223,13 @@ export default function MoldRemediationPage() {
   return (
     <main>
       <ServiceHero
-        title="Mold Remediation in Fairbanks, Alaska"
-        description="Professional assessment, containment, material removal, cleaning, and moisture-control services for homes and businesses."
+        eyebrow="PROFESSIONAL MOLD REMEDIATION · FAIRBANKS, ALASKA"
+        title="Fairbanks Mold"
+        highlightedTitle="Remediation Team."
+        description="Mold can spread through building materials and affect indoor air quality when moisture problems are not corrected. Our team identifies affected areas, contains the workspace, removes damaged materials, cleans the structure, and addresses the underlying moisture source."
         imageSrc="/images/mold-remediation/hero.jpg"
-        imageAlt="Restoration technician performing professional mold remediation"
-        primaryButtonText="Request an Assessment"
+        imageAlt="Mold remediation professional inspecting and treating an affected property"
+        primaryButtonText="Request Mold Inspection"
         primaryButtonHref="/contact"
         secondaryButtonText="Call (907) 987-2916"
         secondaryButtonHref="tel:+19079872916"

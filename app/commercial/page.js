@@ -255,10 +255,12 @@ export default function CommercialPage() {
   return (
     <main>
       <ServiceHero
-        title="Commercial Restoration Services in Fairbanks, Alaska"
-        description="Professional damage cleanup and restoration support for businesses, rental properties, commercial facilities, and property managers."
+        eyebrow="COMMERCIAL RESTORATION SERVICES · FAIRBANKS, ALASKA"
+        title="Fairbanks Commercial"
+        highlightedTitle="Restoration Team."
+        description="Property damage can interrupt operations, displace tenants, and create safety concerns. We provide water, fire, smoke, mold, sewage, and contents restoration services for commercial buildings, rental properties, public facilities, and managed portfolios."
         imageSrc="/images/commercial/hero.jpg"
-        imageAlt="Commercial restoration technicians working inside a business"
+        imageAlt="Commercial restoration professionals working inside a damaged business property"
         primaryButtonText="Request Commercial Service"
         primaryButtonHref="/contact"
         secondaryButtonText="Call (907) 987-2916"
