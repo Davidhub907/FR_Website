@@ -1,3 +1,12 @@
+import {
+  ArrowUpFromLine,
+  Toilet,
+  Ban,
+  Cylinder,
+  House,
+  Building2,
+} from "lucide-react";
+
 import ServiceHero from "@/components/service-page/ServiceHero";
 import ServiceOverview from "@/components/service-page/ServiceOverview";
 import ServiceSituations from "@/components/service-page/ServiceSituations";
@@ -17,37 +26,37 @@ const sewerBackupSituations = [
     title: "Backed-Up Floor Drains",
     description:
       "Cleanup after sewage or contaminated water enters through basement, utility-room, bathroom, or commercial floor drains.",
-    icon: "drain",
+    icon: ArrowUpFromLine,
   },
   {
     title: "Overflowing Toilets",
     description:
       "Removal and cleanup when a toilet overflow contains sewage, wastewater, or other contaminated materials.",
-    icon: "toilet",
+    icon: Toilet,
   },
   {
     title: "Blocked Sewer Lines",
     description:
       "Property cleanup after an obstructed or damaged sewer line forces wastewater back through the plumbing system.",
-    icon: "pipe",
+    icon: Ban,
   },
   {
     title: "Septic System Backups",
     description:
       "Contaminated-water cleanup following a septic-system failure or wastewater backup into the property.",
-    icon: "septic",
+    icon: Cylinder,
   },
   {
     title: "Basement Sewage Damage",
     description:
       "Sewage removal, contaminated-material cleanup, and structural drying for affected basements and lower levels.",
-    icon: "basement",
+    icon: House,
   },
   {
     title: "Commercial Sewer Backups",
     description:
       "Professional sewage cleanup for offices, rental properties, restaurants, retail spaces, and other commercial facilities.",
-    icon: "building",
+    icon: Building2,
   },
 ];
 
