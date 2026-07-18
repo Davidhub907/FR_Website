@@ -12,7 +12,7 @@ export default function ServiceInsurance({
   return (
     <section className="bg-white py-16 sm:py-20 lg:py-24">
       <div className="mx-auto max-w-7xl px-6">
-        <div className="overflow-hidden rounded-3xl bg-gray-950 text-white shadow-xl">
+        <div className="overflow-hidden rounded-3xl bg-[#1f1f1c] text-white shadow-xl">
           <div className="grid lg:grid-cols-[1.1fr_0.9fr]">
             {/* Main content */}
             <div className="p-8 sm:p-10 lg:p-14">
@@ -49,7 +49,7 @@ export default function ServiceInsurance({
             </div>
 
             {/* Documentation panel */}
-            <div className="border-t border-gray-800 bg-gray-900 p-8 sm:p-10 lg:border-t-0 lg:border-l lg:p-14">
+            <div className="border-t border-gray-800 bg-[#454545] p-8 sm:p-10 lg:border-t-0 lg:border-l lg:p-14">
               <div className="flex items-center gap-4">
                 <div className="flex h-12 w-12 shrink-0 items-center justify-center rounded-xl bg-orange-500 text-white">
                   <ShieldCheck

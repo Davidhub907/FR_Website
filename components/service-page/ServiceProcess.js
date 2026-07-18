@@ -33,7 +33,7 @@ export default function ServiceProcess({
           {steps.map((step, index) => (
             <article
               key={`${step.number}-${step.title}`}
-              className="group relative overflow-hidden rounded-2xl border border-gray-800 bg-[#696969] p-7"
+              className="group relative overflow-hidden rounded-2xl border border-gray-800 bg-[#454545] p-7"
             >
               {/* Large background number */}
               <span
