@@ -15,7 +15,7 @@ export default function ServiceAudience({ eyebrow, heading, audiences = [] }) {
           )}
 
           {heading && (
-            <h2 className="mt-3 text-3xl font-bold tracking-tight text-gray-900 sm:text-4xl">
+            <h2 className="mt-3 text-3xl font-bold tracking-tight text-gray-900 uppercase sm:text-4xl">
               {heading}
             </h2>
           )}
