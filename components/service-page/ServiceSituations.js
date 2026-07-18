@@ -1,22 +1,3 @@
-import {
-  Building2,
-  CircleHelp,
-  Droplets,
-  Home,
-  Layers,
-  WashingMachine,
-  Wrench,
-} from "lucide-react";
-
-const situationIcons = {
-  pipe: Wrench,
-  appliance: WashingMachine,
-  roof: Home,
-  basement: Layers,
-  water: Droplets,
-  building: Building2,
-};
-
 export default function ServiceSituations({
   eyebrow,
   heading,
@@ -50,7 +31,7 @@ export default function ServiceSituations({
         {/* Situation cards */}
         <div className="mt-10 grid gap-6 sm:grid-cols-2 lg:mt-14 lg:grid-cols-3">
           {items.map((item) => {
-            const Icon = situationIcons[item.icon] ?? CircleHelp;
+            const Icon = item.icon;
 
             return (
               <article
