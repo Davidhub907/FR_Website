@@ -1,3 +1,12 @@
+import {
+  Building,
+  ClipboardList,
+  School,
+  Store,
+  UtensilsCrossed,
+  Warehouse,
+} from "lucide-react";
+
 import ServiceHero from "@/components/service-page/ServiceHero";
 import ServiceOverview from "@/components/service-page/ServiceOverview";
 import ServiceSituations from "@/components/service-page/ServiceSituations";
@@ -16,37 +25,37 @@ const commercialPropertyTypes = [
     title: "Offices and Retail Spaces",
     description:
       "Restoration services for offices, stores, shopping spaces, professional buildings, and other customer-facing properties.",
-    icon: "store",
+    icon: Store,
   },
   {
     title: "Rental and Multi-Family Properties",
     description:
       "Damage cleanup and restoration support for apartment buildings, rental properties, condominiums, and multi-unit housing.",
-    icon: "apartment",
+    icon: Building,
   },
   {
     title: "Warehouses and Industrial Buildings",
     description:
       "Restoration services for warehouses, workshops, production areas, storage facilities, and other industrial properties.",
-    icon: "warehouse",
+    icon: Warehouse,
   },
   {
     title: "Restaurants and Hospitality",
     description:
       "Cleanup and restoration for restaurants, lodging properties, kitchens, dining spaces, and hospitality facilities.",
-    icon: "restaurant",
+    icon: UtensilsCrossed,
   },
   {
     title: "Schools and Public Facilities",
     description:
       "Restoration support for schools, community buildings, nonprofit facilities, and other shared or publicly used spaces.",
-    icon: "school",
+    icon: School,
   },
   {
     title: "Property Management Portfolios",
     description:
       "Restoration coordination for property managers responsible for multiple residential or commercial locations.",
-    icon: "building",
+    icon: ClipboardList,
   },
 ];
 

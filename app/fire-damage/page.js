@@ -1,3 +1,12 @@
+import {
+  Building2,
+  CloudFog,
+  CookingPot,
+  Flame,
+  Heater,
+  Zap,
+} from "lucide-react";
+
 import ServiceHero from "@/components/service-page/ServiceHero";
 import ServiceOverview from "@/components/service-page/ServiceOverview";
 import ServiceSituations from "@/components/service-page/ServiceSituations";
@@ -17,37 +26,37 @@ const fireDamageSituations = [
     title: "Structural Fire Damage",
     description:
       "Cleanup and restoration preparation after fire damages walls, ceilings, flooring, framing, and other building materials.",
-    icon: "fire",
+    icon: Flame,
   },
   {
     title: "Smoke and Soot Damage",
     description:
       "Professional cleaning for smoke residue and soot that spreads throughout rooms and settles on surfaces.",
-    icon: "smoke",
+    icon: CloudFog,
   },
   {
     title: "Kitchen and Grease Fires",
     description:
       "Cleanup after cooking and grease fires leave soot, smoke residue, odors, and damaged materials.",
-    icon: "kitchen",
+    icon: CookingPot,
   },
   {
     title: "Electrical Fires",
     description:
       "Cleanup and restoration preparation after electrical equipment, wiring, outlets, or appliances cause fire damage.",
-    icon: "electric",
+    icon: Zap,
   },
   {
     title: "Heating and Fireplace Incidents",
     description:
       "Cleaning and restoration after furnaces, fireplaces, wood stoves, or heating equipment produce fire or smoke damage.",
-    icon: "fireplace",
+    icon: Heater,
   },
   {
     title: "Commercial Fire Damage",
     description:
       "Fire, smoke, soot, and odor cleanup for offices, rental properties, retail spaces, warehouses, and other businesses.",
-    icon: "building",
+    icon: Building2,
   },
 ];
 

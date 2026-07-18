@@ -1,3 +1,12 @@
+import {
+  Bath,
+  Building2,
+  Droplets,
+  Layers,
+  Snowflake,
+  Wrench,
+} from "lucide-react";
+
 import ServiceHero from "@/components/service-page/ServiceHero";
 import ServiceOverview from "@/components/service-page/ServiceOverview";
 import ServiceSituations from "@/components/service-page/ServiceSituations";
@@ -17,37 +26,37 @@ const moldSituations = [
     title: "Water Damage",
     description:
       "Mold remediation after leaks, flooding, or incomplete structural drying leaves building materials damp.",
-    icon: "water",
+    icon: Droplets,
   },
   {
     title: "Plumbing and Roof Leaks",
     description:
       "Remediation for mold growth associated with leaking pipes, damaged plumbing, roof leaks, or water entering through the building exterior.",
-    icon: "pipe",
+    icon: Wrench,
   },
   {
     title: "Basements and Crawlspaces",
     description:
       "Assessment and remediation of mold growth in damp basements, crawlspaces, utility rooms, and other lower areas.",
-    icon: "basement",
+    icon: Layers,
   },
   {
     title: "Attics and Ice Dams",
     description:
       "Mold remediation where roof leaks, ice dams, condensation, or ventilation problems have affected attic materials.",
-    icon: "roof",
+    icon: Snowflake,
   },
   {
     title: "Bathrooms and Kitchens",
     description:
       "Remediation where persistent moisture, leaks, or poor ventilation have contributed to mold growth.",
-    icon: "home",
+    icon: Bath,
   },
   {
     title: "Commercial Properties",
     description:
       "Mold remediation for offices, rental properties, retail spaces, warehouses, and other commercial facilities.",
-    icon: "building",
+    icon: Building2,
   },
 ];
 

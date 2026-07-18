@@ -1,3 +1,12 @@
+import {
+  Armchair,
+  Biohazard,
+  Building2,
+  Droplets,
+  Flame,
+  Microscope,
+} from "lucide-react";
+
 import ServiceHero from "@/components/service-page/ServiceHero";
 import ServiceOverview from "@/components/service-page/ServiceOverview";
 import ServiceSituations from "@/components/service-page/ServiceSituations";
@@ -17,37 +26,37 @@ const contentsRestorationSituations = [
     title: "Water-Damaged Belongings",
     description:
       "Evaluation and cleaning of furniture, household items, equipment, and other belongings affected by leaks, flooding, or plumbing failures.",
-    icon: "water",
+    icon: Droplets,
   },
   {
     title: "Fire and Smoke Damage",
     description:
       "Cleaning and restoration of salvageable belongings affected by smoke, soot, fire residue, or lingering odors.",
-    icon: "fire",
+    icon: Flame,
   },
   {
     title: "Sewer Backup Damage",
     description:
       "Evaluation and documentation of belongings exposed to sewage or other contaminated water.",
-    icon: "sewer",
+    icon: Biohazard,
   },
   {
     title: "Mold and Moisture Damage",
     description:
       "Assessment and cleaning of appropriate contents affected by prolonged moisture or mold contamination.",
-    icon: "mold",
+    icon: Microscope,
   },
   {
     title: "Residential Contents",
     description:
       "Contents services for furniture, clothing, household goods, decorations, personal belongings, and other residential property.",
-    icon: "home",
+    icon: Armchair,
   },
   {
     title: "Commercial Contents",
     description:
       "Documentation and restoration support for office furniture, equipment, inventory, records, and other commercial property.",
-    icon: "building",
+    icon: Building2,
   },
 ];
 
