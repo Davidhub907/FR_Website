@@ -226,8 +226,8 @@ export default function SewerBackupPage() {
     <main>
       <ServiceHero
         eyebrow="24/7 EMERGENCY RESTORATION · FAIRBANKS, ALASKA"
-        title="Fairbanks Sewer Backup"
-        highlightedTitle="Cleanup Team."
+        title="FAIRBANKS SEWER BACKUP"
+        highlightedTitle="CLEANUP & RESTORATION."
         description="Sewage and contaminated water can create serious health risks and damage flooring, walls, and personal belongings. Our team provides professional extraction, removal of contaminated materials, cleaning, sanitization, drying, and restoration."
         imageSrc="/images/sewer-backup/hero.jpg"
         imageAlt="Restoration professionals cleaning a property affected by a sewer backup"

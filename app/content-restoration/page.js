@@ -230,8 +230,8 @@ export default function ContentsRestorationPage() {
     <main>
       <ServiceHero
         eyebrow="CONTENTS CLEANING AND RECOVERY · FAIRBANKS, ALASKA"
-        title="Fairbanks Content"
-        highlightedTitle="Restoration Team."
+        title="FAIRBANKS CONTENT"
+        highlightedTitle="RESTORATION."
         description="Furniture, electronics, documents, clothing, and personal belongings may be recoverable after water, fire, smoke, or mold damage. Our team carefully inventories, packs, cleans, deodorizes, stores, and returns restorable contents."
         imageSrc="/images/content-restoration/hero.jpg"
         imageAlt="Restoration professionals cleaning and organizing damaged personal belongings"

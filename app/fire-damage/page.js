@@ -224,8 +224,8 @@ export default function FireDamagePage() {
     <main>
       <ServiceHero
         eyebrow="24/7 FIRE DAMAGE RESPONSE · FAIRBANKS, ALASKA"
-        title="Fairbanks Fire and Smoke"
-        highlightedTitle="Restoration Team."
+        title="FAIRBANKS FIRE AND SMOKE"
+        highlightedTitle="RESTORATION."
         description="Fire, smoke, soot, and firefighting water can damage structural materials, finishes, furniture, and personal belongings. Our team provides emergency cleanup, smoke and soot removal, odor treatment, structural drying, content restoration, and reconstruction support."
         imageSrc="/images/fire-smoke-damage/hero.jpg"
         imageAlt="Restoration professional cleaning smoke and fire damage inside a property"

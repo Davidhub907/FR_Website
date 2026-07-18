@@ -256,8 +256,8 @@ export default function CommercialPage() {
     <main>
       <ServiceHero
         eyebrow="COMMERCIAL RESTORATION SERVICES · FAIRBANKS, ALASKA"
-        title="Fairbanks Commercial"
-        highlightedTitle="Restoration Team."
+        title="FAIRBANKS COMMERCIAL"
+        highlightedTitle="RESTORATION."
         description="Property damage can interrupt operations, displace tenants, and create safety concerns. We provide water, fire, smoke, mold, sewage, and contents restoration services for commercial buildings, rental properties, public facilities, and managed portfolios."
         imageSrc="/images/commercial/hero.jpg"
         imageAlt="Commercial restoration professionals working inside a damaged business property"
