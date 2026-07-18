@@ -174,15 +174,6 @@ const commercialRestorationProcess = [
   },
 ];
 
-const commercialUrgencyPoints = [
-  "Limit damage from spreading into additional rooms or units",
-  "Protect equipment, inventory, records, and business property",
-  "Document affected areas for the commercial insurance claim",
-  "Coordinate access with owners, managers, tenants, and adjusters",
-  "Prioritize areas that are important to continued operations",
-  "Prepare affected areas for repairs and safe return to use",
-];
-
 const commercialDos = [
   "Restrict access to damaged or contaminated areas",
   "Stop the source of water when it is safe and possible",

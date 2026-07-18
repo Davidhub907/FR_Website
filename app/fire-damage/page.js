@@ -15,7 +15,6 @@ import ServiceProcess from "@/components/service-page/ServiceProcess";
 import ServiceSafety from "@/components/service-page/ServiceSafety";
 import ServiceInsurance from "@/components/service-page/ServiceInsurance";
 import ServiceAudience from "@/components/service-page/ServiceAudience";
-import RelatedServices from "@/components/service-page/RelatedServices";
 
 import EmergencyCTA from "@/components/layout/EmergencyCTA";
 import ServiceQuestions from "@/components/service-page/ServiceQuestions";
@@ -131,15 +130,6 @@ const fireDamageProcess = [
   },
 ];
 
-const fireDamageUrgencyPoints = [
-  "Limit soot and smoke residue from spreading further",
-  "Reduce staining and deterioration of affected surfaces",
-  "Address water left behind by firefighting efforts",
-  "Separate salvageable contents from damaged materials",
-  "Document the loss for the insurance claim",
-  "Prepare the property for repairs and reconstruction",
-];
-
 const fireDamageDos = [
   "Wait until fire officials confirm that the property is safe to enter",
   "Contact your insurance company and begin documenting the loss",
@@ -172,33 +162,6 @@ const fireDamageAudiences = [
     imageSrc: "/images/fire-damage/commercial.jpg",
     imageAlt: "Commercial fire and smoke damage restoration",
     href: "/commercial",
-  },
-];
-
-const relatedFireDamageServices = [
-  {
-    title: "Contents Restoration",
-    description:
-      "Documentation, cleaning, packing, and restoration of belongings affected by fire, smoke, soot, or water.",
-    imageSrc: "/images/services/contents-restoration.jpg",
-    imageAlt: "Contents cleaning and restoration after fire damage",
-    href: "/contents-restoration",
-  },
-  {
-    title: "Water Damage Restoration",
-    description:
-      "Professional water extraction and structural drying for moisture left behind by firefighting efforts.",
-    imageSrc: "/images/services/water-damage.jpg",
-    imageAlt: "Water damage restoration equipment drying a room",
-    href: "/water-damage",
-  },
-  {
-    title: "Mold Remediation",
-    description:
-      "Professional remediation when prolonged moisture after a fire contributes to mold growth.",
-    imageSrc: "/images/services/mold-remediation.jpg",
-    imageAlt: "Professional mold remediation service",
-    href: "/mold-remediation",
   },
 ];
 
@@ -334,12 +297,6 @@ export default function FireDamagePage() {
         eyebrow="Who We Serve"
         heading="Residential and Commercial Fire Damage Restoration"
         audiences={fireDamageAudiences}
-      />
-
-      <RelatedServices
-        eyebrow="Related Services"
-        heading="Other Restoration Services"
-        services={relatedFireDamageServices}
       />
 
       <EmergencyCTA />

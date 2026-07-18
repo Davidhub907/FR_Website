@@ -15,7 +15,6 @@ import ServiceProcess from "@/components/service-page/ServiceProcess";
 import ServiceSafety from "@/components/service-page/ServiceSafety";
 import ServiceInsurance from "@/components/service-page/ServiceInsurance";
 import ServiceAudience from "@/components/service-page/ServiceAudience";
-import RelatedServices from "@/components/service-page/RelatedServices";
 
 import ServiceQuestions from "@/components/service-page/ServiceQuestions";
 
@@ -130,15 +129,6 @@ const waterDamageProcess = [
   },
 ];
 
-const waterDamageUrgencyPoints = [
-  "Limit moisture from spreading into unaffected areas",
-  "Reduce damage to flooring, drywall, and insulation",
-  "Improve the likelihood that materials can be saved",
-  "Lower the risk of mold and microbial growth",
-  "Shorten the structural drying process",
-  "Document affected areas for an insurance claim",
-];
-
 const waterDamageDos = [
   "Stop the water source when it is safe and possible",
   "Move undamaged belongings away from the affected area",
@@ -171,33 +161,6 @@ const waterDamageAudiences = [
     imageSrc: "/images/water-damage/commercial.jpg",
     imageAlt: "Commercial water damage restoration inside a business",
     href: "/commercial",
-  },
-];
-
-const relatedWaterDamageServices = [
-  {
-    title: "Mold Remediation",
-    description:
-      "Professional remediation when prolonged moisture contributes to mold growth inside the property.",
-    imageSrc: "/images/services/mold-remediation.jpg",
-    imageAlt: "Professional mold remediation service",
-    href: "/mold-remediation",
-  },
-  {
-    title: "Sewer Backup Cleanup",
-    description:
-      "Professional removal, cleaning, sanitization, and drying after sewage or contaminated water enters a property.",
-    imageSrc: "/images/services/sewer-backup.jpg",
-    imageAlt: "Professional sewer backup cleanup",
-    href: "/sewer-backup",
-  },
-  {
-    title: "Contents Restoration",
-    description:
-      "Documentation, cleaning, and restoration of furniture, belongings, and other contents affected by water.",
-    imageSrc: "/images/services/contents-restoration.jpg",
-    imageAlt: "Contents restoration and cleaning service",
-    href: "/contents-restoration",
   },
 ];
 
@@ -322,12 +285,6 @@ export default function WaterDamagePage() {
         eyebrow="Who We Serve"
         heading="Residential and Commercial Water Damage Restoration"
         audiences={waterDamageAudiences}
-      />
-
-      <RelatedServices
-        eyebrow="Related Services"
-        heading="Other Restoration Services"
-        services={relatedWaterDamageServices}
       />
 
       <ServiceQuestions

@@ -15,7 +15,6 @@ import ServiceProcess from "@/components/service-page/ServiceProcess";
 import ServiceSafety from "@/components/service-page/ServiceSafety";
 import ServiceInsurance from "@/components/service-page/ServiceInsurance";
 import ServiceAudience from "@/components/service-page/ServiceAudience";
-import RelatedServices from "@/components/service-page/RelatedServices";
 
 import EmergencyCTA from "@/components/layout/EmergencyCTA";
 import ServiceQuestions from "@/components/service-page/ServiceQuestions";
@@ -131,15 +130,6 @@ const contentsRestorationProcess = [
   },
 ];
 
-const contentsUrgencyPoints = [
-  "Separate wet contents from dry and unaffected belongings",
-  "Reduce prolonged exposure to moisture, smoke, soot, or odors",
-  "Identify potentially salvageable items early",
-  "Document damaged belongings for the insurance claim",
-  "Prevent residues from transferring to unaffected surfaces",
-  "Prioritize valuable, important, or time-sensitive belongings",
-];
-
 const contentsDos = [
   "Photograph damaged rooms and belongings when it is safe",
   "Move dry, unaffected items away from the damaged area when possible",
@@ -173,33 +163,6 @@ const contentsAudiences = [
     imageAlt:
       "Commercial equipment and contents being prepared for restoration",
     href: "/commercial",
-  },
-];
-
-const relatedContentsServices = [
-  {
-    title: "Fire and Smoke Damage",
-    description:
-      "Professional fire, smoke, soot, and odor cleanup for affected structures and belongings.",
-    imageSrc: "/images/services/fire-damage.jpg",
-    imageAlt: "Fire and smoke damage restoration",
-    href: "/fire-damage",
-  },
-  {
-    title: "Water Damage Restoration",
-    description:
-      "Professional water extraction and structural drying after leaks, flooding, or plumbing failures.",
-    imageSrc: "/images/services/water-damage.jpg",
-    imageAlt: "Water damage restoration equipment drying a room",
-    href: "/water-damage",
-  },
-  {
-    title: "Mold Remediation",
-    description:
-      "Professional remediation when moisture contributes to mold growth on building materials or belongings.",
-    imageSrc: "/images/services/mold-remediation.jpg",
-    imageAlt: "Professional mold remediation service",
-    href: "/mold-remediation",
   },
 ];
 
@@ -340,12 +303,6 @@ export default function ContentsRestorationPage() {
         eyebrow="Who We Serve"
         heading="Residential and Commercial Contents Restoration"
         audiences={contentsAudiences}
-      />
-
-      <RelatedServices
-        eyebrow="Related Services"
-        heading="Other Restoration Services"
-        services={relatedContentsServices}
       />
 
       <EmergencyCTA />

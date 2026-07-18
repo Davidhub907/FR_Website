@@ -15,7 +15,6 @@ import ServiceProcess from "@/components/service-page/ServiceProcess";
 import ServiceSafety from "@/components/service-page/ServiceSafety";
 import ServiceInsurance from "@/components/service-page/ServiceInsurance";
 import ServiceAudience from "@/components/service-page/ServiceAudience";
-import RelatedServices from "@/components/service-page/RelatedServices";
 
 import EmergencyCTA from "@/components/layout/EmergencyCTA";
 import ServiceQuestions from "@/components/service-page/ServiceQuestions";
@@ -131,15 +130,6 @@ const moldProcess = [
   },
 ];
 
-const moldUrgencyPoints = [
-  "Identify and correct the underlying moisture source",
-  "Limit mold growth from affecting additional materials",
-  "Reduce damage to drywall, insulation, wood, and flooring",
-  "Separate affected work areas from occupied spaces when appropriate",
-  "Remove materials that cannot be adequately cleaned",
-  "Prepare the area for repairs or reconstruction",
-];
-
 const moldDos = [
   "Address active leaks or moisture sources as soon as possible",
   "Keep children and pets away from visibly affected areas",
@@ -172,33 +162,6 @@ const moldAudiences = [
     imageSrc: "/images/mold-remediation/commercial.jpg",
     imageAlt: "Commercial mold remediation inside a business",
     href: "/commercial",
-  },
-];
-
-const relatedMoldServices = [
-  {
-    title: "Water Damage Restoration",
-    description:
-      "Professional water extraction and structural drying to address the moisture conditions that can contribute to mold growth.",
-    imageSrc: "/images/services/water-damage.jpg",
-    imageAlt: "Water damage restoration equipment drying a room",
-    href: "/water-damage",
-  },
-  {
-    title: "Sewer Backup Cleanup",
-    description:
-      "Professional removal, cleaning, sanitization, and drying after sewage or contaminated water enters a property.",
-    imageSrc: "/images/services/sewer-backup.jpg",
-    imageAlt: "Professional sewer backup cleanup",
-    href: "/sewer-backup",
-  },
-  {
-    title: "Contents Restoration",
-    description:
-      "Evaluation, cleaning, documentation, and restoration of belongings affected by moisture or mold contamination.",
-    imageSrc: "/images/services/contents-restoration.jpg",
-    imageAlt: "Contents restoration and cleaning service",
-    href: "/contents-restoration",
   },
 ];
 
@@ -334,12 +297,6 @@ export default function MoldRemediationPage() {
         eyebrow="Who We Serve"
         heading="Residential and Commercial Mold Remediation"
         audiences={moldAudiences}
-      />
-
-      <RelatedServices
-        eyebrow="Related Services"
-        heading="Other Restoration Services"
-        services={relatedMoldServices}
       />
 
       <EmergencyCTA />

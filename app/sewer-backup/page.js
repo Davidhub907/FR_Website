@@ -15,7 +15,6 @@ import ServiceProcess from "@/components/service-page/ServiceProcess";
 import ServiceSafety from "@/components/service-page/ServiceSafety";
 import ServiceInsurance from "@/components/service-page/ServiceInsurance";
 import ServiceAudience from "@/components/service-page/ServiceAudience";
-import RelatedServices from "@/components/service-page/RelatedServices";
 
 import EmergencyCTA from "@/components/layout/EmergencyCTA";
 import ServiceQuestions from "@/components/service-page/ServiceQuestions";
@@ -131,15 +130,6 @@ const sewerBackupProcess = [
   },
 ];
 
-const sewerBackupUrgencyPoints = [
-  "Limit contaminated water from spreading into additional areas",
-  "Reduce damage to flooring, drywall, insulation, and framing",
-  "Remove porous materials that cannot be adequately cleaned",
-  "Clean and sanitize affected surfaces",
-  "Dry moisture hidden inside structural materials",
-  "Document affected areas for the insurance claim",
-];
-
 const sewerBackupDos = [
   "Keep children and pets away from the affected area",
   "Avoid direct contact with sewage and contaminated materials",
@@ -174,33 +164,6 @@ const sewerBackupAudiences = [
     imageSrc: "/images/sewer-backup/commercial.jpg",
     imageAlt: "Commercial sewer backup cleanup inside a business",
     href: "/commercial",
-  },
-];
-
-const relatedSewerBackupServices = [
-  {
-    title: "Water Damage Restoration",
-    description:
-      "Professional water extraction and structural drying after leaks, flooding, and plumbing failures.",
-    imageSrc: "/images/services/water-damage.jpg",
-    imageAlt: "Water damage restoration equipment drying a room",
-    href: "/water-damage",
-  },
-  {
-    title: "Mold Remediation",
-    description:
-      "Professional remediation when prolonged moisture contributes to mold growth inside the property.",
-    imageSrc: "/images/services/mold-remediation.jpg",
-    imageAlt: "Professional mold remediation service",
-    href: "/mold-remediation",
-  },
-  {
-    title: "Contents Restoration",
-    description:
-      "Evaluation, documentation, cleaning, and restoration of belongings affected by contaminated water or moisture.",
-    imageSrc: "/images/services/contents-restoration.jpg",
-    imageAlt: "Contents restoration and cleaning service",
-    href: "/contents-restoration",
   },
 ];
 
@@ -336,12 +299,6 @@ export default function SewerBackupPage() {
         eyebrow="Who We Serve"
         heading="Residential and Commercial Sewer Backup Cleanup"
         audiences={sewerBackupAudiences}
-      />
-
-      <RelatedServices
-        eyebrow="Related Services"
-        heading="Other Restoration Services"
-        services={relatedSewerBackupServices}
       />
 
       <EmergencyCTA />
