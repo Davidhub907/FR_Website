@@ -2,9 +2,9 @@ import {
   ArrowUpFromLine,
   Toilet,
   Ban,
-  Cylinder,
   House,
   Building2,
+  Biohazard,
 } from "lucide-react";
 
 import ServiceHero from "@/components/service-page/ServiceHero";
@@ -44,7 +44,7 @@ const sewerBackupSituations = [
     title: "Septic System Backups",
     description:
       "Contaminated-water cleanup following a septic-system failure or wastewater backup into the property.",
-    icon: Cylinder,
+    icon: Biohazard,
   },
   {
     title: "Basement Sewage Damage",
