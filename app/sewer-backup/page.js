@@ -12,7 +12,6 @@ import ServiceOverview from "@/components/service-page/ServiceOverview";
 import ServiceSituations from "@/components/service-page/ServiceSituations";
 import ServiceSigns from "@/components/service-page/ServiceSigns";
 import ServiceProcess from "@/components/service-page/ServiceProcess";
-import ServiceUrgency from "@/components/service-page/ServiceUrgency";
 import ServiceSafety from "@/components/service-page/ServiceSafety";
 import ServiceInsurance from "@/components/service-page/ServiceInsurance";
 import ServiceAudience from "@/components/service-page/ServiceAudience";
@@ -304,18 +303,6 @@ export default function SewerBackupPage() {
         heading="Our Sewer Backup Cleanup Process"
         description="Every sewage loss is different, but professional cleanup and restoration generally follow these core stages."
         steps={sewerBackupProcess}
-      />
-
-      <ServiceUrgency
-        eyebrow="Act Quickly"
-        heading="Why Sewer Backup Damage Requires Immediate Attention"
-        paragraphs={[
-          "Sewer water may contain harmful contaminants and should not be handled like an ordinary plumbing leak.",
-          "A prompt professional response can limit the spread of contamination, reduce additional property damage, and begin the cleaning and structural drying process sooner.",
-        ]}
-        points={sewerBackupUrgencyPoints}
-        imageSrc="/images/sewer-backup/protective-equipment.jpg"
-        imageAlt="Restoration technician wearing protective equipment during sewage cleanup"
       />
 
       <ServiceSafety

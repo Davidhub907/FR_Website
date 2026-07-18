@@ -12,7 +12,6 @@ import ServiceOverview from "@/components/service-page/ServiceOverview";
 import ServiceSituations from "@/components/service-page/ServiceSituations";
 import ServiceSigns from "@/components/service-page/ServiceSigns";
 import ServiceProcess from "@/components/service-page/ServiceProcess";
-import ServiceUrgency from "@/components/service-page/ServiceUrgency";
 import ServiceSafety from "@/components/service-page/ServiceSafety";
 import ServiceInsurance from "@/components/service-page/ServiceInsurance";
 import ServiceAudience from "@/components/service-page/ServiceAudience";
@@ -302,18 +301,6 @@ export default function MoldRemediationPage() {
         heading="Our Mold Remediation Process"
         description="Every property is different, but professional mold remediation generally follows these core stages."
         steps={moldProcess}
-      />
-
-      <ServiceUrgency
-        eyebrow="Address the Moisture"
-        heading="Why Mold and Moisture Should Be Addressed Promptly"
-        paragraphs={[
-          "Mold growth will often continue when building materials remain damp or when the original moisture source has not been corrected.",
-          "Addressing the affected materials and the underlying moisture problem can limit additional damage and reduce the likelihood that mold will return.",
-        ]}
-        points={moldUrgencyPoints}
-        imageSrc="/images/mold-remediation/moisture-inspection.jpg"
-        imageAlt="Technician using moisture-detection equipment during a mold inspection"
       />
 
       <ServiceSafety

@@ -12,7 +12,6 @@ import ServiceOverview from "@/components/service-page/ServiceOverview";
 import ServiceSituations from "@/components/service-page/ServiceSituations";
 import ServiceSigns from "@/components/service-page/ServiceSigns";
 import ServiceProcess from "@/components/service-page/ServiceProcess";
-import ServiceUrgency from "@/components/service-page/ServiceUrgency";
 import ServiceSafety from "@/components/service-page/ServiceSafety";
 import ServiceInsurance from "@/components/service-page/ServiceInsurance";
 import ServiceAudience from "@/components/service-page/ServiceAudience";
@@ -291,18 +290,6 @@ export default function WaterDamagePage() {
         heading="Our Water Damage Restoration Process"
         description="Every water loss is different, but professional restoration generally follows these core stages."
         steps={waterDamageProcess}
-      />
-
-      <ServiceUrgency
-        eyebrow="Act Quickly"
-        heading="Why Water Damage Should Be Addressed Immediately"
-        paragraphs={[
-          "Water can continue moving through porous building materials after the original leak or flooding event has stopped.",
-          "A fast professional response can reduce additional property damage, shorten drying time, and improve the likelihood that affected materials can be saved.",
-        ]}
-        points={waterDamageUrgencyPoints}
-        imageSrc="/images/water-damage/moisture-inspection.jpg"
-        imageAlt="Restoration technician checking a wall with a moisture meter"
       />
 
       <ServiceSafety

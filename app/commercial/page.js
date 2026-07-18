@@ -12,7 +12,6 @@ import ServiceOverview from "@/components/service-page/ServiceOverview";
 import ServiceSituations from "@/components/service-page/ServiceSituations";
 import ServiceSigns from "@/components/service-page/ServiceSigns";
 import ServiceProcess from "@/components/service-page/ServiceProcess";
-import ServiceUrgency from "@/components/service-page/ServiceUrgency";
 import ServiceSafety from "@/components/service-page/ServiceSafety";
 import ServiceInsurance from "@/components/service-page/ServiceInsurance";
 import CommercialServices from "@/components/service-page/CommercialServices";
@@ -313,18 +312,6 @@ export default function CommercialPage() {
         heading="Our Commercial Restoration Process"
         description="Commercial restoration requires clear communication, damage documentation, and coordination between multiple stakeholders."
         steps={commercialRestorationProcess}
-      />
-
-      <ServiceUrgency
-        eyebrow="Limit Business Disruption"
-        heading="Why Commercial Property Damage Should Be Addressed Quickly"
-        paragraphs={[
-          "Damage can spread into additional rooms, units, inventory, equipment, and building materials while disrupting normal business operations.",
-          "A prompt professional response can establish priorities, begin mitigation, protect potentially salvageable property, and create a documented plan for recovery.",
-        ]}
-        points={commercialUrgencyPoints}
-        imageSrc="/images/commercial/damage-documentation.jpg"
-        imageAlt="Technician documenting damage inside a commercial facility"
       />
 
       <ServiceSafety

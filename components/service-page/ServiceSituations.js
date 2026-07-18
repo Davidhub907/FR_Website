@@ -36,9 +36,9 @@ export default function ServiceSituations({
             return (
               <article
                 key={item.title}
-                className="group rounded-2xl border border-gray-200 bg-white p-7 shadow-sm transition duration-300 hover:-translate-y-1 hover:shadow-lg"
+                className="group rounded-2xl border border-gray-200 bg-white p-7"
               >
-                <div className="flex h-12 w-12 items-center justify-center rounded-xl bg-orange-100 text-orange-600 transition-colors duration-300 group-hover:bg-orange-600 group-hover:text-white">
+                <div className="flex h-12 w-12 items-center justify-center rounded-xl bg-orange-100 text-orange-600">
                   <Icon
                     aria-hidden="true"
                     className="h-6 w-6"

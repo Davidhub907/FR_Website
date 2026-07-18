@@ -12,7 +12,6 @@ import ServiceOverview from "@/components/service-page/ServiceOverview";
 import ServiceSituations from "@/components/service-page/ServiceSituations";
 import ServiceSigns from "@/components/service-page/ServiceSigns";
 import ServiceProcess from "@/components/service-page/ServiceProcess";
-import ServiceUrgency from "@/components/service-page/ServiceUrgency";
 import ServiceSafety from "@/components/service-page/ServiceSafety";
 import ServiceInsurance from "@/components/service-page/ServiceInsurance";
 import ServiceAudience from "@/components/service-page/ServiceAudience";
@@ -302,18 +301,6 @@ export default function FireDamagePage() {
         heading="Our Fire and Smoke Damage Restoration Process"
         description="Every fire loss is different, but professional cleanup and restoration generally follow these core stages."
         steps={fireDamageProcess}
-      />
-
-      <ServiceUrgency
-        eyebrow="Act Promptly"
-        heading="Why Fire and Smoke Damage Should Be Addressed Quickly"
-        paragraphs={[
-          "Soot and smoke residue can continue affecting surfaces, finishes, electronics, fabrics, and personal belongings after the fire has been extinguished.",
-          "A prompt professional response can limit additional damage, identify salvageable materials, begin drying wet areas, and establish a documented restoration plan.",
-        ]}
-        points={fireDamageUrgencyPoints}
-        imageSrc="/images/fire-damage/soot-cleaning.jpg"
-        imageAlt="Technician cleaning soot residue from a fire-damaged property"
       />
 
       <ServiceSafety
