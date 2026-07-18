@@ -49,17 +49,6 @@ export default function ServiceHero({
       <div className="absolute inset-0 bg-black/70" />
       <div className="absolute inset-0 bg-gradient-to-r from-black/90 via-black/70 to-black/45" />
 
-      {/* Decorative orange corners */}
-      <div
-        aria-hidden="true"
-        className="absolute top-0 left-0 h-28 w-28 bg-orange-500 [clip-path:polygon(0_0,100%_0,0_100%)] md:h-36 md:w-36"
-      />
-
-      <div
-        aria-hidden="true"
-        className="absolute right-0 bottom-0 h-20 w-20 bg-orange-500 [clip-path:polygon(100%_0,100%_100%,0_100%)] md:h-28 md:w-28"
-      />
-
       <div className="relative mx-auto grid min-h-[720px] max-w-7xl items-center gap-14 px-6 py-20 lg:grid-cols-2 lg:gap-16 lg:py-24">
         {/* Left content */}
         <div className="text-white">
