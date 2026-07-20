@@ -7,16 +7,16 @@ const defaultStats = [
     label: "Emergency Response",
   },
   {
-    value: "Local",
-    label: "Fairbanks Team",
+    value: "60 MIN",
+    label: "On site",
   },
   {
-    value: "Homes",
-    label: "Residential Service",
+    value: "20+",
+    label: "Restorations",
   },
   {
-    value: "Business",
-    label: "Commercial Service",
+    value: "IICRC",
+    label: "Certifited",
   },
 ];
 
