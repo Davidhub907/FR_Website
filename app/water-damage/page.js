@@ -251,6 +251,8 @@ export default function WaterDamagePage() {
         items={waterDamageSigns}
       />
 
+      <EmergencyCTA />
+
       <ServiceProcess
         eyebrow="Our Process"
         heading="Our Water Damage Restoration Process"
@@ -289,8 +291,6 @@ export default function WaterDamagePage() {
         heading="Residential and Commercial Water Damage Restoration"
         audiences={waterDamageAudiences}
       />
-
-      <EmergencyCTA />
 
       <ServiceQuestions
         eyebrow="Common Questions"

@@ -254,6 +254,8 @@ export default function FireDamagePage() {
         items={fireDamageSituations}
       />
 
+      <EmergencyCTA />
+
       <ServiceSigns
         eyebrow="Hidden Damage"
         heading="Signs of Smoke, Soot, and Fire Damage"
@@ -300,8 +302,6 @@ export default function FireDamagePage() {
         heading="Residential and Commercial Fire Damage Restoration"
         audiences={fireDamageAudiences}
       />
-
-      <EmergencyCTA />
 
       <ServiceQuestions
         eyebrow="Common Questions"

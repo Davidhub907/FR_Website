@@ -261,6 +261,8 @@ export default function MoldRemediationPage() {
         items={moldSigns}
       />
 
+      <EmergencyCTA />
+
       <ServiceProcess
         eyebrow="Our Process"
         heading="Our Mold Remediation Process"
@@ -300,8 +302,6 @@ export default function MoldRemediationPage() {
         heading="Residential and Commercial Mold Remediation"
         audiences={moldAudiences}
       />
-
-      <EmergencyCTA />
 
       <ServiceQuestions
         eyebrow="Common Questions"

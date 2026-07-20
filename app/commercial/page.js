@@ -300,6 +300,8 @@ export default function CommercialPage() {
         items={commercialDamageSigns}
       />
 
+      <EmergencyCTA />
+
       <ServiceProcess
         eyebrow="Our Process"
         heading="Our Commercial Restoration Process"
@@ -333,8 +335,6 @@ export default function CommercialPage() {
         buttonText="Request Commercial Service"
         buttonHref="/contact"
       />
-
-      <EmergencyCTA />
 
       <ServiceQuestions
         eyebrow="Common Questions"

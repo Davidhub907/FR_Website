@@ -263,6 +263,8 @@ export default function SewerBackupPage() {
         items={sewerBackupSigns}
       />
 
+      <EmergencyCTA />
+
       <ServiceProcess
         eyebrow="Our Process"
         heading="Our Sewer Backup Cleanup Process"
@@ -302,8 +304,6 @@ export default function SewerBackupPage() {
         heading="Residential and Commercial Sewer Backup Cleanup"
         audiences={sewerBackupAudiences}
       />
-
-      <EmergencyCTA />
 
       <ServiceQuestions
         eyebrow="Common Questions"

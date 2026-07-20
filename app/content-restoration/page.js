@@ -267,6 +267,8 @@ export default function ContentsRestorationPage() {
         items={contentsRestorationSigns}
       />
 
+      <EmergencyCTA />
+
       <ServiceProcess
         eyebrow="Our Process"
         heading="Our Contents Restoration Process"
@@ -306,8 +308,6 @@ export default function ContentsRestorationPage() {
         heading="Residential and Commercial Contents Restoration"
         audiences={contentsAudiences}
       />
-
-      <EmergencyCTA />
 
       <ServiceQuestions
         eyebrow="Common Questions"
