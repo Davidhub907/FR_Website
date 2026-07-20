@@ -227,7 +227,7 @@ export default function FireDamagePage() {
         title="FAIRBANKS FIRE AND SMOKE"
         highlightedTitle="RESTORATION."
         description="Fire, smoke, soot, and firefighting water can damage structural materials, finishes, furniture, and personal belongings. Our team provides emergency cleanup, smoke and soot removal, odor treatment, structural drying, content restoration, and reconstruction support."
-        imageSrc="/images/fire-smoke-damage/hero.jpg"
+        imageSrc="/images/services/fire-damage.jpg"
         imageAlt="Restoration professional cleaning smoke and fire damage inside a property"
         primaryButtonText="Request Emergency Service"
         primaryButtonHref="/contact"
