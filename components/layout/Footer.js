@@ -9,11 +9,7 @@ const serviceLinks = [
   { label: "Commercial", href: "/commercial" },
 ];
 
-const companyLinks = [
-  { label: "Home", href: "/" },
-  { label: "About Us", href: "/about" },
-  { label: "Contact", href: "/contact" },
-];
+const companyLinks = [{ label: "Home", href: "/" }];
 
 const phoneNumber = "(907) 987-2916";
 const phoneHref = "tel:+19079872916";

@@ -11,7 +11,6 @@ const navLinks = [
   { label: "Sewer backup", href: "/sewer-backup" },
   { label: "Content Restoration", href: "/content-restoration" },
   { label: "Commercial", href: "/commercial" },
-  { label: "Contact", href: "/contact" },
 ];
 
 export default function NavigationBar() {
