@@ -42,15 +42,16 @@ export default function ServiceHero({
         fill
         priority
         sizes="100vw"
-        className="object-cover"
+        className="object-cover object-center"
       />
 
       {/* Background overlays */}
 
       <div className="absolute inset-0 bg-black/10" />
-      <div className="absolute inset-0 bg-gradient-to-r from-black/90 via-black/20 to-black/45" />
+      <div className="absolute inset-0 bg-gradient-to-r from-black/100 via-black/20 to-black/45" />
 
-      <div className="relative mx-auto grid min-h-[720px] max-w-7xl items-center gap-14 px-6 py-20 lg:grid-cols-2 lg:gap-16 lg:py-24">
+      <div className="relative mx-auto grid min-h-[760px] max-w-7xl items-center gap-14 px-6 py-20 lg:grid-cols-[1.05fr_0.95fr] lg:gap-16 lg:px-8 lg:py-24">
+        {" "}
         {/* Left content */}
         <div className="text-white">
           <div className="mb-8">
@@ -61,9 +62,9 @@ export default function ServiceHero({
             <div className="mt-3 h-[2px] w-24 bg-orange-500" />
           </div>
 
-          <h1 className="max-w-3xl text-5xl leading-[0.95] font-extrabold tracking-tight sm:text-6xl lg:text-7xl">
+          <h1 className="max-w-3xl text-5xl leading-[0.92] font-extrabold tracking-tight uppercase sm:text-6xl lg:text-7xl">
+            {" "}
             <span className="block">{title}</span>
-
             {highlightedTitle && (
               <span className="mt-2 block text-orange-500">
                 {highlightedTitle}
@@ -108,7 +109,6 @@ export default function ServiceHero({
             </div>
           </div>
         </div>
-
         {/* Request form */}
         <div className="relative">
           <div className="overflow-hidden rounded-lg bg-white shadow-2xl">
@@ -119,8 +119,6 @@ export default function ServiceHero({
               method="get"
               className="p-7 sm:p-10"
             >
-              <input type="hidden" name="service" value={title} />
-
               <div>
                 <p className="text-sm font-bold tracking-[0.18em] text-orange-600 uppercase">
                   Fast Response

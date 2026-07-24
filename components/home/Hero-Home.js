@@ -38,7 +38,7 @@ export default function HeroSection() {
       {/* Background overlays */}
 
       <div className="absolute inset-0 bg-black/10" />
-      <div className="absolute inset-0 bg-gradient-to-r from-black/90 via-black/20 to-black/45" />
+      <div className="absolute inset-0 bg-gradient-to-r from-black/100 via-black/20 to-black/45" />
 
       <div className="relative mx-auto grid min-h-[760px] max-w-7xl items-center gap-14 px-6 py-20 lg:grid-cols-[1.05fr_0.95fr] lg:gap-16 lg:px-8 lg:py-24">
         {/* Left hero content */}
