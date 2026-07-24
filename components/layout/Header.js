@@ -1,15 +1,15 @@
 import Image from "next/image";
+import { siteConfig } from "@/config/site";
 
 // Keeping this data at the top makes the component easier to update later.
 // If the client's phone number or email changes, you only edit it once here.
 
-const emailAddress = "office@frontierrestorationllc.com";
 const emailSubject = "Restoration Service Request";
 const emailBody =
   "Hello Frontier Restoration,%0A%0AI would like help with:%0A%0AMy name:%0AMy phone number:%0AMy property address:%0A";
 
 const emailHref = `https://mail.google.com/mail/?view=cm&fs=1&to=${encodeURIComponent(
-  emailAddress,
+  siteConfig.email.address,
 )}&su=${encodeURIComponent(emailSubject)}&body=${emailBody}`;
 
 const phoneNumber = "(907) 987-2916";
@@ -65,7 +65,7 @@ export default function Header() {
               <p className="text-sm font-semibold tracking-wide uppercase">
                 Gmail Us
               </p>
-              <p className="text-sm font-bold">{emailAddress}</p>
+              <p className="text-sm font-bold">{siteConfig.email.address}</p>
             </div>
           </a>
         </div>
