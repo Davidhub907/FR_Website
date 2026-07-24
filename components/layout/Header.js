@@ -27,7 +27,7 @@ export default function Header() {
   return (
     <header className="bg-white">
       {/* Desktop / tablet header */}
-      <div className="mx-auto hidden max-w-7xl items-center justify-between px-6 py-6 md:flex lg:py-8">
+      <div className="mx-auto hidden max-w-7xl items-center justify-between px-6 py-4 md:flex lg:py-4">
         {/* Full desktop logo */}
         <a
           href="/"
@@ -38,7 +38,7 @@ export default function Header() {
             alt="Frontier Restoration LLC"
             width={220}
             height={120}
-            className="h-20 w-auto md:h-28"
+            className="h-20 w-auto md:h-24"
             priority
           />
         </a>
