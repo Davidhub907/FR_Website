@@ -4,16 +4,24 @@ import { siteConfig } from "@/config/site";
 // Keeping this data at the top makes the component easier to update later.
 // If the client's phone number or email changes, you only edit it once here.
 
+// This is the subject of the email being sent
 const emailSubject = "Restoration Service Request";
-const emailBody =
-  "Hello Frontier Restoration,%0A%0AI would like help with:%0A%0AMy name:%0AMy phone number:%0AMy property address:%0A";
+
+// This is the body of the email being sent
+const emailBody = `Hello Frontier Restoration,
+
+I would like help with:
+
+My name:
+My phone number:
+My property address:
+`;
 
 const emailHref = `https://mail.google.com/mail/?view=cm&fs=1&to=${encodeURIComponent(
   siteConfig.email.address,
-)}&su=${encodeURIComponent(emailSubject)}&body=${emailBody}`;
-
-const phoneNumber = "(907) 987-2916";
-const phoneHref = "tel:+19079872916";
+)}&su=${encodeURIComponent(emailSubject)}&body=${encodeURIComponent(
+  emailBody,
+)}`;
 
 export default function Header() {
   return (
@@ -39,7 +47,7 @@ export default function Header() {
         <div className="flex items-center gap-12">
           {/* Phone button */}
           <a
-            href={phoneHref}
+            href={siteConfig.phone.href}
             className="flex cursor-pointer items-center gap-3 rounded-md bg-orange-400 px-6 py-4 text-black transition transition-transform duration-300 ease-in-out hover:-translate-y-1 hover:bg-orange-500 hover:drop-shadow-md"
           >
             <DesktopPhoneIcon />
@@ -48,7 +56,7 @@ export default function Header() {
               <p className="text-sm font-semibold tracking-wide uppercase">
                 Call Now 24/7
               </p>
-              <p className="text-base font-bold">{phoneNumber}</p>
+              <p className="text-base font-bold">{siteConfig.phone.display}</p>
             </div>
           </a>
 
@@ -86,7 +94,7 @@ export default function Header() {
         </a>
 
         <a
-          href={phoneHref}
+          href={siteConfig.phone.href}
           aria-label="Call Frontier Restoration 24/7 line"
           className="flex h-12 w-[200px] items-center justify-center gap-3 rounded-full bg-orange-400 font-bold text-black shadow-md"
         >

@@ -1,35 +1,44 @@
-// These are the constants of the website (Change the info here, it changes all over the site.)
+// config/site.js
 
-// This is the name of the business
+// Change the information here to update it across the website.
+
 export const siteConfig = {
+  // Business name
   name: "Frontier Restoration LLC",
   shortName: "Frontier Restoration",
+
+  // Default business description
   description:
     "24/7 water, fire, mold, sewer, and contents restoration services in Fairbanks, Alaska.",
 
-  // This is the phone number of the business, display is what shows, href is what number is called
+  // Business phone number
   phone: {
     display: "(907) 987-2916",
     href: "tel:+19079872916",
   },
 
-  // This is the email for the site. Address is the display name, gmailHref is the email you go to when pressing the email button
+  // Business email
   email: {
     address: "office@frontierrestorationllc.com",
-    gmailHref:
-      "https://mail.google.com/mail/?view=cm&fs=1&to=office%40frontierrestorationllc.com",
+    href: "mailto:office@frontierrestorationllc.com",
   },
 
-  // This is the location and service area of the business
+  // Business address
   location: {
-    address: "2155 Frank Ave, Fairbanks, AK 99701",
-    serviceArea: "Fairbanks and surrounding communities",
+    streetAddress: "2155 Frank Ave",
+    city: "Fairbanks",
+    state: "AK",
+    zipCode: "99701",
+    formatted: "2155 Frank Ave, Fairbanks, AK 99701",
   },
 
-  // This is the service area of the business
-  serviceArea: ["Fairbanks", "North Pole", "Ester", "Fox", "Interior Alaska"],
+  // Business service area
+  serviceArea: {
+    summary: "Fairbanks and surrounding communities",
+    communities: ["Fairbanks", "North Pole", "Ester", "Fox", "Interior Alaska"],
+  },
 
-  // These are the social links of the business
+  // Business social media links
   social: {
     facebook: "https://facebook.com/example",
     instagram: "https://instagram.com/example",
