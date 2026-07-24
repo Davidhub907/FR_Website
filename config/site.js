@@ -3,6 +3,9 @@
 // This is the name of the business
 export const siteConfig = {
   name: "Frontier Restoration LLC",
+  shortName: "Frontier Restoration",
+  description:
+    "24/7 water, fire, mold, sewer, and contents restoration services in Fairbanks, Alaska.",
 
   // This is the phone number of the business, display is what shows, href is what number is called
   phone: {
@@ -21,5 +24,14 @@ export const siteConfig = {
   location: {
     address: "2155 Frank Ave, Fairbanks, AK 99701",
     serviceArea: "Fairbanks and surrounding communities",
+  },
+
+  // This is the service area of the business
+  serviceArea: ["Fairbanks", "North Pole", "Ester", "Fox", "Interior Alaska"],
+
+  // These are the social links of the business
+  social: {
+    facebook: "https://facebook.com/example",
+    instagram: "https://instagram.com/example",
   },
 };
