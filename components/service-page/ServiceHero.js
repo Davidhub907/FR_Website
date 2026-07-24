@@ -16,7 +16,7 @@ const defaultStats = [
   },
   {
     value: "IICRC",
-    label: "Certifited",
+    label: "Certified",
   },
 ];
 

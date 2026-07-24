@@ -18,7 +18,7 @@ const heroStats = [
   },
   {
     value: "IICRC",
-    label: "Certifited",
+    label: "Certified",
   },
 ];
 
