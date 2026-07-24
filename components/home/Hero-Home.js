@@ -1,7 +1,5 @@
 import Image from "next/image";
-
-const phoneNumber = "(907) 987-2916";
-const phoneHref = "tel:+19079872916";
+import { siteConfig } from "@/config/site";
 
 const heroStats = [
   {
@@ -68,7 +66,7 @@ export default function HeroSection() {
           </p>
 
           <a
-            href={phoneHref}
+            href={siteConfig.phone.href}
             className="mt-8 inline-flex items-center gap-3 rounded-md border border-white/40 bg-white/10 px-6 py-3.5 font-bold text-white backdrop-blur-sm transition hover:border-orange-500 hover:bg-orange-500 focus-visible:outline-2 focus-visible:outline-offset-4 focus-visible:outline-white"
           >
             <svg
@@ -79,7 +77,7 @@ export default function HeroSection() {
             >
               <path d="M6.62 10.79a15.46 15.46 0 0 0 6.59 6.59l2.2-2.2a1 1 0 0 1 1.02-.24 11.36 11.36 0 0 0 3.57.57 1 1 0 0 1 1 1V20a1 1 0 0 1-1 1C10.61 21 3 13.39 3 4a1 1 0 0 1 1-1h3.5a1 1 0 0 1 1 1 11.36 11.36 0 0 0 .57 3.57 1 1 0 0 1-.25 1.02l-2.2 2.2Z" />
             </svg>
-            Call {phoneNumber}
+            Call {siteConfig.phone.display}
           </a>
 
           {/* Trust statistics */}
