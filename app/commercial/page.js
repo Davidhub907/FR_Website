@@ -259,7 +259,7 @@ export default function CommercialPage() {
         title="FAIRBANKS COMMERCIAL"
         highlightedTitle="RESTORATION."
         description="Property damage can interrupt operations, displace tenants, and create safety concerns. We provide water, fire, smoke, mold, sewage, and contents restoration services for commercial buildings, rental properties, public facilities, and managed portfolios."
-        imageSrc="/images/commercial/hero.jpg"
+        imageSrc="/images/services/commercial.jpg"
         imageAlt="Commercial restoration professionals working inside a damaged business property"
         primaryButtonText="Request Commercial Service"
         primaryButtonHref="/contact"

@@ -233,7 +233,7 @@ export default function ContentsRestorationPage() {
         title="FAIRBANKS CONTENT"
         highlightedTitle="RESTORATION."
         description="Furniture, electronics, documents, clothing, and personal belongings may be recoverable after water, fire, smoke, or mold damage. Our team carefully inventories, packs, cleans, deodorizes, stores, and returns restorable contents."
-        imageSrc="/images/content-restoration/hero.jpg"
+        imageSrc="/images/services/content-restoration.jpg"
         imageAlt="Restoration professionals cleaning and organizing damaged personal belongings"
         primaryButtonText="Request Content Restoration"
         primaryButtonHref="/contact"

@@ -48,7 +48,7 @@ const services = [
     description:
       "We work closely with businesses to get their commercial property restored.",
     href: "/commercial",
-    image: "/images/services/about-us.jpg",
+    image: "/images/services/commercial.jpg",
     alt: "Commercial building",
   },
 ];
