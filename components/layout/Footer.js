@@ -12,9 +12,6 @@ const serviceLinks = [
 
 const companyLinks = [{ label: "Home", href: "/" }];
 
-const phoneNumber = "(907) 987-2916";
-const phoneHref = "tel:+19079872916";
-
 const emailHref = `https://mail.google.com/mail/?view=cm&fs=1&to=${encodeURIComponent(
   siteConfig.email.address,
 )}`;
@@ -109,10 +106,10 @@ export default function Footer() {
               <div>
                 <p className="font-semibold text-white">Phone</p>
                 <a
-                  href={phoneHref}
+                  href={siteConfig.phone.href}
                   className="text-zinc-300 transition hover:text-orange-500"
                 >
-                  {phoneNumber}
+                  {siteConfig.phone.display}
                 </a>
               </div>
 
