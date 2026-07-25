@@ -1,13 +1,13 @@
 what needs done:
 
-add the insurance assistance component to the home page
-
 redesign each component to look sharper and less vibe-coded
 
-fix the icons in the service pages
+Add a before and after section to the homepage and service pages
 
-fill in the missing images
-
-orginize the file structure
+add a careers page for employement
 
 add captcha to the contact forms
+
+integrate sanity
+
+integrate resend for emails
