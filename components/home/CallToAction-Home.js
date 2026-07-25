@@ -1,5 +1,4 @@
-const phoneNumber = "(907) 987-2916";
-const phoneHref = "tel:+19079872916";
+import { siteConfig } from "@/config/site";
 
 const services = [
   "Water Damage",
@@ -45,10 +44,10 @@ export default function CallToAction() {
               </p>
 
               <a
-                href={phoneHref}
+                href={siteConfig.phone.href}
                 className="mt-3 inline-block text-lg font-bold text-orange-600 transition hover:text-orange-700"
               >
-                {phoneNumber}
+                {siteConfig.phone.display}
               </a>
             </div>
           </div>
