@@ -1,4 +1,5 @@
 import Link from "next/link";
+import { siteConfig } from "@/config/site";
 
 const serviceLinks = [
   { label: "Water Damage", href: "/water-damage" },
@@ -14,9 +15,8 @@ const companyLinks = [{ label: "Home", href: "/" }];
 const phoneNumber = "(907) 987-2916";
 const phoneHref = "tel:+19079872916";
 
-const emailAddress = "office@frontierrestorationllc.com";
 const emailHref = `https://mail.google.com/mail/?view=cm&fs=1&to=${encodeURIComponent(
-  emailAddress,
+  siteConfig.email.address,
 )}`;
 
 const businessAddress = "Frontier Restoration LLC";
@@ -52,7 +52,7 @@ export default function Footer() {
             </p>
 
             <a
-              href={phoneHref}
+              href={siteConfig.phone.href}
               className="mt-6 inline-flex rounded-md bg-orange-500 px-5 py-3 text-sm font-bold tracking-wide uppercase transition hover:bg-orange-600"
             >
               Call Now
@@ -124,7 +124,7 @@ export default function Footer() {
                   rel="noopener noreferrer"
                   className="break-words text-zinc-300 transition hover:text-orange-500"
                 >
-                  {emailAddress}
+                  {siteConfig.email.address}
                 </a>
               </div>
 
