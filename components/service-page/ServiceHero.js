@@ -1,5 +1,6 @@
 import Image from "next/image";
 import Link from "next/link";
+import { siteConfig } from "@/config/site";
 
 const defaultStats = [
   {
@@ -29,8 +30,8 @@ export default function ServiceHero({
   imageAlt,
   primaryButtonText = "Request Emergency Service",
   primaryButtonHref = "/contact",
-  secondaryButtonText = "Call (907) 987-2916",
-  secondaryButtonHref = "tel:+19079872916",
+  secondaryButtonText = `Call ${siteConfig.phone.display}`,
+  secondaryButtonHref = siteConfig.phone.href,
   stats = defaultStats,
 }) {
   return (
