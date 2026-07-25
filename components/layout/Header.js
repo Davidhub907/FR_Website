@@ -34,7 +34,7 @@ export default function Header() {
           className="flex shrink-0 cursor-pointer items-center transition-transform duration-300 ease-in-out hover:-translate-y-1 hover:drop-shadow-md"
         >
           <Image
-            src="/frontier-logo.png"
+            src="/frontier-logos/frontier-logo.png"
             alt="Frontier Restoration LLC"
             width={220}
             height={120}
@@ -84,7 +84,7 @@ export default function Header() {
         {/* Mobile logo */}
         <a href="/" className="block flex shrink-0 items-center md:hidden">
           <Image
-            src="/frontier-logo-small.png"
+            src="/frontier-logos/frontier-logo-small.png"
             alt="Frontier Restoration LLC"
             width={40}
             height={40}
