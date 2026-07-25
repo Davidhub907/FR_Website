@@ -28,7 +28,7 @@ export default function Footer() {
   const currentYear = new Date().getFullYear();
 
   return (
-    <footer className="bg-[#1f1f1c] text-white">
+    <footer className="bg-[#121211] text-white">
       {/* Orange accent line */}
       <div className="h-1 bg-orange-500" />
 
