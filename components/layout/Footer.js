@@ -16,14 +16,12 @@ const emailHref = `https://mail.google.com/mail/?view=cm&fs=1&to=${encodeURIComp
   siteConfig.email.address,
 )}`;
 
-const businessAddress = "Frontier Restoration LLC";
-
 const googleMapsEmbedUrl = `https://www.google.com/maps?q=${encodeURIComponent(
-  businessAddress,
+  siteConfig.location.formatted,
 )}&z=11&output=embed`;
 
 const googleMapsDirectionsUrl = `https://www.google.com/maps/search/?api=1&query=${encodeURIComponent(
-  businessAddress,
+  siteConfig.location.formatted,
 )}`;
 
 export default function Footer() {
@@ -149,7 +147,7 @@ export default function Footer() {
               </p>
 
               <address className="mt-2 leading-7 text-zinc-300 not-italic">
-                {businessAddress}
+                {siteConfig.location.streetAddress}
               </address>
 
               <a
