@@ -1,5 +1,4 @@
 import Hero from "@/components/home/Hero-Home";
-import CallToAction from "@/components/home/CallToAction-Home";
 import InsuranceScroller from "@/components/home/InsuranceScroller";
 import ServicesSection from "@/components/home/ServiceSection";
 import CommonQuestions from "@/components/home/CommonQuestions";
@@ -18,7 +17,6 @@ export default function HomePage() {
       <main>
         <Hero />
         <InsuranceScroller />
-        <CallToAction />
         <ServicesSection />
         <InsuranceAssistance />
         <EmergencyCTA />
