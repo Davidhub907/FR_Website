@@ -263,8 +263,6 @@ export default function CommercialPage() {
         imageAlt="Commercial restoration professionals working inside a damaged business property"
         primaryButtonText="Request Commercial Service"
         primaryButtonHref="/contact"
-        secondaryButtonText="Call (907) 987-2916"
-        secondaryButtonHref="tel:+19079872916"
       />
 
       <ServiceOverview

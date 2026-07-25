@@ -223,7 +223,7 @@ export default function MoldRemediationPage() {
   return (
     <main>
       <ServiceHero
-        eyebrow="PROFESSIONAL MOLD REMEDIATION · FAIRBANKS, ALASKA"
+        eyebrow="PROFESSIONAL MOLD REMEDIATION · FAIRBANKS, ALASK"
         title="FAIRBANKS MOLD"
         highlightedTitle="REMEDIATION."
         description="Mold can spread through building materials and affect indoor air quality when moisture problems are not corrected. Our team identifies affected areas, contains the workspace, removes damaged materials, cleans the structure, and addresses the underlying moisture source."
@@ -231,8 +231,6 @@ export default function MoldRemediationPage() {
         imageAlt="Mold remediation professional inspecting and treating an affected property"
         primaryButtonText="Request Mold Inspection"
         primaryButtonHref="/contact"
-        secondaryButtonText="Call (907) 987-2916"
-        secondaryButtonHref="tel:+19079872916"
       />
 
       <ServiceOverview

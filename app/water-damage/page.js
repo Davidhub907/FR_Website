@@ -213,7 +213,6 @@ export default function WaterDamagePage() {
   return (
     <main>
       <ServiceHero
-        eyebrow="24/7 EMERGENCY RESTORATION · FAIRBANKS, ALASKA"
         title="FAIRBANKS WATER DAMAGE"
         highlightedTitle="RESTORATION."
         description="Standing water can damage flooring, drywall, insulation, and structural materials within hours. Our local team provides professional extraction, structural drying, cleanup, and restoration for homes and businesses."
@@ -221,8 +220,6 @@ export default function WaterDamagePage() {
         imageAlt="Professional drying equipment inside a water-damaged property"
         primaryButtonText="Request Emergency Service"
         primaryButtonHref="/contact"
-        secondaryButtonText="Call (907) 987-2916"
-        secondaryButtonHref="tel:+19079872916"
       />
 
       <ServiceOverview

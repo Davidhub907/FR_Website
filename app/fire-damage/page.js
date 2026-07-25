@@ -231,8 +231,6 @@ export default function FireDamagePage() {
         imageAlt="Restoration professional cleaning smoke and fire damage inside a property"
         primaryButtonText="Request Emergency Service"
         primaryButtonHref="/contact"
-        secondaryButtonText="Call (907) 987-2916"
-        secondaryButtonHref="tel:+19079872916"
       />
 
       <ServiceOverview

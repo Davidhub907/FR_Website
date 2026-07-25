@@ -237,8 +237,6 @@ export default function ContentsRestorationPage() {
         imageAlt="Restoration professionals cleaning and organizing damaged personal belongings"
         primaryButtonText="Request Content Restoration"
         primaryButtonHref="/contact"
-        secondaryButtonText="Call (907) 987-2916"
-        secondaryButtonHref="tel:+19079872916"
       />
 
       <ServiceOverview
