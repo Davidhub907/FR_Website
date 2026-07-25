@@ -121,59 +121,6 @@ export default function WhyChooseUs() {
             </div>
           </div>
         </div>
-
-        {/* Testimonials */}
-        <div className="mt-20 border-t border-slate-200 pt-16">
-          <div className="mx-auto max-w-3xl text-left md:text-center">
-            <p className="text-sm font-bold tracking-widest text-orange-600 uppercase">
-              Customer Testimonials
-            </p>
-
-            <h2 className="mt-3 text-3xl font-bold tracking-tight text-slate-900 uppercase sm:text-4xl">
-              Trusted by homeowners and businesses
-            </h2>
-
-            <p className="mt-5 text-lg leading-8 text-slate-600">
-              See what customers have to say about working with Frontier
-              Restoration.
-            </p>
-          </div>
-
-          <div className="mt-10 grid gap-6 md:grid-cols-3">
-            {testimonials.map((testimonial) => (
-              <article
-                key={testimonial.id}
-                className="flex h-full flex-col rounded-2xl bg-white p-7 shadow-sm ring-1 ring-slate-200"
-              >
-                {/* Temporary star rating */}
-                <p
-                  className="text-lg tracking-wide text-orange-500"
-                  aria-label="Five-star review"
-                >
-                  ★★★★★
-                </p>
-
-                <blockquote className="mt-5 flex-1 leading-7 text-slate-700">
-                  “{testimonial.quote}”
-                </blockquote>
-
-                <div className="mt-6 border-t border-slate-100 pt-5">
-                  <span className="inline-flex rounded-full bg-orange-100 px-3 py-1 text-xs font-bold tracking-wide text-orange-700 uppercase">
-                    {testimonial.service}
-                  </span>
-
-                  <p className="mt-4 font-bold text-slate-900">
-                    {testimonial.name}
-                  </p>
-
-                  <p className="mt-1 text-sm text-slate-500">
-                    {testimonial.location}
-                  </p>
-                </div>
-              </article>
-            ))}
-          </div>
-        </div>
       </div>
     </section>
   );
