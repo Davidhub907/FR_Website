@@ -8,7 +8,7 @@ export default function ServiceProcess({
     <section className="bg-[#1f1f1c] py-16 text-white sm:py-20 lg:py-24">
       <div className="mx-auto max-w-7xl px-6">
         {/* Section heading */}
-        <div className="mx-auto max-w-3xl text-center">
+        <div className="max-w-3xl text-left">
           {eyebrow && (
             <p className="text-sm font-bold tracking-[0.18em] text-orange-500 uppercase">
               {eyebrow}

@@ -7,7 +7,7 @@ export default function ServiceAudience({ eyebrow, heading, audiences = [] }) {
     <section className="bg-gray-50 py-16 sm:py-20 lg:py-24">
       <div className="mx-auto max-w-7xl px-6">
         {/* Section heading */}
-        <div className="mx-auto max-w-3xl text-center">
+        <div className="max-w-3xl text-left">
           {eyebrow && (
             <p className="text-sm font-bold tracking-[0.18em] text-orange-600 uppercase">
               {eyebrow}
