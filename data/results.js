@@ -4,8 +4,8 @@ export const homeResults = [
     title: "Water Damage Restoration",
     description:
       "Water-damaged materials were removed, dried, cleaned, and restored.",
-    beforeImage: "/results/water/water-1-before.jpg",
-    afterImage: "/results/water/water-1-after.jpg",
+    beforeImage: "/images/services/water-damage1.jpg",
+    afterImage: "/images/services/water-damage1.jpg",
     beforeAlt: "Room before water damage restoration",
     afterAlt: "Room after water damage restoration",
     href: "/water-damage",
