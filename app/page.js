@@ -5,6 +5,9 @@ import CommonQuestions from "@/components/home/CommonQuestions";
 import EmergencyCTA from "@/components/layout/EmergencyCTA";
 import InsuranceAssistance from "@/components/home/InsuranceAssistance";
 
+import ResultsSection from "@/components/results/ResultsSection";
+import { homeResults } from "@/data/results";
+
 export const metadata = {
   title: "Water Damage Restoration in Fairbanks, AK | Frontier Restoration LLC",
   description:
@@ -18,6 +21,12 @@ export default function HomePage() {
         <Hero />
         <InsuranceScroller />
         <ServicesSection />
+        <ResultsSection
+          eyebrow="Our Work"
+          heading="Real Restoration Results"
+          description="See examples of damaged homes and businesses before and after professional restoration by Frontier Restoration."
+          projects={homeResults}
+        />
         <InsuranceAssistance />
         <EmergencyCTA />
         <CommonQuestions />
