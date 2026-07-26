@@ -3,7 +3,7 @@ import Link from "next/link";
 
 const services = [
   {
-    title: "Water Damage Restoration",
+    title: "WATER DAMAGE",
     description:
       "Fast water extraction, structural drying, and cleanup to prevent further damage.",
     href: "/water-damage",
@@ -11,7 +11,7 @@ const services = [
     alt: "Water damage restoration equipment drying a property",
   },
   {
-    title: "Fire & Smoke Restoration",
+    title: "FIRE & SMOKE",
     description:
       "Complete cleanup and restoration for fire, smoke, soot, and odor damage.",
     href: "/fire-damage",
@@ -19,7 +19,7 @@ const services = [
     alt: "Fire and smoke damage restoration work",
   },
   {
-    title: "Mold Remediation",
+    title: "MOLD REMEDIATION",
     description:
       "Professional mold removal and moisture control to protect your property.",
     href: "/mold-remediation",
@@ -27,7 +27,7 @@ const services = [
     alt: "Professional mold remediation service",
   },
   {
-    title: "Sewer Backup Cleanup",
+    title: "SEWER BACKUP",
     description:
       "Safe removal, cleaning, and sanitization after sewage or contaminated water damage.",
     href: "/sewer-backup",
@@ -35,7 +35,7 @@ const services = [
     alt: "Sewer backup cleanup and sanitization",
   },
   {
-    title: "Contents Restoration",
+    title: "CONTENTS RESTORATION",
     description:
       "Careful cleaning and restoration of furniture, belongings, and other valuable contents.",
     href: "/content-restoration",
@@ -44,7 +44,7 @@ const services = [
   },
 
   {
-    title: "Commercial",
+    title: "COMMERICAL",
     description:
       "We work closely with businesses to get their commercial property restored.",
     href: "/commercial",
