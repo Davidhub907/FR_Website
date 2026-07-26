@@ -19,6 +19,9 @@ import ServiceAudience from "@/components/service-page/ServiceAudience";
 import ServiceQuestions from "@/components/service-page/ServiceQuestions";
 import EmergencyCTA from "@/components/layout/EmergencyCTA";
 
+import ResultsSection from "@/components/results/ResultsSection";
+import { waterDamageResults } from "@/data/results";
+
 const waterDamageSituations = [
   {
     title: "Burst and Frozen Pipes",
@@ -239,6 +242,14 @@ export default function WaterDamagePage() {
         heading="Water Damage Problems We Handle"
         description="Our team responds to residential and commercial water damage caused by plumbing failures, leaks, flooding, and other unexpected events."
         items={waterDamageSituations}
+      />
+
+      <ResultsSection
+        eyebrow="Water Damage Results"
+        heading="Before and After Water Restoration"
+        description="See how professional water extraction, drying, cleanup, and restoration can transform damaged properties."
+        projects={waterDamageResults}
+        background="white"
       />
 
       <ServiceSigns
