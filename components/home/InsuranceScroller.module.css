@@ -1,10 +1,8 @@
 .scroller {
-  width: 88%;
-  max-width: 1500px;
-  margin: 1.5rem auto 0;
+  width: 100%;
+  margin-top: 1.5rem;
   overflow: hidden;
 
-  /* Logos gradually appear on the left and disappear on the right */
   -webkit-mask-image: linear-gradient(
     to right,
     transparent 0%,

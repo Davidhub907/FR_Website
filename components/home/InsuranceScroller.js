@@ -55,34 +55,36 @@ export default function InsuranceScroller() {
         </p>
       </div>
 
-      <div className={styles.scroller}>
-        <div className={styles.track}>
-          {[0, 1].map((groupIndex) => (
-            <div
-              key={`insurance-group-${groupIndex}`}
-              className={styles.group}
-              aria-hidden={groupIndex === 1}
-            >
-              {insuranceCompanies.map((company) => (
-                <div
-                  key={`${groupIndex}-${company.name}`}
-                  className={styles.logoContainer}
-                >
-                  <Image
-                    src={company.logo}
-                    alt={groupIndex === 0 ? `${company.name} logo` : ""}
-                    width={200}
-                    height={80}
-                    className={styles.logo}
-                    style={{
-                      height: `${company.height ?? 40}px`,
-                      width: "auto",
-                    }}
-                  />
-                </div>
-              ))}
-            </div>
-          ))}
+      <div className="mx-auto w-full max-w-7xl px-6">
+        <div className={styles.scroller}>
+          <div className={styles.track}>
+            {[0, 1].map((groupIndex) => (
+              <div
+                key={`insurance-group-${groupIndex}`}
+                className={styles.group}
+                aria-hidden={groupIndex === 1}
+              >
+                {insuranceCompanies.map((company) => (
+                  <div
+                    key={`${groupIndex}-${company.name}`}
+                    className={styles.logoContainer}
+                  >
+                    <Image
+                      src={company.logo}
+                      alt={groupIndex === 0 ? `${company.name} logo` : ""}
+                      width={200}
+                      height={80}
+                      className={styles.logo}
+                      style={{
+                        height: `${company.height ?? 40}px`,
+                        width: "auto",
+                      }}
+                    />
+                  </div>
+                ))}
+              </div>
+            ))}
+          </div>
         </div>
       </div>
     </section>
