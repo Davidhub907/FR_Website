@@ -7,10 +7,12 @@ const serviceLinks = [
   { label: "Mold Remediation", href: "/mold-remediation" },
   { label: "Sewer backup", href: "/sewer-backup" },
   { label: "Content Restoration", href: "/content-restoration" },
-  { label: "Commercial", href: "/commercial" },
 ];
 
-const companyLinks = [{ label: "Home", href: "/" }];
+const companyLinks = [
+  { label: "Home", href: "/" },
+  { label: "Careers", href: "/careers" },
+];
 
 const emailHref = `https://mail.google.com/mail/?view=cm&fs=1&to=${encodeURIComponent(
   siteConfig.email.address,
