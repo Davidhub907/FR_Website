@@ -14,7 +14,6 @@ import ServiceSigns from "@/components/service-page/ServiceSigns";
 import ServiceProcess from "@/components/service-page/ServiceProcess";
 import ServiceSafety from "@/components/service-page/ServiceSafety";
 import ServiceInsurance from "@/components/service-page/ServiceInsurance";
-import CommercialServices from "@/components/service-page/CommercialServices";
 
 import EmergencyCTA from "@/components/layout/EmergencyCTA";
 import ServiceQuestions from "@/components/service-page/ServiceQuestions";
@@ -275,13 +274,6 @@ export default function CommercialPage() {
         imageSrc="/images/commercial/assessment.jpg"
         imageAlt="Restoration technician assessing damage inside a commercial property"
         imagePosition="right"
-      />
-
-      <CommercialServices
-        eyebrow="Our Commercial Services"
-        heading="Commercial Damage Restoration Services"
-        description="Frontier Restoration provides cleanup and restoration support for several types of commercial property damage."
-        services={commercialServices}
       />
 
       <ServiceSituations
