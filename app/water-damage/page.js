@@ -14,7 +14,6 @@ import ServiceSigns from "@/components/service-page/ServiceSigns";
 import ServiceProcess from "@/components/service-page/ServiceProcess";
 import ServiceSafety from "@/components/service-page/ServiceSafety";
 import ServiceInsurance from "@/components/service-page/ServiceInsurance";
-import ServiceAudience from "@/components/service-page/ServiceAudience";
 
 import ServiceQuestions from "@/components/service-page/ServiceQuestions";
 import EmergencyCTA from "@/components/layout/EmergencyCTA";
@@ -149,25 +148,6 @@ const waterDamageDonts = [
   "Do not delay professional drying when walls, floors, or insulation are wet",
 ];
 
-const waterDamageAudiences = [
-  {
-    title: "Residential Properties",
-    description:
-      "Water damage restoration for homes, apartments, rental properties, basements, crawlspaces, and multi-family buildings.",
-    imageSrc: "/images/water-damage/residential.jpg",
-    imageAlt: "Residential water damage restoration inside a home",
-    href: "/contact",
-  },
-  {
-    title: "Commercial Properties",
-    description:
-      "Water extraction and structural drying for offices, retail spaces, warehouses, rental properties, and other commercial facilities.",
-    imageSrc: "/images/water-damage/commercial.jpg",
-    imageAlt: "Commercial water damage restoration inside a business",
-    href: "/commercial",
-  },
-];
-
 const waterDamageQuestions = [
   {
     question: "How quickly should I respond to water damage?",
@@ -292,12 +272,6 @@ export default function WaterDamagePage() {
         ]}
         buttonText="Request Service"
         buttonHref="/contact"
-      />
-
-      <ServiceAudience
-        eyebrow="Who We Serve"
-        heading="Residential and Commercial Water Damage Restoration"
-        audiences={waterDamageAudiences}
       />
 
       <ServiceQuestions

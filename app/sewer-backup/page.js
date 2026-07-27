@@ -14,7 +14,6 @@ import ServiceSigns from "@/components/service-page/ServiceSigns";
 import ServiceProcess from "@/components/service-page/ServiceProcess";
 import ServiceSafety from "@/components/service-page/ServiceSafety";
 import ServiceInsurance from "@/components/service-page/ServiceInsurance";
-import ServiceAudience from "@/components/service-page/ServiceAudience";
 
 import EmergencyCTA from "@/components/layout/EmergencyCTA";
 import ServiceQuestions from "@/components/service-page/ServiceQuestions";
@@ -148,25 +147,6 @@ const sewerBackupDonts = [
   "Do not assume the area is safe after visible water is removed",
 ];
 
-const sewerBackupAudiences = [
-  {
-    title: "Residential Properties",
-    description:
-      "Sewer backup cleanup for homes, apartments, rental properties, basements, crawlspaces, and multi-family buildings.",
-    imageSrc: "/images/sewer-backup/residential.jpg",
-    imageAlt: "Residential sewer backup cleanup inside a home",
-    href: "/contact",
-  },
-  {
-    title: "Commercial Properties",
-    description:
-      "Professional sewage cleanup for offices, retail spaces, restaurants, rental properties, warehouses, and other commercial facilities.",
-    imageSrc: "/images/sewer-backup/commercial.jpg",
-    imageAlt: "Commercial sewer backup cleanup inside a business",
-    href: "/commercial",
-  },
-];
-
 const sewerBackupQuestions = [
   {
     question: "Is sewage water dangerous?",
@@ -295,12 +275,6 @@ export default function SewerBackupPage() {
         ]}
         buttonText="Request Emergency Service"
         buttonHref="/contact"
-      />
-
-      <ServiceAudience
-        eyebrow="Who We Serve"
-        heading="Residential and Commercial Sewer Backup Cleanup"
-        audiences={sewerBackupAudiences}
       />
 
       <ServiceQuestions

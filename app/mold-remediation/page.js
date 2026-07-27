@@ -14,7 +14,6 @@ import ServiceSigns from "@/components/service-page/ServiceSigns";
 import ServiceProcess from "@/components/service-page/ServiceProcess";
 import ServiceSafety from "@/components/service-page/ServiceSafety";
 import ServiceInsurance from "@/components/service-page/ServiceInsurance";
-import ServiceAudience from "@/components/service-page/ServiceAudience";
 
 import EmergencyCTA from "@/components/layout/EmergencyCTA";
 import ServiceQuestions from "@/components/service-page/ServiceQuestions";
@@ -146,25 +145,6 @@ const moldDonts = [
   "Do not assume the problem is resolved without correcting the moisture source",
 ];
 
-const moldAudiences = [
-  {
-    title: "Residential Properties",
-    description:
-      "Mold remediation for houses, apartments, rental properties, basements, crawlspaces, attics, and multi-family buildings.",
-    imageSrc: "/images/mold-remediation/residential.jpg",
-    imageAlt: "Residential mold remediation inside a home",
-    href: "/contact",
-  },
-  {
-    title: "Commercial Properties",
-    description:
-      "Mold remediation for offices, rental buildings, retail spaces, warehouses, and other commercial facilities.",
-    imageSrc: "/images/mold-remediation/commercial.jpg",
-    imageAlt: "Commercial mold remediation inside a business",
-    href: "/commercial",
-  },
-];
-
 const moldQuestions = [
   {
     question: "What causes mold to grow inside a building?",
@@ -293,12 +273,6 @@ export default function MoldRemediationPage() {
         ]}
         buttonText="Request an Assessment"
         buttonHref="/contact"
-      />
-
-      <ServiceAudience
-        eyebrow="Who We Serve"
-        heading="Residential and Commercial Mold Remediation"
-        audiences={moldAudiences}
       />
 
       <ServiceQuestions

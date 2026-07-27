@@ -14,7 +14,6 @@ import ServiceSigns from "@/components/service-page/ServiceSigns";
 import ServiceProcess from "@/components/service-page/ServiceProcess";
 import ServiceSafety from "@/components/service-page/ServiceSafety";
 import ServiceInsurance from "@/components/service-page/ServiceInsurance";
-import ServiceAudience from "@/components/service-page/ServiceAudience";
 
 import EmergencyCTA from "@/components/layout/EmergencyCTA";
 import ServiceQuestions from "@/components/service-page/ServiceQuestions";
@@ -144,26 +143,6 @@ const contentsDonts = [
   "Do not wipe soot-covered items with household cleaners",
   "Do not use visibly contaminated belongings before evaluation",
   "Do not assume an item is unsalvageable based only on its appearance",
-];
-
-const contentsAudiences = [
-  {
-    title: "Residential Contents",
-    description:
-      "Evaluation, documentation, cleaning, and restoration support for furniture, clothing, household goods, and personal belongings.",
-    imageSrc: "/images/contents-restoration/residential.jpg",
-    imageAlt: "Residential belongings being evaluated for contents restoration",
-    href: "/contact",
-  },
-  {
-    title: "Commercial Contents",
-    description:
-      "Contents services for office furniture, equipment, inventory, records, fixtures, and other commercial property.",
-    imageSrc: "/images/contents-restoration/commercial.jpg",
-    imageAlt:
-      "Commercial equipment and contents being prepared for restoration",
-    href: "/commercial",
-  },
 ];
 
 const contentsQuestions = [
@@ -299,12 +278,6 @@ export default function ContentsRestorationPage() {
         ]}
         buttonText="Request Service"
         buttonHref="/contact"
-      />
-
-      <ServiceAudience
-        eyebrow="Who We Serve"
-        heading="Residential and Commercial Contents Restoration"
-        audiences={contentsAudiences}
       />
 
       <ServiceQuestions

@@ -14,7 +14,6 @@ import ServiceSigns from "@/components/service-page/ServiceSigns";
 import ServiceProcess from "@/components/service-page/ServiceProcess";
 import ServiceSafety from "@/components/service-page/ServiceSafety";
 import ServiceInsurance from "@/components/service-page/ServiceInsurance";
-import ServiceAudience from "@/components/service-page/ServiceAudience";
 
 import EmergencyCTA from "@/components/layout/EmergencyCTA";
 import ServiceQuestions from "@/components/service-page/ServiceQuestions";
@@ -146,25 +145,6 @@ const fireDamageDonts = [
   "Do not turn on HVAC equipment if it may spread soot through the property",
 ];
 
-const fireDamageAudiences = [
-  {
-    title: "Residential Properties",
-    description:
-      "Fire and smoke damage cleanup for homes, apartments, rental properties, garages, and multi-family buildings.",
-    imageSrc: "/images/fire-damage/residential.jpg",
-    imageAlt: "Residential fire and smoke damage restoration inside a home",
-    href: "/contact",
-  },
-  {
-    title: "Commercial Properties",
-    description:
-      "Fire, soot, smoke, and odor cleanup for offices, stores, rental buildings, warehouses, and other commercial facilities.",
-    imageSrc: "/images/fire-damage/commercial.jpg",
-    imageAlt: "Commercial fire and smoke damage restoration",
-    href: "/commercial",
-  },
-];
-
 const fireDamageQuestions = [
   {
     question: "When is it safe to enter a fire-damaged property?",
@@ -293,12 +273,6 @@ export default function FireDamagePage() {
         ]}
         buttonText="Request Emergency Service"
         buttonHref="/contact"
-      />
-
-      <ServiceAudience
-        eyebrow="Who We Serve"
-        heading="Residential and Commercial Fire Damage Restoration"
-        audiences={fireDamageAudiences}
       />
 
       <ServiceQuestions
