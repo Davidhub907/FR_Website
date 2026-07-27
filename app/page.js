@@ -4,6 +4,7 @@ import ServicesSection from "@/components/home/ServiceSection";
 import CommonQuestions from "@/components/home/CommonQuestions";
 import EmergencyCTA from "@/components/layout/EmergencyCTA";
 import InsuranceAssistance from "@/components/home/InsuranceAssistance";
+import Testimonials from "@/components/layout/Testimonials";
 
 import ResultsSection from "@/components/results/ResultsSection";
 import { homeResults } from "@/data/results";
@@ -27,8 +28,9 @@ export default function HomePage() {
           description="See examples of damaged homes and businesses before and after professional restoration by Frontier Restoration."
           projects={homeResults}
         />
-        <InsuranceAssistance />
+        <Testimonials />
         <EmergencyCTA />
+        <InsuranceAssistance />
         <CommonQuestions />
       </main>
     </>

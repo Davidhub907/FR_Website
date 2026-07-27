@@ -2,7 +2,6 @@ import Header from "@/components/layout/Header";
 import NavigationBar from "@/components/layout/NavigationBar";
 import Footer from "@/components/layout/Footer";
 import WhyChooseUs from "@/components/layout/WhyChooseUs";
-import Testimonials from "@/components/layout/Testimonials";
 
 import "./globals.css";
 
@@ -28,7 +27,7 @@ export default function RootLayout({ children }) {
         <NavigationBar />
 
         <main className="flex-1">{children}</main>
-        <Testimonials />
+
         <WhyChooseUs />
         <Footer />
       </body>
