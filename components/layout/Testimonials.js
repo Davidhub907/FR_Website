@@ -1,4 +1,9 @@
+import Image from "next/image";
+
 // Testimonials
+
+const googleReviewsUrl =
+  "https://www.google.com/search?q=water+damage+restoration+fairbanks&sca_esv=1bfee9744c1a1100&sxsrf=APpeQnvHFp7fXKJeaW6KG3N6hmjgD6yegA:1785136976534&udm=1&lsack=UAdnaqubILiq0PEPo8ONoQc&sa=X&ved=2ahUKEwirg_K6qfKVAxU4FTQIHaNhI3QQjGp6BAg0EAA&biw=1241&bih=1298&dpr=1.5#sv=CAESzQEKuQEStgEKd0FKaVQ0dEtNcHZNQlExX2JibWs4aTZlTjlxMGRiZGhVVTBEa1BreEMtQnJJNDZ1S1lZUlhjaXFObU5UbzdvNG5SeXNlMEh6MjIyYlJUcVBfSFZ3VWFSeTk0VGU2bjBHZE1HWmtmdVkwQkVVQ2FxdVUxX3hzVzdVEhdvZ2RuYXZIMEd0elkwUEVQeWZtNzRBOBoiQURzcjlmUjIycFJBX2ZiLVR2d2tYSzUxNmJLQWQyLVFFQRIEODA1MRoBMyoAMAA4AUAAGAAg1anZ9AY6AEoCEAI";
 
 const testimonials = [
   {
@@ -14,7 +19,7 @@ const testimonials = [
     quote:
       "Frontier Restoration LLC is truly exceptional! Josh and his team are punctual and deliver great results. Their attention to detail is impeccable and they communicate every step of the way. I was completely impressed by their professionalism and dedication to quality work. Their outstanding customer service is second to none. Highly recommend!",
     name: "Robert",
-    location: "Fairbanks Alaska",
+    location: "Fairbanks, Alaska",
     service: "Restoration",
   },
   {
@@ -78,6 +83,26 @@ export default function Testimonials() {
               </div>
             </article>
           ))}
+        </div>
+
+        {/* Google reviews button */}
+        <div className="mt-10 flex justify-center">
+          <a
+            href={googleReviewsUrl}
+            target="_blank"
+            rel="noopener noreferrer"
+            className="inline-flex items-center justify-center gap-3 rounded-lg bg-white px-6 py-4 text-sm font-bold text-slate-900 shadow-sm ring-1 ring-slate-300 transition-colors hover:bg-orange-500 hover:text-white hover:ring-orange-500 focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-orange-500 sm:text-base"
+          >
+            <Image
+              src="/images/google-logo.webp"
+              alt=""
+              width={24}
+              height={24}
+              aria-hidden="true"
+            />
+
+            <span>See All of Our Reviews</span>
+          </a>
         </div>
       </div>
     </section>
