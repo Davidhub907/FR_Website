@@ -25,7 +25,7 @@ const emailHref = `https://mail.google.com/mail/?view=cm&fs=1&to=${encodeURIComp
 
 export default function Header() {
   return (
-    <header className="bg-white">
+    <header className="bg-[#121211]">
       {/* Desktop / tablet header */}
       <div className="mx-auto hidden max-w-7xl items-center justify-between px-6 py-4 md:flex lg:py-4">
         {/* Full desktop logo */}
@@ -65,7 +65,7 @@ export default function Header() {
             href={emailHref}
             target="_blank"
             rel="noopener noreferrer"
-            className="flex cursor-pointer items-center gap-3 rounded-md border border-slate-900 px-6 py-4 text-slate-900 transition transition-transform duration-300 ease-in-out hover:-translate-y-1 hover:bg-slate-100 hover:drop-shadow-md"
+            className="flex cursor-pointer items-center gap-3 rounded-md border border-slate-100 bg-white px-6 py-4 text-slate-900 transition transition-transform duration-300 ease-in-out hover:-translate-y-1 hover:bg-slate-100 hover:drop-shadow-md"
           >
             <EmailIcon />
 
