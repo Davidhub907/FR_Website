@@ -51,8 +51,8 @@ export const waterDamageResults = [
     title: "Residential Water Damage",
     description:
       "Damaged flooring and building materials were removed following a plumbing leak.",
-    beforeImage: "/results/water/water-1-before.jpg",
-    afterImage: "/results/water/water-1-after.jpg",
+    beforeImage: "/images/services/water-damage1.jpg",
+    afterImage: "/images/services/water-damage1.jpg",
     beforeAlt: "Residential room with water damage before restoration",
     afterAlt: "Residential room after water damage restoration",
   },

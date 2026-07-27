@@ -10,11 +10,11 @@ export default function BeforeAfterCard({
   afterAlt,
   href,
 }) {
-  return (
-    <article className="group flex h-full flex-col overflow-hidden rounded-2xl bg-white shadow-sm ring-1 ring-slate-200 transition duration-300 hover:-translate-y-1 hover:shadow-lg">
+  const cardContent = (
+    <>
       {/* Before and after images */}
-      <div className="grid grid-cols-2">
-        <figure className="relative aspect-[4/3] overflow-hidden border-r border-white">
+      <div className="absolute inset-0 grid grid-cols-2">
+        <figure className="relative overflow-hidden border-r border-white/40">
           <Image
             src={beforeImage}
             alt={beforeAlt}
@@ -23,12 +23,12 @@ export default function BeforeAfterCard({
             className="object-cover transition-transform duration-500 group-hover:scale-105"
           />
 
-          <figcaption className="absolute bottom-3 left-3 rounded-full bg-slate-950/85 px-3 py-1 text-xs font-bold tracking-wider text-white uppercase backdrop-blur-sm">
+          <figcaption className="absolute top-4 left-4 z-20 bg-black/80 px-3 py-1 text-xs font-bold tracking-wider text-white uppercase">
             Before
           </figcaption>
         </figure>
 
-        <figure className="relative aspect-[4/3] overflow-hidden">
+        <figure className="relative overflow-hidden">
           <Image
             src={afterImage}
             alt={afterAlt}
@@ -37,32 +37,47 @@ export default function BeforeAfterCard({
             className="object-cover transition-transform duration-500 group-hover:scale-105"
           />
 
-          <figcaption className="absolute bottom-3 left-3 rounded-full bg-orange-600/95 px-3 py-1 text-xs font-bold tracking-wider text-white uppercase backdrop-blur-sm">
+          <figcaption className="absolute top-4 left-4 z-20 bg-orange-600 px-3 py-1 text-xs font-bold tracking-wider text-white uppercase">
             After
           </figcaption>
         </figure>
       </div>
 
+      {/* Dark overlay */}
+      <div className="absolute inset-0 bg-gradient-to-t from-black/90 via-black/30 to-transparent transition-colors duration-300 group-hover:from-black/95 group-hover:via-black/40" />
+
       {/* Project information */}
-      <div className="flex flex-1 flex-col p-6 sm:p-7">
-        <h3 className="text-xl font-bold tracking-tight text-slate-900">
-          {title}
-        </h3>
+      <div className="absolute inset-x-0 bottom-0 z-10 p-6">
+        <h3 className="text-2xl font-bold text-white">{title}</h3>
 
         {description && (
-          <p className="mt-3 flex-1 leading-7 text-slate-600">{description}</p>
+          <p className="mt-3 leading-6 text-slate-200">{description}</p>
         )}
 
         {href && (
-          <Link
-            href={href}
-            className="mt-5 inline-flex items-center gap-2 text-sm font-bold text-orange-600 transition hover:text-orange-700"
-          >
-            View service
+          <span className="mt-5 inline-flex items-center gap-2 font-bold text-orange-400 transition-all duration-300 group-hover:gap-3">
+            View Service
             <span aria-hidden="true">→</span>
-          </Link>
+          </span>
         )}
       </div>
+    </>
+  );
+
+  if (href) {
+    return (
+      <Link
+        href={href}
+        className="group relative block min-h-[340px] overflow-hidden rounded-xl shadow-lg"
+      >
+        {cardContent}
+      </Link>
+    );
+  }
+
+  return (
+    <article className="group relative min-h-[340px] overflow-hidden rounded-xl shadow-lg">
+      {cardContent}
     </article>
   );
 }
