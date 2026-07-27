@@ -1,4 +1,5 @@
 import EmploymentForm from "./EmploymentForm";
+import Image from "next/image";
 
 export const metadata = {
   title: "Employment | Frontier Restoration",
@@ -10,20 +11,33 @@ export default function EmploymentPage() {
   return (
     <main className="bg-slate-100">
       {/* Page heading */}
-      <section className="bg-slate-900 py-16 text-white md:py-20">
-        <div className="mx-auto max-w-7xl px-6">
-          <p className="mb-3 text-sm font-bold tracking-widest text-orange-500 uppercase">
-            Join Our Team
-          </p>
+      <section className="bg-[#121211] py-16 text-white md:py-20">
+        <div className="mx-auto grid max-w-7xl items-center gap-10 px-6 lg:grid-cols-2">
+          <div>
+            <p className="mb-3 text-sm font-bold tracking-widest text-orange-500 uppercase">
+              Join Our Team
+            </p>
 
-          <h1 className="max-w-3xl text-4xl font-bold tracking-tight uppercase md:text-5xl">
-            Employment Opportunities
-          </h1>
+            <h1 className="max-w-3xl text-4xl font-bold tracking-tight uppercase md:text-5xl">
+              Employment Opportunities
+            </h1>
 
-          <p className="mt-5 max-w-2xl text-lg leading-8 text-slate-300">
-            Interested in working with Frontier Restoration? Complete the
-            application below and tell us a little about your experience.
-          </p>
+            <p className="mt-5 max-w-2xl text-lg leading-8 text-slate-300">
+              Interested in working with Frontier Restoration? Complete the
+              application below and tell us a little about your experience.
+            </p>
+          </div>
+          {/* Team image */}
+          <div className="relative h-[300px] overflow-hidden rounded-2xl shadow-xl sm:h-[380px]">
+            <Image
+              src="/images/Team-placeholder.jpg"
+              alt="Frontier Restoration team"
+              fill
+              priority
+              sizes="(max-width: 1024px) 100vw, 50vw"
+              className="object-cover"
+            />
+          </div>
         </div>
       </section>
 
