@@ -14,9 +14,10 @@ import ServiceSigns from "@/components/service-page/ServiceSigns";
 import ServiceProcess from "@/components/service-page/ServiceProcess";
 import ServiceSafety from "@/components/service-page/ServiceSafety";
 import ServiceInsurance from "@/components/service-page/ServiceInsurance";
-
 import ServiceQuestions from "@/components/service-page/ServiceQuestions";
+
 import EmergencyCTA from "@/components/layout/EmergencyCTA";
+import WhyChooseUs from "@/components/layout/WhyChooseUs";
 
 const waterDamageSituations = [
   {
@@ -268,6 +269,8 @@ export default function WaterDamagePage() {
         heading="Water Damage Restoration FAQs"
         questions={waterDamageQuestions}
       />
+
+      <WhyChooseUs />
     </main>
   );
 }

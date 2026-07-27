@@ -14,9 +14,10 @@ import ServiceSigns from "@/components/service-page/ServiceSigns";
 import ServiceProcess from "@/components/service-page/ServiceProcess";
 import ServiceSafety from "@/components/service-page/ServiceSafety";
 import ServiceInsurance from "@/components/service-page/ServiceInsurance";
+import ServiceQuestions from "@/components/service-page/ServiceQuestions";
 
 import EmergencyCTA from "@/components/layout/EmergencyCTA";
-import ServiceQuestions from "@/components/service-page/ServiceQuestions";
+import WhyChooseUs from "@/components/layout/WhyChooseUs";
 
 const sewerBackupSituations = [
   {
@@ -282,6 +283,8 @@ export default function SewerBackupPage() {
         heading="Sewer Backup Cleanup FAQs"
         questions={sewerBackupQuestions}
       />
+
+      <WhyChooseUs />
     </main>
   );
 }
