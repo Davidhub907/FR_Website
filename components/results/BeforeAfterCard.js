@@ -3,7 +3,6 @@ import Link from "next/link";
 
 export default function BeforeAfterCard({
   title,
-  description,
   beforeImage,
   afterImage,
   beforeAlt,
@@ -48,12 +47,6 @@ export default function BeforeAfterCard({
 
       {/* Project information */}
       <div className="absolute inset-x-0 bottom-0 z-10 p-6">
-        <h3 className="text-2xl font-bold text-white">{title}</h3>
-
-        {description && (
-          <p className="mt-3 leading-6 text-slate-200">{description}</p>
-        )}
-
         {href && (
           <span className="mt-5 inline-flex items-center gap-2 font-bold text-orange-400 transition-all duration-300 group-hover:gap-3">
             View Service
