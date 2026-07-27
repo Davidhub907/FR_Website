@@ -1,9 +1,11 @@
 import Hero from "@/components/home/Hero-Home";
 import ServicesSection from "@/components/home/ServiceSection";
 import CommonQuestions from "@/components/home/CommonQuestions";
-import EmergencyCTA from "@/components/layout/EmergencyCTA";
 import InsuranceAssistance from "@/components/home/InsuranceAssistance";
+
+import EmergencyCTA from "@/components/layout/EmergencyCTA";
 import Testimonials from "@/components/layout/Testimonials";
+import WhyChooseUs from "@/components/layout/WhyChooseUs";
 
 import ResultsSection from "@/components/results/ResultsSection";
 import { homeResults } from "@/data/results";
@@ -31,6 +33,7 @@ export default function HomePage() {
         <EmergencyCTA />
         <InsuranceAssistance />
         <CommonQuestions />
+        <WhyChooseUs />
       </main>
     </>
   );
