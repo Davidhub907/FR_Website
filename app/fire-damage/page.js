@@ -232,14 +232,14 @@ export default function FireDamagePage() {
         items={fireDamageSituations}
       />
 
-      <EmergencyCTA />
-
       <ServiceSigns
         eyebrow="Hidden Damage"
         heading="Signs of Smoke, Soot, and Fire Damage"
         description="Damage may extend beyond burned materials. Smoke residue, odors, and firefighting water can affect rooms throughout the property."
         items={fireDamageSigns}
       />
+
+      <EmergencyCTA />
 
       <ServiceProcess
         eyebrow="Our Process"
