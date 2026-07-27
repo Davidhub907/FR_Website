@@ -1,36 +1,142 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).
+# Frontier Restoration Website
 
-## Getting Started
+Website for **Frontier Restoration LLC**, serving Fairbanks and Interior Alaska.
 
-First, run the development server:
+Built with Next.js, React, Tailwind CSS, and reusable components for the homepage, service pages, testimonials, and restoration results.
+
+## Setup
 
 ```bash
+npm install
 npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
 ```
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+Open `http://localhost:3000`.
 
-You can start editing the page by modifying `app/page.js`. The page auto-updates as you edit the file.
+Before deploying:
 
-This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
+```bash
+npm run lint
+npm run build
+```
 
-## Learn More
+## Project Structure
 
-To learn more about Next.js, take a look at the following resources:
+```text
+app/
+├── page.js                     Homepage
+├── layout.js                   Shared layout for every page
+├── globals.css                 Global styles
+├── water-damage/page.js
+├── fire-damage/page.js
+├── mold-remediation/page.js
+├── sewer-backup/page.js
+├── content-restoration/page.js
+└── commercial/page.js
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+components/
+├── home/                       Homepage sections
+├── layout/                     Header, navigation, footer, CTAs, testimonials
+├── results/                    Before-and-after result components
+└── service-page/               Reusable service-page sections
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
+config/
+└── site.js                     Shared business information
 
-## Deploy on Vercel
+data/
+├── results.js                  Restoration project content
+└── testimonials.js             Planned testimonial data file
 
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
+public/
+└── images/                     Website images
+```
 
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
+Do not edit `.next` or `node_modules`.
+
+## Where to Make Changes
+
+| Change | File |
+|---|---|
+| Phone, email, address, service area, social links | `config/site.js` |
+| Homepage sections and their order | `app/page.js` |
+| Homepage hero | `components/home/Hero-Home.js` |
+| Homepage service cards | `components/home/ServiceSection.js` |
+| Homepage FAQs | `components/home/CommonQuestions.js` |
+| Insurance assistance section | `components/home/InsuranceAssistance.js` |
+| Header | `components/layout/Header.js` |
+| Navigation | `components/layout/NavigationBar.js` |
+| Footer | `components/layout/Footer.js` |
+| Emergency CTA | `components/layout/EmergencyCTA.js` |
+| Why Choose Us | `components/layout/WhyChooseUs.js` |
+| Testimonials | `components/layout/Testimonials.js` |
+| Restoration results | `data/results.js` |
+| Global colors and styles | `app/globals.css` |
+| Page title and SEO description | `metadata` inside the page's `page.js` |
+
+## Editing Content
+
+### Business information
+
+Use `config/site.js` for shared company details. Update both the visible and clickable versions of phone numbers and email addresses.
+
+```js
+phone: {
+  display: "(907) 987-2916",
+  href: "tel:+19079872916",
+}
+```
+
+### Homepage
+
+`app/page.js` controls which homepage sections appear and their order. The content inside each section is stored in the matching file under `components/home/` or `components/layout/`.
+
+### Service pages
+
+Each service has its own `page.js` file under `app/`. These files contain the service-specific text, images, process steps, FAQs, warning signs, and other page content.
+
+Edit files in `components/service-page/` only when changing the shared layout or design used by multiple service pages.
+
+### Testimonials
+
+Testimonials are currently inside `components/layout/Testimonials.js`. The content will be moved to `data/testimonials.js` so names, reviews, locations, and services can be edited separately from the layout.
+
+### Restoration results
+
+Project titles, descriptions, image paths, alt text, and links are stored in `data/results.js`.
+
+The visual layout is controlled by files in `components/results/`.
+
+## Images
+
+Store website images in:
+
+```text
+public/images/
+```
+
+Reference them from the site with paths beginning with `/images/`:
+
+```js
+imageSrc="/images/services/water-damage1.jpg"
+```
+
+Replacing an image with a new file using the same filename usually requires no code changes.
+
+## Shared Layout
+
+`app/layout.js` adds the header, navigation, Why Choose Us section, and footer to every page. Changes to these shared components affect the entire website.
+
+## Editing Workflow
+
+1. Pull the latest changes.
+2. Run `npm run dev`.
+3. Make and review changes locally.
+4. Check desktop and mobile layouts.
+5. Run `npm run lint` and `npm run build`.
+6. Commit and push to GitHub.
+
+## Notes
+
+- The insurance logo scroller and its assets are scheduled for removal and are not documented here.
+- Use `config/site.js` instead of repeating business information across components.
+- Review multiple pages after changing anything inside `components/layout/` or `components/service-page/`.
