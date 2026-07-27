@@ -22,13 +22,13 @@ export default function HomePage() {
         <Hero />
         <InsuranceScroller />
         <ServicesSection />
+        <Testimonials />
         <ResultsSection
           eyebrow="Our Work"
           heading="Real Restoration Results"
           description="See examples of damaged homes and businesses before and after professional restoration by Frontier Restoration."
           projects={homeResults}
         />
-        <Testimonials />
         <EmergencyCTA />
         <InsuranceAssistance />
         <CommonQuestions />
