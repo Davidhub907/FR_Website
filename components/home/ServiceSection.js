@@ -81,31 +81,30 @@ export default function ServicesSection() {
             <Link
               key={service.href}
               href={service.href}
-              className="group relative min-h-[340px] overflow-hidden rounded-xl shadow-lg"
+              className="group flex h-full flex-col overflow-hidden rounded-2xl bg-white shadow-sm ring-1 ring-slate-200 transition duration-300 hover:-translate-y-1 hover:shadow-lg"
             >
-              {/* Background image */}
-              <Image
-                src={service.image}
-                alt={service.alt}
-                fill
-                sizes="(max-width: 768px) 100vw, (max-width: 1024px) 50vw, 33vw"
-                className="object-cover transition-transform duration-500 group-hover:scale-105"
-              />
+              {/* Service image */}
+              <div className="relative aspect-[4/3] overflow-hidden">
+                <Image
+                  src={service.image}
+                  alt={service.alt}
+                  fill
+                  sizes="(max-width: 768px) 100vw, (max-width: 1024px) 50vw, 33vw"
+                  className="object-cover transition-transform duration-500 group-hover:scale-105"
+                />
+              </div>
 
-              {/* Dark image overlay */}
-              <div className="absolute inset-0 bg-gradient-to-t from-black/90 via-black/50 to-black/20 transition-colors duration-300 group-hover:from-black/95 group-hover:via-black/60" />
-
-              {/* Card text */}
-              <div className="absolute inset-x-0 bottom-0 z-10 p-6">
-                <h3 className="text-2xl font-bold text-white">
+              {/* Service information */}
+              <div className="flex flex-1 flex-col p-6 sm:p-7">
+                <h3 className="text-xl font-bold tracking-tight text-slate-900">
                   {service.title}
                 </h3>
 
-                <p className="mt-3 leading-6 text-slate-200">
+                <p className="mt-3 flex-1 leading-7 text-slate-600">
                   {service.description}
                 </p>
 
-                <span className="mt-5 inline-flex items-center gap-2 font-bold text-orange-400 transition-all duration-300 group-hover:gap-3">
+                <span className="mt-5 inline-flex items-center gap-2 text-sm font-bold text-orange-600 transition group-hover:text-orange-700">
                   Learn More
                   <span aria-hidden="true">→</span>
                 </span>
