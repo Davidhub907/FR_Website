@@ -32,8 +32,8 @@ export default function HomePage() {
         />
         <EmergencyCTA />
         <InsuranceAssistance />
-        <CommonQuestions />
         <WhyChooseUs />
+        <CommonQuestions />
       </main>
     </>
   );
