@@ -1,5 +1,3 @@
-import Link from "next/link";
-
 const assistanceItems = [
   {
     title: "Damage Documentation",
@@ -96,15 +94,6 @@ export default function InsuranceAssistance({
                   </article>
                 );
               })}
-            </div>
-
-            <div className="mt-9">
-              <Link
-                href={contactHref}
-                className="inline-flex min-h-12 items-center justify-center rounded-md bg-orange-500 px-6 py-3 text-sm font-bold text-white transition hover:bg-orange-600 focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-orange-500"
-              >
-                {contactButtonText}
-              </Link>
             </div>
 
             <p className="mt-5 max-w-2xl text-xs leading-5 text-gray-500">
