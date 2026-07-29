@@ -26,6 +26,8 @@ const services = [
     image: "/images/services/mold-damage.jpg",
     alt: "Professional mold remediation service",
   },
+
+  /*
   {
     title: "SEWER BACKUP",
     description:
@@ -34,6 +36,9 @@ const services = [
     image: "/images/services/sewer-backup.jpg",
     alt: "Sewer backup cleanup and sanitization",
   },
+  */
+
+  /*
   {
     title: "CONTENTS RESTORATION",
     description:
@@ -42,6 +47,9 @@ const services = [
     image: "/images/services/content-restoration.jpg",
     alt: "Contents being cleaned after property damage",
   },
+  */
+
+  /* 
 
   {
     title: "COMMERICAL",
@@ -51,6 +59,7 @@ const services = [
     image: "/images/services/commercial.jpg",
     alt: "Commercial building",
   },
+  */
 ];
 
 export default function ServicesSection() {
