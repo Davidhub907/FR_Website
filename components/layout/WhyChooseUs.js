@@ -66,7 +66,7 @@ export default function WhyChooseUs() {
               Why Choose Frontier Restoration?
             </p>
 
-            <h2 className="mt-3 font-bold tracking-tight text-slate-900 uppercase sm:text-4xl md:text-4xl">
+            <h2 className="mt-3 text-4xl font-bold tracking-tight text-slate-900 uppercase sm:text-4xl md:text-4xl">
               Local restoration professionals you can depend on
             </h2>
 
