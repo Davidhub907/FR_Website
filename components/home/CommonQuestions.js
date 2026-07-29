@@ -41,7 +41,7 @@ export default function CommonQuestions() {
             Frequently Asked Questions
           </p>
 
-          <h2 className="text-3xl font-bold text-slate-900 uppercase md:text-4xl">
+          <h2 className="text-3xl font-bold text-slate-900 uppercase md:text-5xl">
             Common Questions,
             <br />
             Answered
