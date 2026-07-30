@@ -33,7 +33,7 @@ const questions = [
 
 export default function CommonQuestions() {
   return (
-    <section className="bg-slate-100 px-6 py-20">
+    <section className="bg-slate-50 px-6 py-20">
       <div className="mx-auto max-w-7xl">
         {/* Section heading */}
         <div className="mb-12 text-left">
