@@ -54,6 +54,40 @@ export default function Footer() {
             >
               Call Now
             </a>
+            {/* Social links */}
+            <div className="mt-6 flex items-center gap-4">
+              <a
+                href={siteConfig.socialLinks.facebook}
+                target="_blank"
+                rel="noopener noreferrer"
+                aria-label="Visit Frontier Restoration on Facebook"
+                className="text-zinc-300 transition hover:text-blue-500"
+              >
+                <svg
+                  viewBox="0 0 24 24"
+                  aria-hidden="true"
+                  className="h-6 w-6 fill-current"
+                >
+                  <path d="M22 12.07C22 6.51 17.52 2 12 2S2 6.51 2 12.07c0 5.02 3.66 9.18 8.44 9.93v-7.03H7.9v-2.9h2.54V9.86c0-2.52 1.49-3.91 3.77-3.91 1.09 0 2.23.2 2.23.2V8.6h-1.26c-1.24 0-1.63.78-1.63 1.57v1.9h2.77l-.44 2.9h-2.33V22C18.34 21.25 22 17.09 22 12.07Z" />
+                </svg>
+              </a>
+
+              <a
+                href={siteConfig.socialLinks.instagram}
+                target="_blank"
+                rel="noopener noreferrer"
+                aria-label="Visit Frontier Restoration on Instagram"
+                className="text-zinc-300 transition hover:text-orange-500"
+              >
+                <svg
+                  viewBox="0 0 24 24"
+                  aria-hidden="true"
+                  className="h-6 w-6 fill-current"
+                >
+                  <path d="M7.75 2h8.5A5.76 5.76 0 0 1 22 7.75v8.5A5.76 5.76 0 0 1 16.25 22h-8.5A5.76 5.76 0 0 1 2 16.25v-8.5A5.76 5.76 0 0 1 7.75 2Zm0 2A3.75 3.75 0 0 0 4 7.75v8.5A3.75 3.75 0 0 0 7.75 20h8.5A3.75 3.75 0 0 0 20 16.25v-8.5A3.75 3.75 0 0 0 16.25 4h-8.5ZM17.5 5.5A1.25 1.25 0 1 1 17.5 8a1.25 1.25 0 0 1 0-2.5ZM12 7a5 5 0 1 1 0 10 5 5 0 0 1 0-10Zm0 2a3 3 0 1 0 0 6 3 3 0 0 0 0-6Z" />
+                </svg>
+              </a>
+            </div>
           </div>
 
           {/* Services */}
