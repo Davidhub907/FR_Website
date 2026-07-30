@@ -276,13 +276,13 @@ export default function MoldRemediationPage() {
         buttonHref="/contact"
       />
 
+      <WhyChooseUs />
+
       <ServiceQuestions
         eyebrow="Common Questions"
         heading="Mold Remediation FAQs"
         questions={moldQuestions}
       />
-
-      <WhyChooseUs />
     </main>
   );
 }

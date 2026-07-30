@@ -281,13 +281,13 @@ export default function ContentsRestorationPage() {
         buttonHref="/contact"
       />
 
+      <WhyChooseUs />
+
       <ServiceQuestions
         eyebrow="Common Questions"
         heading="Contents Restoration FAQs"
         questions={contentsQuestions}
       />
-
-      <WhyChooseUs />
     </main>
   );
 }

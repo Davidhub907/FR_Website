@@ -276,13 +276,13 @@ export default function FireDamagePage() {
         buttonHref="/contact"
       />
 
+      <WhyChooseUs />
+
       <ServiceQuestions
         eyebrow="Common Questions"
         heading="Fire and Smoke Damage Restoration FAQs"
         questions={fireDamageQuestions}
       />
-
-      <WhyChooseUs />
     </main>
   );
 }

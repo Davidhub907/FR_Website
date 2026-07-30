@@ -264,13 +264,13 @@ export default function WaterDamagePage() {
         buttonHref="/contact"
       />
 
+      <WhyChooseUs />
+
       <ServiceQuestions
         eyebrow="Common Questions"
         heading="Water Damage Restoration FAQs"
         questions={waterDamageQuestions}
       />
-
-      <WhyChooseUs />
     </main>
   );
 }

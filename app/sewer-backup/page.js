@@ -278,13 +278,13 @@ export default function SewerBackupPage() {
         buttonHref="/contact"
       />
 
+      <WhyChooseUs />
+
       <ServiceQuestions
         eyebrow="Common Questions"
         heading="Sewer Backup Cleanup FAQs"
         questions={sewerBackupQuestions}
       />
-
-      <WhyChooseUs />
     </main>
   );
 }
