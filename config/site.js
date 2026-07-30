@@ -39,8 +39,8 @@ export const siteConfig = {
   },
 
   // Business social media links
-  social: {
-    facebook: "https://facebook.com/example",
-    instagram: "https://instagram.com/example",
+  socialLinks: {
+    facebook: "https://www.facebook.com/YOUR-FACEBOOK-PAGE",
+    instagram: "https://www.instagram.com/YOUR-INSTAGRAM-USERNAME",
   },
 };
