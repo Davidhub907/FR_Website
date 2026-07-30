@@ -9,8 +9,8 @@ import {
 
 import ServiceHero from "@/components/service-page/ServiceHero";
 import ServiceOverview from "@/components/service-page/ServiceOverview";
-import ServiceSituations from "@/components/service-page/ServiceSituations";
-import ServiceSigns from "@/components/service-page/ServiceSigns";
+import ServiceSituations from "@/components/service-page/ServiceWarningSigns";
+import ServiceSigns from "@/components/service-page/ServiceCommonCauses";
 import ServiceProcess from "@/components/service-page/ServiceProcess";
 import ServiceSafety from "@/components/service-page/ServiceSafety";
 import ServiceInsurance from "@/components/service-page/ServiceInsurance";
