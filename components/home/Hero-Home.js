@@ -252,6 +252,28 @@ export default function HeroSection() {
                   </div>
                 </div>
 
+                {/* Email */}
+                <div>
+                  <label
+                    htmlFor="home-hero-email"
+                    className="mb-2 block text-sm font-bold text-[#1A1A1A]"
+                  >
+                    Email{" "}
+                    <span className="font-normal text-gray-500">
+                      (optional)
+                    </span>
+                  </label>
+
+                  <input
+                    id="home-hero-email"
+                    name="email"
+                    type="email"
+                    autoComplete="email"
+                    placeholder="you@example.com"
+                    className="w-full rounded-md border border-gray-300 bg-gray-50 px-4 py-3.5 text-[#1A1A1A] transition outline-none placeholder:text-gray-400 focus:border-orange-500 focus:ring-2 focus:ring-orange-500/20"
+                  />
+                </div>
+
                 {/* Service */}
                 <div>
                   <label
