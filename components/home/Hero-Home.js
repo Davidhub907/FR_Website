@@ -1,5 +1,8 @@
+"use client";
+
 import Image from "next/image";
 import { siteConfig } from "@/config/site";
+import { useState } from "react";
 
 const heroStats = [
   {
@@ -21,6 +24,54 @@ const heroStats = [
 ];
 
 export default function HeroSection() {
+  const [isSubmitting, setIsSubmitting] = useState(false);
+  const [formStatus, setFormStatus] = useState({
+    type: "",
+    message: "",
+  });
+
+  async function handleEmergencySubmit(event) {
+    event.preventDefault();
+
+    const form = event.currentTarget;
+
+    setIsSubmitting(true);
+    setFormStatus({
+      type: "",
+      message: "",
+    });
+
+    try {
+      const response = await fetch("/api/contact", {
+        method: "POST",
+        body: new FormData(form),
+      });
+
+      const result = await response.json();
+
+      if (!response.ok) {
+        throw new Error(result.message || "The request could not be sent.");
+      }
+
+      form.reset();
+
+      setFormStatus({
+        type: "success",
+        message:
+          "Your request was sent. A member of our team will contact you as soon as possible.",
+      });
+    } catch (error) {
+      setFormStatus({
+        type: "error",
+        message:
+          error.message ||
+          "Something went wrong. Please call us for immediate assistance.",
+      });
+    } finally {
+      setIsSubmitting(false);
+    }
+  }
+
   return (
     <section className="relative isolate overflow-hidden bg-[#111111]">
       {/* Background image */}
@@ -103,13 +154,27 @@ export default function HeroSection() {
           <div className="overflow-hidden rounded-lg bg-white shadow-2xl">
             <div className="h-1.5 bg-orange-500" />
 
-            <form action="/contact" method="get" className="p-7 sm:p-10">
+            <form onSubmit={handleEmergencySubmit} className="p-7 sm:p-10">
               <input
                 type="hidden"
                 name="requestType"
                 value="Emergency restoration"
               />
 
+              {/* Honeypot for bots */}
+              <div
+                className="absolute top-auto -left-[9999px] h-px w-px overflow-hidden"
+                aria-hidden="true"
+              >
+                <label htmlFor="home-hero-website">Website</label>
+                <input
+                  id="home-hero-website"
+                  name="website"
+                  type="text"
+                  tabIndex={-1}
+                  autoComplete="off"
+                />
+              </div>
               <div>
                 <p className="text-sm font-bold tracking-[0.18em] text-orange-600 uppercase">
                   Fast Local Response
@@ -124,7 +189,6 @@ export default function HeroSection() {
                   you as soon as possible.
                 </p>
               </div>
-
               <div className="mt-8 space-y-5">
                 {/* Name */}
                 <div>
@@ -238,17 +302,34 @@ export default function HeroSection() {
                   />
                 </div>
               </div>
-
               <button
                 type="submit"
-                className="mt-6 flex w-full items-center justify-center rounded-md bg-orange-500 px-6 py-4 text-sm font-extrabold tracking-wide text-white uppercase transition hover:bg-orange-600 focus-visible:ring-2 focus-visible:ring-orange-500 focus-visible:ring-offset-2 focus-visible:outline-none"
+                disabled={isSubmitting}
+                className="mt-6 flex w-full items-center justify-center rounded-md bg-orange-500 px-6 py-4 text-sm font-extrabold tracking-wide text-white uppercase transition hover:bg-orange-600 focus-visible:ring-2 focus-visible:ring-orange-500 focus-visible:ring-offset-2 focus-visible:outline-none disabled:cursor-not-allowed disabled:opacity-60"
               >
-                Request Emergency Service
-                <span aria-hidden="true" className="ml-2">
-                  →
-                </span>
-              </button>
+                {isSubmitting
+                  ? "Sending Request..."
+                  : "Request Emergency Service"}
 
+                {!isSubmitting && (
+                  <span aria-hidden="true" className="ml-2">
+                    →
+                  </span>
+                )}
+              </button>
+              {formStatus.message && (
+                <p
+                  role="status"
+                  aria-live="polite"
+                  className={`mt-4 rounded-md px-4 py-3 text-center text-sm font-medium ${
+                    formStatus.type === "success"
+                      ? "bg-green-50 text-green-800"
+                      : "bg-red-50 text-red-700"
+                  }`}
+                >
+                  {formStatus.message}
+                </p>
+              )}
               <p className="mt-4 text-center text-xs leading-5 text-gray-500">
                 Your information is kept private and is only used to respond to
                 your service request.
