@@ -40,7 +40,7 @@ export const siteConfig = {
 
   // Business social media links
   socialLinks: {
-    facebook: "https://www.facebook.com/YOUR-FACEBOOK-PAGE",
-    instagram: "https://www.instagram.com/YOUR-INSTAGRAM-USERNAME",
+    facebook: "https://www.facebook.com/profile.php?id=61574070232093",
+    instagram: "https://www.instagram.com/frontier.restoration/",
   },
 };
