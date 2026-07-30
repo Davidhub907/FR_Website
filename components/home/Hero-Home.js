@@ -215,9 +215,7 @@ export default function HeroSection() {
                     <option value="Content restoration">
                       Content restoration
                     </option>
-                    <option value="Commercial restoration">
-                      Commercial restoration
-                    </option>
+
                     <option value="Other">Other</option>
                   </select>
                 </div>
