@@ -43,6 +43,7 @@ export async function POST(request) {
 
     const name = clean(formData.get("name"));
     const phone = clean(formData.get("phone"));
+    const email = clean(formData.get("email"));
     const zip = clean(formData.get("zip"));
     const service = clean(formData.get("service"));
     const damage = clean(formData.get("damage"));
@@ -64,6 +65,7 @@ export async function POST(request) {
     if (
       name.length > 100 ||
       phone.length > 30 ||
+      email.length > 254 ||
       zip.length > 15 ||
       damage.length > 3000
     ) {
@@ -89,6 +91,13 @@ export async function POST(request) {
       );
     }
 
+    if (email && !/^[^\s@]+@[^\s@]+\.[^\s@]+$/.test(email)) {
+      return NextResponse.json(
+        { message: "Please enter a valid email address." },
+        { status: 400 },
+      );
+    }
+
     if (zip && !/^\d{5}(?:-\d{4})?$/.test(zip)) {
       return NextResponse.json(
         { message: "Please enter a valid ZIP code." },
@@ -98,6 +107,7 @@ export async function POST(request) {
 
     const safeName = escapeHtml(name);
     const safePhone = escapeHtml(phone);
+    const safeEmail = escapeHtml(email || "Not provided");
     const safeZip = escapeHtml(zip || "Not provided");
     const safeService = escapeHtml(service || "Not selected");
     const safeDamage = escapeHtml(damage || "Not provided");
@@ -105,6 +115,7 @@ export async function POST(request) {
     const { error } = await resend.emails.send({
       from: process.env.RESEND_FROM_EMAIL,
       to: [process.env.CONTACT_TO_EMAIL],
+      replyTo: email || undefined,
       subject: `Emergency service request${service ? `: ${service}` : ""}`,
       html: `
         <div style="font-family: Arial, sans-serif; color: #1a1a1a; line-height: 1.6;">
@@ -133,6 +144,15 @@ export async function POST(request) {
                 </td>
                 <td style="padding: 10px; border: 1px solid #ddd;">
                   ${safePhone}
+                </td>
+              </tr>
+
+              <tr>
+                <td style="padding: 10px; border: 1px solid #ddd;">
+                    <strong>Email</strong>
+                </td>
+                <td style="padding: 10px; border: 1px solid #ddd;">
+                    ${safeEmail}
                 </td>
               </tr>
 
@@ -170,6 +190,7 @@ New Emergency Service Request
 
 Name: ${name}
 Phone: ${phone}
+Email: ${email || "Not provided"}
 ZIP code: ${zip || "Not provided"}
 Service: ${service || "Not selected"}
 
