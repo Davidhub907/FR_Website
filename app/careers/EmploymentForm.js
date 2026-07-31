@@ -9,6 +9,7 @@ const inputClasses =
 export default function EmploymentForm() {
   const [status, setStatus] = useState("idle");
   const [message, setMessage] = useState("");
+  const [turnstileResetSignal, setTurnstileResetSignal] = useState(0);
 
   async function handleSubmit(event) {
     event.preventDefault();
@@ -45,6 +46,8 @@ export default function EmploymentForm() {
         error.message ||
           "Something went wrong. Please try submitting the form again.",
       );
+    } finally {
+      setTurnstileResetSignal((current) => current + 1);
     }
   }
 
@@ -243,7 +246,10 @@ export default function EmploymentForm() {
         </div>
       )}
 
-      <TurnstileWidget action="employment_application" />
+      <TurnstileWidget
+        action="employment_application"
+        resetSignal={turnstileResetSignal}
+      />
 
       <button
         type="submit"
