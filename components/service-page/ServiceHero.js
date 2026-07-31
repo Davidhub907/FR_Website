@@ -34,7 +34,6 @@ export default function ServiceHero({
   imageAlt,
   service = "",
   primaryButtonText = "Request Emergency Service",
-  primaryButtonHref = "/contact",
   secondaryButtonText = `Call ${siteConfig.phone.display}`,
   secondaryButtonHref = siteConfig.phone.href,
   stats = defaultStats,
@@ -44,6 +43,8 @@ export default function ServiceHero({
     type: "",
     message: "",
   });
+
+  const [turnstileResetSignal, setTurnstileResetSignal] = useState(0);
 
   async function handleServiceSubmit(event) {
     event.preventDefault();
@@ -97,6 +98,7 @@ export default function ServiceHero({
       });
     } finally {
       setIsSubmitting(false);
+      setTurnstileResetSignal((current) => current + 1);
     }
   }
 
