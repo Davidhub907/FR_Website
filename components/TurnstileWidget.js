@@ -3,15 +3,30 @@
 import Script from "next/script";
 import { useCallback, useEffect, useRef } from "react";
 
-export default function TurnstileWidget({ action }) {
+export default function TurnstileWidget({ action, resetSignal = 0 }) {
   const containerRef = useRef(null);
   const widgetIdRef = useRef(null);
+
+  const resetWidget = useCallback(() => {
+    if (widgetIdRef.current !== null && window.turnstile) {
+      window.turnstile.reset(widgetIdRef.current);
+    }
+  }, []);
 
   const renderWidget = useCallback(() => {
     const siteKey = process.env.NEXT_PUBLIC_TURNSTILE_SITE_KEY;
 
+    if (!action) {
+      console.error("TurnstileWidget requires an action prop.");
+      return;
+    }
+
+    if (!siteKey) {
+      console.error("Missing NEXT_PUBLIC_TURNSTILE_SITE_KEY.");
+      return;
+    }
+
     if (
-      !siteKey ||
       !containerRef.current ||
       !window.turnstile ||
       widgetIdRef.current !== null
@@ -26,8 +41,22 @@ export default function TurnstileWidget({ action }) {
       action,
       "response-field": true,
       "response-field-name": "cf-turnstile-response",
+
+      "expired-callback": () => {
+        resetWidget();
+      },
+
+      "timeout-callback": () => {
+        resetWidget();
+      },
+
+      "error-callback": (errorCode) => {
+        console.error("Turnstile client error:", errorCode);
+
+        return true;
+      },
     });
-  }, [action]);
+  }, [action, resetWidget]);
 
   useEffect(() => {
     renderWidget();
@@ -39,6 +68,12 @@ export default function TurnstileWidget({ action }) {
       }
     };
   }, [renderWidget]);
+
+  useEffect(() => {
+    if (resetSignal > 0) {
+      resetWidget();
+    }
+  }, [resetSignal, resetWidget]);
 
   return (
     <>
