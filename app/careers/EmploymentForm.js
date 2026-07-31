@@ -1,6 +1,7 @@
 "use client";
 
 import { useState } from "react";
+import TurnstileWidget from "@/components/TurnstileWidget";
 
 const inputClasses =
   "mt-2 w-full rounded-lg border border-slate-300 bg-white px-4 py-3 text-slate-900 outline-none transition placeholder:text-slate-400 focus:border-orange-500 focus:ring-2 focus:ring-orange-500/20";
@@ -241,6 +242,8 @@ export default function EmploymentForm() {
           {message}
         </div>
       )}
+
+      <TurnstileWidget action="service_emergency" />
 
       <button
         type="submit"
