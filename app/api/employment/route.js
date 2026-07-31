@@ -5,7 +5,7 @@ import { verifyTurnstile } from "@/lib/turnstile";
 
 export const runtime = "nodejs";
 
-const MAX_RESUME_SIZE = 4 * 1024 * 1024;
+const MAX_RESUME_SIZE = 5 * 1024 * 1024;
 
 const allowedPositions = new Set([
   "Restoration Technician",
@@ -72,7 +72,7 @@ export async function POST(request) {
     // Reject an oversized request before processing the uploaded file.
     const contentLength = Number(request.headers.get("content-length") || 0);
 
-    if (contentLength > 4_500_000) {
+    if (contentLength > MAX_RESUME_SIZE) {
       return NextResponse.json(
         { error: "The uploaded résumé must be smaller than 4 MB." },
         { status: 413 },
