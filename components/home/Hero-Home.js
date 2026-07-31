@@ -31,6 +31,8 @@ export default function HeroSection() {
     message: "",
   });
 
+  const [turnstileResetSignal, setTurnstileResetSignal] = useState(0);
+
   async function handleEmergencySubmit(event) {
     event.preventDefault();
 
@@ -70,6 +72,7 @@ export default function HeroSection() {
       });
     } finally {
       setIsSubmitting(false);
+      setTurnstileResetSignal((current) => current + 1);
     }
   }
 
@@ -325,7 +328,10 @@ export default function HeroSection() {
                   />
                 </div>
 
-                <TurnstileWidget action="home_emergency" />
+                <TurnstileWidget
+                  action="home_emergency"
+                  resetSignal={turnstileResetSignal}
+                />
               </div>
               <button
                 type="submit"
