@@ -1,3 +1,6 @@
+"use client";
+
+import { useState } from "react";
 import Image from "next/image";
 import Link from "next/link";
 import { siteConfig } from "@/config/site";
@@ -35,6 +38,67 @@ export default function ServiceHero({
   secondaryButtonHref = siteConfig.phone.href,
   stats = defaultStats,
 }) {
+  const [isSubmitting, setIsSubmitting] = useState(false);
+  const [formStatus, setFormStatus] = useState({
+    type: "",
+    message: "",
+  });
+
+  async function handleServiceSubmit(event) {
+    event.preventDefault();
+
+    const form = event.currentTarget;
+
+    setIsSubmitting(true);
+    setFormStatus({
+      type: "",
+      message: "",
+    });
+
+    try {
+      const response = await fetch("/api/contact", {
+        method: "POST",
+        body: new FormData(form),
+      });
+
+      const responseText = await response.text();
+      let result = {};
+
+      if (responseText) {
+        try {
+          result = JSON.parse(responseText);
+        } catch {
+          throw new Error(
+            `The server returned an invalid response (${response.status}).`,
+          );
+        }
+      }
+
+      if (!response.ok) {
+        throw new Error(
+          result.message || "The service request could not be sent.",
+        );
+      }
+
+      form.reset();
+
+      setFormStatus({
+        type: "success",
+        message:
+          "Your request was sent. A member of our team will contact you as soon as possible.",
+      });
+    } catch (error) {
+      setFormStatus({
+        type: "error",
+        message:
+          error.message ||
+          "Something went wrong. Please call us for immediate assistance.",
+      });
+    } finally {
+      setIsSubmitting(false);
+    }
+  }
+
   return (
     <section className="relative isolate overflow-hidden bg-[#111111]">
       {/* Background image */}
@@ -116,11 +180,25 @@ export default function ServiceHero({
           <div className="overflow-hidden rounded-lg bg-white shadow-2xl">
             <div className="h-1.5 bg-orange-500" />
 
-            <form
-              action={primaryButtonHref}
-              method="get"
-              className="p-7 sm:p-10"
-            >
+            <form onSubmit={handleServiceSubmit} className="p-7 sm:p-10">
+              <input type="hidden" name="service" value={service} />
+
+              {/* Honeypot spam field */}
+              <div
+                className="absolute top-auto -left-[9999px] h-px w-px overflow-hidden"
+                aria-hidden="true"
+              >
+                <label htmlFor="service-website">Website</label>
+
+                <input
+                  id="service-website"
+                  name="website"
+                  type="text"
+                  tabIndex={-1}
+                  autoComplete="off"
+                />
+              </div>
+
               <input type="hidden" name="service" value={service} />
 
               <div>
@@ -199,6 +277,28 @@ export default function ServiceHero({
                   </div>
                 </div>
 
+                {/* Email */}
+                <div>
+                  <label
+                    htmlFor="service-email"
+                    className="mb-2 block text-sm font-bold text-[#1A1A1A]"
+                  >
+                    Email{" "}
+                    <span className="font-normal text-gray-500">
+                      (optional)
+                    </span>
+                  </label>
+
+                  <input
+                    id="service-email"
+                    name="email"
+                    type="email"
+                    autoComplete="email"
+                    placeholder="you@example.com"
+                    className="w-full rounded-md border border-gray-300 bg-gray-50 px-4 py-3.5 text-[#1A1A1A] transition outline-none placeholder:text-gray-400 focus:border-orange-500 focus:ring-2 focus:ring-orange-500/20"
+                  />
+                </div>
+
                 <div>
                   <label
                     htmlFor="service-description"
@@ -219,13 +319,31 @@ export default function ServiceHero({
 
               <button
                 type="submit"
-                className="mt-6 flex w-full items-center justify-center rounded-md bg-orange-500 px-6 py-4 text-sm font-extrabold tracking-wide text-white uppercase transition hover:bg-orange-600 focus:ring-2 focus:ring-orange-500 focus:ring-offset-2 focus:outline-none"
+                disabled={isSubmitting}
+                className="mt-6 flex w-full items-center justify-center rounded-md bg-orange-500 px-6 py-4 text-sm font-extrabold tracking-wide text-white uppercase transition hover:bg-orange-600 focus:ring-2 focus:ring-orange-500 focus:ring-offset-2 focus:outline-none disabled:cursor-not-allowed disabled:opacity-60"
               >
-                {primaryButtonText}
-                <span aria-hidden="true" className="ml-2">
-                  →
-                </span>
+                {isSubmitting ? "Sending Request..." : primaryButtonText}
+
+                {!isSubmitting && (
+                  <span aria-hidden="true" className="ml-2">
+                    →
+                  </span>
+                )}
               </button>
+
+              {formStatus.message && (
+                <p
+                  role="status"
+                  aria-live="polite"
+                  className={`mt-4 rounded-md px-4 py-3 text-center text-sm font-medium ${
+                    formStatus.type === "success"
+                      ? "bg-green-50 text-green-800"
+                      : "bg-red-50 text-red-700"
+                  }`}
+                >
+                  {formStatus.message}
+                </p>
+              )}
 
               <p className="mt-4 text-center text-xs leading-5 text-gray-500">
                 Your information is kept private and is only used to respond to
