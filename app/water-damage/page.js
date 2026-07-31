@@ -199,6 +199,7 @@ export default function WaterDamagePage() {
         description="Standing water can damage flooring, drywall, insulation, and structural materials within hours. Our local team provides professional extraction, structural drying, cleanup, and restoration for homes and businesses."
         imageSrc="/images/services/water-damage1.jpg"
         imageAlt="Professional drying equipment inside a water-damaged property"
+        service="Water damage"
         primaryButtonText="Request Emergency Service"
         primaryButtonHref="/contact"
       />

@@ -210,6 +210,7 @@ export default function MoldRemediationPage() {
         description="Mold can spread through building materials and affect indoor air quality when moisture problems are not corrected. Our team identifies affected areas, contains the workspace, removes damaged materials, cleans the structure, and addresses the underlying moisture source."
         imageSrc="/images/services/mold-damage.jpg"
         imageAlt="Mold remediation professional inspecting and treating an affected property"
+        service="Mold remediation"
         primaryButtonText="Request Mold Inspection"
         primaryButtonHref="/contact"
       />

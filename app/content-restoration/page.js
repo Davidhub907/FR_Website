@@ -215,6 +215,7 @@ export default function ContentsRestorationPage() {
         description="Furniture, electronics, documents, clothing, and personal belongings may be recoverable after water, fire, smoke, or mold damage. Our team carefully inventories, packs, cleans, deodorizes, stores, and returns restorable contents."
         imageSrc="/images/services/content-restoration.jpg"
         imageAlt="Restoration professionals cleaning and organizing damaged personal belongings"
+        service="Content restoration"
         primaryButtonText="Request Content Restoration"
         primaryButtonHref="/contact"
       />

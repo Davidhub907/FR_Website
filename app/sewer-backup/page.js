@@ -212,6 +212,7 @@ export default function SewerBackupPage() {
         description="Sewage and contaminated water can create serious health risks and damage flooring, walls, and personal belongings. Our team provides professional extraction, removal of contaminated materials, cleaning, sanitization, drying, and restoration."
         imageSrc="/images/services/sewer-backup.jpg"
         imageAlt="Restoration professionals cleaning a property affected by a sewer backup"
+        service="Sewer backup"
         primaryButtonText="Request Emergency Service"
         primaryButtonHref="/contact"
       />
