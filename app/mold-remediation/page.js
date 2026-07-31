@@ -212,7 +212,6 @@ export default function MoldRemediationPage() {
         imageAlt="Mold remediation professional inspecting and treating an affected property"
         service="Mold remediation"
         primaryButtonText="Request Mold Inspection"
-        primaryButtonHref="/contact"
       />
 
       <ServiceOverview

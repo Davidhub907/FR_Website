@@ -201,7 +201,6 @@ export default function WaterDamagePage() {
         imageAlt="Professional drying equipment inside a water-damaged property"
         service="Water damage"
         primaryButtonText="Request Emergency Service"
-        primaryButtonHref="/contact"
       />
 
       <ServiceOverview

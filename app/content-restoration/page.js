@@ -217,7 +217,6 @@ export default function ContentsRestorationPage() {
         imageAlt="Restoration professionals cleaning and organizing damaged personal belongings"
         service="Content restoration"
         primaryButtonText="Request Content Restoration"
-        primaryButtonHref="/contact"
       />
 
       <ServiceOverview

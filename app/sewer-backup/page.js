@@ -214,7 +214,6 @@ export default function SewerBackupPage() {
         imageAlt="Restoration professionals cleaning a property affected by a sewer backup"
         service="Sewer backup"
         primaryButtonText="Request Emergency Service"
-        primaryButtonHref="/contact"
       />
 
       <ServiceOverview

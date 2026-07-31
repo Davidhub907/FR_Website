@@ -212,7 +212,6 @@ export default function FireDamagePage() {
         imageAlt="Restoration professional cleaning smoke and fire damage inside a property"
         service="Fire and smoke damage"
         primaryButtonText="Request Emergency Service"
-        primaryButtonHref="/contact"
       />
 
       <ServiceOverview
