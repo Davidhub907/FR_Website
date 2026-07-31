@@ -1,5 +1,6 @@
 "use client";
 
+import TurnstileWidget from "../TurnstileWidget";
 import Image from "next/image";
 import { siteConfig } from "@/config/site";
 import { useState } from "react";
@@ -323,6 +324,8 @@ export default function HeroSection() {
                     className="w-full resize-none rounded-md border border-gray-300 bg-gray-50 px-4 py-3.5 text-[#1A1A1A] transition outline-none placeholder:text-gray-400 focus:border-orange-500 focus:ring-2 focus:ring-orange-500/20"
                   />
                 </div>
+
+                <TurnstileWidget action="home_emergency" />
               </div>
               <button
                 type="submit"
