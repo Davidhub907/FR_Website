@@ -3,7 +3,7 @@
 import Script from "next/script";
 import { useCallback, useEffect, useRef } from "react";
 
-export default function TurnstileWidget({ action = "contact_form" }) {
+export default function TurnstileWidget({ action }) {
   const containerRef = useRef(null);
   const widgetIdRef = useRef(null);
 
