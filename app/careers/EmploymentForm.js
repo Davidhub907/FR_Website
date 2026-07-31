@@ -224,7 +224,7 @@ export default function EmploymentForm() {
           />
 
           <p className="mt-2 text-xs text-slate-500">
-            PDF, DOC, or DOCX. Maximum file size: 5 MB.
+            PDF, DOC, or DOCX. Maximum file size: 4 MB.
           </p>
         </div>
       </div>
