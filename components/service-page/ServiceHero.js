@@ -28,6 +28,7 @@ export default function ServiceHero({
   description,
   imageSrc,
   imageAlt,
+  service = "",
   primaryButtonText = "Request Emergency Service",
   primaryButtonHref = "/contact",
   secondaryButtonText = `Call ${siteConfig.phone.display}`,
@@ -120,6 +121,8 @@ export default function ServiceHero({
               method="get"
               className="p-7 sm:p-10"
             >
+              <input type="hidden" name="service" value={service} />
+
               <div>
                 <p className="text-sm font-bold tracking-[0.18em] text-orange-600 uppercase">
                   Fast Response
