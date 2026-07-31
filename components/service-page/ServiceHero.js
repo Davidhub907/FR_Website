@@ -200,8 +200,6 @@ export default function ServiceHero({
                 />
               </div>
 
-              <input type="hidden" name="service" value={service} />
-
               <div>
                 <p className="text-sm font-bold tracking-[0.18em] text-orange-600 uppercase">
                   Fast Response
@@ -318,7 +316,10 @@ export default function ServiceHero({
                 </div>
               </div>
 
-              <TurnstileWidget action="service_emergency" />
+              <TurnstileWidget
+                action="service_emergency"
+                resetSignal={turnstileResetSignal}
+              />
 
               <button
                 type="submit"
