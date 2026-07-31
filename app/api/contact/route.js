@@ -1,5 +1,6 @@
 import { NextResponse } from "next/server";
 import { Resend } from "resend";
+import { verifyTurnstile } from "@/lib/turnstile";
 
 const allowedServices = new Set([
   "Water damage",
@@ -51,8 +52,25 @@ export async function POST(request) {
     // Honeypot field. Real visitors leave this blank.
     const website = clean(formData.get("website"));
 
+    const turnstileToken = clean(formData.get("cf-turnstile-response"));
+
     if (website) {
       return NextResponse.json({ success: true });
+    }
+
+    const turnstileIsValid = await verifyTurnstile(turnstileToken, [
+      "home_emergency",
+      "service_emergency",
+    ]);
+
+    if (!turnstileIsValid) {
+      return NextResponse.json(
+        {
+          message:
+            "Security verification failed. Please refresh the page and try again.",
+        },
+        { status: 400 },
+      );
     }
 
     if (!name || !phone) {
