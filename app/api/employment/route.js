@@ -1,6 +1,7 @@
 import { Buffer } from "node:buffer";
 import { NextResponse } from "next/server";
 import { Resend } from "resend";
+import { verifyTurnstile } from "@/lib/turnstile";
 
 export const runtime = "nodejs";
 
@@ -88,12 +89,28 @@ export async function POST(request) {
     const experience = clean(formData.get("experience"));
     const additionalMessage = clean(formData.get("message"));
     const website = clean(formData.get("website"));
+    const turnstileToken = clean(formData.get("cf-turnstile-response"));
 
     const resume = formData.get("resume");
 
     // Honeypot: bots often fill this hidden field.
     if (website) {
       return NextResponse.json({ success: true });
+    }
+
+    const turnstileIsValid = await verifyTurnstile(
+      turnstileToken,
+      "employment_application",
+    );
+
+    if (!turnstileIsValid) {
+      return NextResponse.json(
+        {
+          error:
+            "Security verification failed. Please refresh the page and try again.",
+        },
+        { status: 400 },
+      );
     }
 
     if (!fullName || !email || !phone || !position || !availability) {
