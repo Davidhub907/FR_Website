@@ -24,12 +24,14 @@ export default function HomePage() {
 
         <ServicesSection />
         <Testimonials />
-        <ResultsSection
+        {/*     <ResultsSection
           eyebrow="Our Work"
           heading="Real Restoration Results"
           description="See examples of damaged homes and businesses before and after professional restoration by Frontier Restoration."
           projects={homeResults}
         />
+
+        */}
         <EmergencyCTA />
         <InsuranceAssistance />
         <WhyChooseUs />
