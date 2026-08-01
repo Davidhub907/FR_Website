@@ -221,7 +221,7 @@ export default function MoldRemediationPage() {
           "Mold can develop when drywall, wood, insulation, flooring, or other building materials remain damp. Visible growth may represent only part of the affected area when moisture has traveled behind walls or beneath surfaces.",
           "Frontier Restoration evaluates the affected area, helps identify moisture conditions, establishes containment when appropriate, removes materials that cannot be adequately cleaned, and prepares the property for restoration.",
         ]}
-        imageSrc="/images/mold-remediation/inspection.jpg"
+        imageSrc="/images/services/mold-damage.jpg"
         imageAlt="Technician inspecting a property for visible mold and moisture damage"
         imagePosition="right"
       />

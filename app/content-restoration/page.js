@@ -226,7 +226,7 @@ export default function ContentsRestorationPage() {
           "Property damage affects more than walls, floors, and ceilings. Furniture, clothing, household goods, equipment, inventory, and personal belongings may also be exposed to water, smoke, soot, mold, or contamination.",
           "Frontier Restoration evaluates affected belongings, documents their condition, identifies items that may be salvageable, and uses appropriate cleaning and restoration procedures based on the material and type of damage.",
         ]}
-        imageSrc="/images/contents-restoration/evaluation.jpg"
+        imageSrc="/images/services/content-restoration.jpg"
         imageAlt="Technician documenting and evaluating damaged belongings"
         imagePosition="right"
       />

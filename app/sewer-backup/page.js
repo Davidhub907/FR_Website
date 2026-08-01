@@ -223,7 +223,7 @@ export default function SewerBackupPage() {
           "A sewer backup can expose your property to contaminated water while damaging flooring, drywall, insulation, furniture, equipment, and personal belongings.",
           "Frontier Restoration removes sewage and standing water, cleans and sanitizes affected areas, removes materials that cannot be adequately restored, dries the structure, and prepares the property for repairs.",
         ]}
-        imageSrc="/images/sewer-backup/sewage-cleanup.jpg"
+        imageSrc="/images/services/sewer-backup.jpg"
         imageAlt="Restoration technician removing contaminated water from a property"
         imagePosition="right"
       />

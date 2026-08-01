@@ -221,7 +221,7 @@ export default function FireDamagePage() {
           "Fire damage often extends beyond the visibly burned area. Smoke and soot can spread throughout a property, settle on surfaces, enter concealed spaces, and affect furniture and personal belongings.",
           "Frontier Restoration evaluates the damage, removes unsalvageable materials, cleans smoke and soot residue, addresses odors, dries water-damaged areas, and prepares the property for restoration.",
         ]}
-        imageSrc="/images/fire-damage/inspection.jpg"
+        imageSrc="/images/services/fire-damage.jpg"
         imageAlt="Technician inspecting smoke and soot damage inside a property"
         imagePosition="right"
       />
