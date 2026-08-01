@@ -261,7 +261,7 @@ export default function WaterDamagePage() {
           "Communication with insurance adjusters",
         ]}
         buttonText="Request Service"
-        buttonHref="/contact"
+        buttonHref="/ "
       />
 
       <WhyChooseUs />

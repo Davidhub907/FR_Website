@@ -273,7 +273,7 @@ export default function MoldRemediationPage() {
           "Communication with insurance adjusters",
         ]}
         buttonText="Request an Assessment"
-        buttonHref="/contact"
+        buttonHref="/ "
       />
 
       <WhyChooseUs />

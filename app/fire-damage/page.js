@@ -273,7 +273,7 @@ export default function FireDamagePage() {
           "Communication with insurance adjusters",
         ]}
         buttonText="Request Emergency Service"
-        buttonHref="/contact"
+        buttonHref="/ "
       />
 
       <WhyChooseUs />

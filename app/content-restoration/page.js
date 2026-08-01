@@ -278,7 +278,7 @@ export default function ContentsRestorationPage() {
           "Communication with insurance adjusters",
         ]}
         buttonText="Request Service"
-        buttonHref="/contact"
+        buttonHref="/ "
       />
 
       <WhyChooseUs />

@@ -275,7 +275,7 @@ export default function SewerBackupPage() {
           "Communication with insurance adjusters",
         ]}
         buttonText="Request Emergency Service"
-        buttonHref="/contact"
+        buttonHref="/ "
       />
 
       <WhyChooseUs />

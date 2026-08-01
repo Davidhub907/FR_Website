@@ -7,7 +7,7 @@ export default function ServiceInsurance({
   paragraphs = [],
   points = [],
   buttonText,
-  buttonHref,
+  buttonHref = "\ ",
 }) {
   return (
     <section className="bg-white py-16 sm:py-20 lg:py-24">
