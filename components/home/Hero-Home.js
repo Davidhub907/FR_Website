@@ -11,12 +11,12 @@ const heroStats = [
     label: "Emergency Response",
   },
   {
-    value: "60 MIN",
-    label: "On site",
+    value: "LOCAL",
+    label: "Fairbanks Owned",
   },
   {
-    value: "20+",
-    label: "Restorations",
+    value: "200+",
+    label: "Customers served",
   },
   {
     value: "IICRC",
