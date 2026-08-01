@@ -16,6 +16,7 @@ export const metadata = {
   title: "Frontier Restoration",
   description:
     "Professional water, fire, mold, sewer, and content restoration services in Fairbanks, Alaska.",
+  metadataBase: new URL("https://frontierrestorationllc.com/"),
 };
 
 export default function RootLayout({ children }) {
