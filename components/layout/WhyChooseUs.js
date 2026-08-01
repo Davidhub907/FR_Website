@@ -1,4 +1,5 @@
 import { ShieldCheck, BadgeCheck, Award, Clock } from "lucide-react";
+import Image from "next/image";
 
 const reasons = [
   {
@@ -106,19 +107,16 @@ export default function WhyChooseUs() {
           </div>
 
           {/* Team image placeholder */}
-          <div className="overflow-hidden rounded-2xl bg-slate-200 shadow-sm">
-            <div className="flex aspect-[4/3] items-center justify-center px-8 text-center">
-              <div>
-                <p className="text-lg font-bold text-slate-700">
-                  Frontier Restoration Team Photo
-                </p>
-
-                <p className="mt-2 text-sm text-slate-500">
-                  Replace this placeholder with a professional photo of the
-                  team.
-                </p>
-              </div>
-            </div>
+          {/* Team image */}
+          <div className="relative h-[300px] overflow-hidden rounded-2xl shadow-xl sm:h-[380px]">
+            <Image
+              src="/images/Team-placeholder.jpg"
+              alt="Frontier Restoration team"
+              fill
+              priority
+              sizes="(max-width: 1024px) 100vw, 50vw"
+              className="object-cover"
+            />
           </div>
         </div>
       </div>
