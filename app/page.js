@@ -7,9 +7,6 @@ import EmergencyCTA from "@/components/layout/EmergencyCTA";
 import Testimonials from "@/components/layout/Testimonials";
 import WhyChooseUs from "@/components/layout/WhyChooseUs";
 
-import ResultsSection from "@/components/results/ResultsSection";
-import { homeResults } from "@/data/results";
-
 export const metadata = {
   title: "Emergency Restoration in Fairbanks, AK | Frontier Restoration LLC",
   description:
