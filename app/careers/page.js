@@ -30,7 +30,7 @@ export default function EmploymentPage() {
           {/* Team image */}
           <div className="relative h-[300px] overflow-hidden rounded-2xl shadow-xl sm:h-[380px]">
             <Image
-              src="/images/Team-placeholder.jpg"
+              src="/images/services/group-picture.jpeg"
               alt="Frontier Restoration team"
               fill
               priority
