@@ -186,8 +186,12 @@ const waterDamageQuestions = [
 
 export const metadata = {
   title: "Water Damage Restoration in Fairbanks, Alaska",
+
   description:
     "Professional water extraction, structural drying, cleanup, and restoration services for homes and businesses in Fairbanks, Alaska.",
+  alternates: {
+    canonical: "/water-damage",
+  },
 };
 
 export default function WaterDamagePage() {

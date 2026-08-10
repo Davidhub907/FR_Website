@@ -201,8 +201,13 @@ const contentsQuestions = [
 
 export const metadata = {
   title: "Contents Restoration in Fairbanks, Alaska",
+
   description:
     "Professional contents evaluation, documentation, cleaning, drying, and restoration services for homes and businesses in Fairbanks, Alaska.",
+
+  alternates: {
+    canonical: "/content-restoration",
+  },
 };
 
 export default function ContentsRestorationPage() {

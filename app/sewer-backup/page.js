@@ -198,8 +198,13 @@ const sewerBackupQuestions = [
 
 export const metadata = {
   title: "Sewer Backup Cleanup in Fairbanks, Alaska",
+
   description:
     "Professional sewer backup cleanup, sewage removal, sanitization, structural drying, and restoration services in Fairbanks, Alaska.",
+
+  alternates: {
+    canonical: "/sewer-backup",
+  },
 };
 
 export default function SewerBackupPage() {

@@ -3,8 +3,13 @@ import Image from "next/image";
 
 export const metadata = {
   title: "Employment | Frontier Restoration",
+
   description:
     "Apply for employment opportunities with Frontier Restoration in Fairbanks, Alaska.",
+
+  alternates: {
+    canonical: "/careers",
+  },
 };
 
 export default function EmploymentPage() {

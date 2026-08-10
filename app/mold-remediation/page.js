@@ -196,8 +196,13 @@ const moldQuestions = [
 
 export const metadata = {
   title: "Mold Remediation in Fairbanks, Alaska",
+
   description:
     "Professional mold remediation, containment, material removal, cleaning, and moisture-control services for homes and businesses in Fairbanks, Alaska.",
+
+  alternates: {
+    canonical: "/mold-remediation",
+  },
 };
 
 export default function MoldRemediationPage() {

@@ -36,8 +36,13 @@ const team = [
 
 export const metadata = {
   title: "About Us | Frontier Restoration",
+
   description:
     "Learn more about Frontier Restoration, a Fairbanks restoration company serving homeowners, businesses, property managers, and insurance professionals throughout the Fairbanks North Star Borough.",
+
+  alternates: {
+    canonical: "/about",
+  },
 };
 
 export default function AboutPage() {

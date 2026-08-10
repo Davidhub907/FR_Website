@@ -196,8 +196,13 @@ const fireDamageQuestions = [
 
 export const metadata = {
   title: "Fire and Smoke Damage Restoration in Fairbanks, Alaska",
+
   description:
     "Professional fire, smoke, soot, odor, and water damage cleanup services for homes and businesses in Fairbanks, Alaska.",
+
+  alternates: {
+    canonical: "/fire-damage",
+  },
 };
 
 export default function FireDamagePage() {
