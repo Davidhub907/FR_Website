@@ -210,7 +210,7 @@ export default function WaterDamagePage() {
           "Water can quickly spread through flooring, drywall, insulation, framing, and personal belongings. Even after visible water is removed, moisture may remain trapped beneath surfaces or inside structural materials.",
           "Frontier Restoration identifies affected areas, removes standing water, dries the structure, monitors moisture levels, and prepares damaged areas for restoration.",
         ]}
-        imageSrc="/images/services/water-damage1.jpg"
+        imageSrc="/images/services/water-damage2.jpg"
         imageAlt="Restoration technician extracting water from a damaged floor"
         imagePosition="right"
       />
