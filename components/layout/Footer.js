@@ -12,6 +12,7 @@ const serviceLinks = [
 const companyLinks = [
   { label: "Home", href: "/" },
   { label: "Careers", href: "/careers" },
+  { label: "About Us", href: "/about" },
 ];
 
 const emailHref = `https://mail.google.com/mail/?view=cm&fs=1&to=${encodeURIComponent(
