@@ -15,14 +15,12 @@ const team = [
     name: "Candace Hawkes",
     role: "Office Manager",
     image: "/images/services/Candance-headshot.jpeg",
-    bio: "Biography coming soon.",
     certifications: [],
   },
   {
     name: "Ross Matherly",
     role: "Operations Manager",
     image: "/images/services/Ross-headshot.jpeg",
-    bio: "Biography coming soon.",
     certifications: [
       "IICRC Water Restoration Technician",
       "IICRC Applied Structural Drying",
@@ -32,7 +30,6 @@ const team = [
     name: "Jenna",
     role: "Mitigation Manager",
     image: "/images/team/jenna.jpg",
-    bio: "Biography coming soon.",
     certifications: [],
   },
 ];
@@ -119,8 +116,6 @@ export default function AboutPage() {
                   <p className="mt-1 font-semibold text-orange-600">
                     {person.role}
                   </p>
-
-                  <p className="mt-4 leading-7 text-slate-600">{person.bio}</p>
 
                   {person.certifications.length > 0 && (
                     <div className="mt-5">
