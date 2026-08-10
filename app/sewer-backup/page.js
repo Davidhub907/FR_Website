@@ -210,7 +210,7 @@ export default function SewerBackupPage() {
         title="FAIRBANKS SEWER BACKUP"
         highlightedTitle="CLEANUP & RESTORATION."
         description="Sewage and contaminated water can create serious health risks and damage flooring, walls, and personal belongings. Our team provides professional extraction, removal of contaminated materials, cleaning, sanitization, drying, and restoration."
-        imageSrc="/images/services/sewer-backup.jpg"
+        imageSrc="/images/services/water-damage2.jpg"
         imageAlt="Restoration professionals cleaning a property affected by a sewer backup"
         service="Sewer backup"
         primaryButtonText="Request Emergency Service"
@@ -223,7 +223,7 @@ export default function SewerBackupPage() {
           "A sewer backup can expose your property to contaminated water while damaging flooring, drywall, insulation, furniture, equipment, and personal belongings.",
           "Frontier Restoration removes sewage and standing water, cleans and sanitizes affected areas, removes materials that cannot be adequately restored, dries the structure, and prepares the property for repairs.",
         ]}
-        imageSrc="/images/services/sewer-backup.jpg"
+        imageSrc="/images/services/water-damage2.jpg"
         imageAlt="Restoration technician removing contaminated water from a property"
         imagePosition="right"
       />
