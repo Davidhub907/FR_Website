@@ -13,10 +13,15 @@ const sourceSans = Source_Sans_3({
 });
 
 export const metadata = {
-  title: "Frontier Restoration",
+  title: {
+    default: "Frontier Restoration | Fairbanks, Alaska",
+    template: "%s | Frontier Restoration",
+  },
+
   description:
     "Professional water, fire, mold, sewer, and content restoration services in Fairbanks, Alaska.",
-  metadataBase: new URL("https://frontierrestorationllc.com/"),
+
+  metadataBase: new URL("https://frontierrestorationllc.com"),
 };
 
 export default function RootLayout({ children }) {
