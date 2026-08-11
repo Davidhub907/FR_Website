@@ -28,7 +28,7 @@ const team = [
     ],
   },
   {
-    name: "Jenna",
+    name: "Jenna Gelines",
     role: "Mitigation Manager",
     image: "/images/services/Jenna-headshot.jpeg",
     certifications: ["lead-Based Paint Renovation & Repair"],
@@ -58,7 +58,10 @@ export default function AboutPage() {
             </p>
 
             <h1 className="mt-4 text-4xl font-bold tracking-tight uppercase sm:text-5xl lg:text-6xl">
-              Restoring Property. Rebuilding Confidence.
+              <span className="block">Restoring Property.</span>
+              <span className="block text-orange-500">
+                Rebuilding Confidence.
+              </span>
             </h1>
 
             <p className="mt-6 max-w-2xl text-lg leading-8 text-slate-300">
