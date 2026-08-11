@@ -23,14 +23,15 @@ const team = [
     image: "/images/services/Ross-headshot.jpeg",
     certifications: [
       "IICRC Water Restoration Technician",
-      "IICRC Applied Structural Drying",
+      "Certified Mold Inspector",
+      "Certified Mold Remediation",
     ],
   },
   {
     name: "Jenna",
     role: "Mitigation Manager",
-    image: "/images/team/jenna.jpg",
-    certifications: [],
+    image: "/images/services/Jenna-headshot.jpeg",
+    certifications: ["lead-Based Paint Renovation & Repair"],
   },
 ];
 
