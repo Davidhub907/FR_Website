@@ -1,5 +1,6 @@
 import { ShieldCheck, BadgeCheck, Award, Clock } from "lucide-react";
 import Image from "next/image";
+import Link from "next/link";
 
 const reasons = [
   {
@@ -106,17 +107,26 @@ export default function WhyChooseUs() {
             </div>
           </div>
 
-          {/* Team image placeholder */}
           {/* Team image */}
-          <div className="relative h-[300px] overflow-hidden rounded-2xl shadow-xl sm:h-[380px]">
-            <Image
-              src="/images/services/group-picture.jpeg"
-              alt="Frontier Restoration team"
-              fill
-              priority
-              sizes="(max-width: 1024px) 100vw, 50vw"
-              className="object-cover"
-            />
+          <div>
+            <div className="relative h-[300px] overflow-hidden rounded-2xl shadow-xl sm:h-[380px]">
+              <Image
+                src="/images/services/group-picture.jpeg"
+                alt="Frontier Restoration team"
+                fill
+                priority
+                sizes="(max-width: 1024px) 100vw, 50vw"
+                className="object-cover"
+              />
+            </div>
+            <div className="mt-6 flex justify-center">
+              <Link
+                href="/about"
+                className="inline-flex items-center justify-center rounded-lg bg-orange-500 px-6 py-3 text-base font-bold text-white transition hover:bg-orange-600"
+              >
+                More About Us
+              </Link>
+            </div>
           </div>
         </div>
       </div>
