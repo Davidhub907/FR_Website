@@ -83,7 +83,8 @@ export default function HeroSection() {
         src="/images/background/Fairbanks-image.jpg"
         alt="Frontier Restoration serving homes and businesses in Fairbanks, Alaska"
         fill
-        priority
+        loading="eager"
+        fetchPriority="high"
         sizes="100vw"
         className="object-cover object-center"
       />
