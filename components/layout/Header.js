@@ -71,7 +71,7 @@ export default function Header() {
 
             <div className="hidden text-center lg:block">
               <p className="text-sm font-semibold tracking-wide uppercase">
-                Gmail Us
+                Email Us
               </p>
               <p className="text-sm font-bold">{siteConfig.email.address}</p>
             </div>
