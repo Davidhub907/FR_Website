@@ -111,7 +111,7 @@ export default function WhyChooseUs() {
           <div>
             <div className="relative h-[300px] overflow-hidden rounded-2xl shadow-xl sm:h-[380px]">
               <Image
-                src="/images/services/group-picture.jpeg"
+                src="/images/services/group-picture.webp"
                 alt="Frontier Restoration team"
                 fill
                 priority

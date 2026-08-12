@@ -80,7 +80,7 @@ export default function HeroSection() {
     <section className="relative isolate overflow-hidden bg-[#111111]">
       {/* Background image */}
       <Image
-        src="/images/background/Fairbanks-image.jpg"
+        src="/images/background/Fairbanks-image.webp"
         alt="Frontier Restoration serving homes and businesses in Fairbanks, Alaska"
         fill
         loading="eager"

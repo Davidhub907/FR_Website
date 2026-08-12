@@ -14,13 +14,13 @@ const team = [
   {
     name: "Candace Hawkes",
     role: "Office Manager",
-    image: "/images/services/Candance-headshot.jpeg",
+    image: "/images/services/Candance-headshot.webp",
     certifications: [],
   },
   {
     name: "Ross Matherly",
     role: "Operations Manager",
-    image: "/images/services/Ross-headshot.jpeg",
+    image: "/images/services/Ross-headshot.webp",
     certifications: [
       "IICRC Water Restoration Technician",
       "Certified Mold Inspector",
@@ -30,7 +30,7 @@ const team = [
   {
     name: "Jenna Gelines",
     role: "Mitigation Manager",
-    image: "/images/services/Jenna-headshot.jpeg",
+    image: "/images/services/Jenna-headshot.webp",
     certifications: ["lead-Based Paint Renovation & Repair"],
   },
 ];
@@ -75,7 +75,7 @@ export default function AboutPage() {
           {/* Team image */}
           <div className="relative h-[300px] overflow-hidden rounded-2xl shadow-xl sm:h-[380px]">
             <Image
-              src="/images/services/group-picture.jpeg"
+              src="/images/services/group-picture.webp"
               alt="Frontier Restoration team"
               fill
               priority
