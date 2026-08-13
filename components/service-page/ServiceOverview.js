@@ -42,6 +42,7 @@ export default function ServiceOverview({
             <Image
               src={imageSrc}
               alt={imageAlt}
+              loading="eager"
               fill
               sizes="(min-width: 1024px) 50vw, 100vw"
               className="object-cover"
