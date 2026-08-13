@@ -23,7 +23,7 @@ const services = [
     description:
       "Professional mold removal and moisture control to protect your property.",
     href: "/mold-remediation",
-    image: "/images/services/mold-damage.jpg",
+    image: "/images/services/mold-damage.webp",
     alt: "Professional mold remediation service",
   },
 

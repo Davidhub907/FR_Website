@@ -213,7 +213,7 @@ export default function MoldRemediationPage() {
         title="FAIRBANKS MOLD"
         highlightedTitle="REMEDIATION."
         description="Mold can spread through building materials and affect indoor air quality when moisture problems are not corrected. Our team identifies affected areas, contains the workspace, removes damaged materials, cleans the structure, and addresses the underlying moisture source."
-        imageSrc="/images/services/mold-damage.jpg"
+        imageSrc="/images/services/mold-damage.webp"
         imageAlt="Mold remediation professional inspecting and treating an affected property"
         service="Mold remediation"
         primaryButtonText="Request Mold Inspection"
@@ -226,7 +226,7 @@ export default function MoldRemediationPage() {
           "Mold can develop when drywall, wood, insulation, flooring, or other building materials remain damp. Visible growth may represent only part of the affected area when moisture has traveled behind walls or beneath surfaces.",
           "Frontier Restoration evaluates the affected area, helps identify moisture conditions, establishes containment when appropriate, removes materials that cannot be adequately cleaned, and prepares the property for restoration.",
         ]}
-        imageSrc="/images/services/mold-damage.jpg"
+        imageSrc="/images/services/mold-damage.webp"
         imageAlt="Technician inspecting a property for visible mold and moisture damage"
         imagePosition="right"
       />
