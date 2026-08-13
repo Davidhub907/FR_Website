@@ -55,23 +55,23 @@ Do not edit `.next` or `node_modules`.
 
 ## Where to Make Changes
 
-| Change | File |
-|---|---|
-| Phone, email, address, service area, social links | `config/site.js` |
-| Homepage sections and their order | `app/page.js` |
-| Homepage hero | `components/home/Hero-Home.js` |
-| Homepage service cards | `components/home/ServiceSection.js` |
-| Homepage FAQs | `components/home/CommonQuestions.js` |
-| Insurance assistance section | `components/home/InsuranceAssistance.js` |
-| Header | `components/layout/Header.js` |
-| Navigation | `components/layout/NavigationBar.js` |
-| Footer | `components/layout/Footer.js` |
-| Emergency CTA | `components/layout/EmergencyCTA.js` |
-| Why Choose Us | `components/layout/WhyChooseUs.js` |
-| Testimonials | `components/layout/Testimonials.js` |
-| Restoration results | `data/results.js` |
-| Global colors and styles | `app/globals.css` |
-| Page title and SEO description | `metadata` inside the page's `page.js` |
+| Change                                            | File                                     |
+| ------------------------------------------------- | ---------------------------------------- |
+| Phone, email, address, service area, social links | `config/site.js`                         |
+| Homepage sections and their order                 | `app/page.js`                            |
+| Homepage hero                                     | `components/home/Hero-Home.js`           |
+| Homepage service cards                            | `components/home/ServiceSection.js`      |
+| Homepage FAQs                                     | `components/home/CommonQuestions.js`     |
+| Insurance assistance section                      | `components/home/InsuranceAssistance.js` |
+| Header                                            | `components/layout/Header.js`            |
+| Navigation                                        | `components/layout/NavigationBar.js`     |
+| Footer                                            | `components/layout/Footer.js`            |
+| Emergency CTA                                     | `components/layout/EmergencyCTA.js`      |
+| Why Choose Us                                     | `components/layout/WhyChooseUs.js`       |
+| Testimonials                                      | `components/layout/Testimonials.js`      |
+| Restoration results                               | `data/results.js`                        |
+| Global colors and styles                          | `app/globals.css`                        |
+| Page title and SEO description                    | `metadata` inside the page's `page.js`   |
 
 ## Editing Content
 
@@ -117,7 +117,7 @@ public/images/
 Reference them from the site with paths beginning with `/images/`:
 
 ```js
-imageSrc="/images/services/water-damage1.jpg"
+imageSrc = "/images/services/water-damage1.webp";
 ```
 
 Replacing an image with a new file using the same filename usually requires no code changes.

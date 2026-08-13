@@ -7,7 +7,7 @@ const services = [
     description:
       "Fast water extraction, structural drying, and cleanup to prevent further damage.",
     href: "/water-damage",
-    image: "/images/services/water-damage1.jpg",
+    image: "/images/services/water-damage1.webp",
     alt: "Water damage restoration equipment drying a property",
   },
   {
