@@ -99,8 +99,7 @@ export default function HeroSection() {
           </h1>
 
           <p className="mt-8 max-w-2xl text-lg leading-8 text-gray-200">
-            Water, fire, smoke, mold, and sewage damage can quickly spread
-            through a property. Frontier Restoration provides{" "}
+            Frontier Restoration provides{" "}
             <span className="font-bold text-white">
               professional cleanup, drying, remediation, contents recovery, and
               restoration services{" "}
