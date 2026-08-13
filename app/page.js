@@ -8,7 +8,7 @@ import Testimonials from "@/components/layout/Testimonials";
 import WhyChooseUs from "@/components/layout/WhyChooseUs";
 
 export const metadata = {
-  title: "Emergency Restoration in Fairbanks, AK | Frontier Restoration LLC",
+  title: "Emergency Restoration in Fairbanks, AK | Frontier Restoration",
   description:
     "24/7 water, fire, mold, sewer, and content restoration services for homes and businesses in Fairbanks, Alaska. Call (907) 987-2916 for emergency service.",
   alternates: {
