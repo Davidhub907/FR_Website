@@ -15,7 +15,7 @@ const services = [
     description:
       "Complete cleanup and restoration for fire, smoke, soot, and odor damage.",
     href: "/fire-damage",
-    image: "/images/services/fire-damage.jpg",
+    image: "/images/services/fire-damage.webp",
     alt: "Fire and smoke damage restoration work",
   },
   {
