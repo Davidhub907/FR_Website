@@ -1,7 +1,6 @@
 "use client";
 
 import TurnstileWidget from "../TurnstileWidget";
-import Image from "next/image";
 import { siteConfig } from "@/config/site";
 import { useState } from "react";
 
@@ -77,22 +76,10 @@ export default function HeroSection() {
   }
 
   return (
-    <section className="relative isolate overflow-hidden bg-[#111111]">
-      {/* Background image */}
-      <Image
-        src="/images/background/Fairbanks-image.webp"
-        alt="Frontier Restoration serving homes and businesses in Fairbanks, Alaska"
-        fill
-        loading="eager"
-        fetchPriority="high"
-        sizes="100vw"
-        className="object-cover object-center"
-      />
-
-      {/* Background overlays */}
-
-      <div className="absolute inset-0 bg-black/10" />
-      <div className="absolute inset-0 bg-gradient-to-r from-black/100 via-black/20 to-black/45" />
+    <section className="relative isolate overflow-hidden bg-[#111111] md:bg-[url('/images/background/Fairbanks-image.webp')] md:bg-cover md:bg-center md:bg-no-repeat">
+      {/* Background overlays - desktop only */}
+      <div className="absolute inset-0 hidden bg-black/10 md:block" />
+      <div className="absolute inset-0 hidden bg-gradient-to-r from-black/100 via-black/20 to-black/45 md:block" />
 
       <div className="relative mx-auto grid min-h-[760px] max-w-7xl items-center gap-14 px-6 py-20 lg:grid-cols-[1.05fr_0.95fr] lg:gap-16 lg:px-8 lg:py-24">
         {/* Left hero content */}
