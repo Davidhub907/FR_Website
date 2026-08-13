@@ -1,15 +1,14 @@
 import Header from "@/components/layout/Header";
 import NavigationBar from "@/components/layout/NavigationBar";
 import Footer from "@/components/layout/Footer";
-
-import "./globals.css";
-
 import { Source_Sans_3 } from "next/font/google";
+
 import "./globals.css";
 
 const sourceSans = Source_Sans_3({
   subsets: ["latin"],
   display: "swap",
+  variable: "--font-source-sans",
 });
 
 export const metadata = {
@@ -26,8 +25,8 @@ export const metadata = {
 
 export default function RootLayout({ children }) {
   return (
-    <html lang="en" className="h-full antialiased">
-      <body className={`${sourceSans.className} flex min-h-full flex-col`}>
+    <html lang="en" className={`${sourceSans.variable} h-full antialiased`}>
+      <body className="flex min-h-full flex-col font-sans">
         <Header />
         <NavigationBar />
 
