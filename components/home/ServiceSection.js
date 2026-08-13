@@ -44,7 +44,7 @@ const services = [
     description:
       "Careful cleaning and restoration of furniture, belongings, and other valuable contents.",
     href: "/content-restoration",
-    image: "/images/services/content-restoration.jpg",
+    image: "/images/services/content-restoration.webp",
     alt: "Contents being cleaned after property damage",
   },
   */

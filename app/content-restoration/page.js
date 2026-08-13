@@ -218,7 +218,7 @@ export default function ContentsRestorationPage() {
         title="FAIRBANKS CONTENT"
         highlightedTitle="RESTORATION."
         description="Furniture, electronics, documents, clothing, and personal belongings may be recoverable after water, fire, smoke, or mold damage. Our team carefully inventories, packs, cleans, deodorizes, stores, and returns restorable contents."
-        imageSrc="/images/services/content-restoration.jpg"
+        imageSrc="/images/services/content-restoration.webp"
         imageAlt="Restoration professionals cleaning and organizing damaged personal belongings"
         service="Content restoration"
         primaryButtonText="Request Content Restoration"
@@ -231,7 +231,7 @@ export default function ContentsRestorationPage() {
           "Property damage affects more than walls, floors, and ceilings. Furniture, clothing, household goods, equipment, inventory, and personal belongings may also be exposed to water, smoke, soot, mold, or contamination.",
           "Frontier Restoration evaluates affected belongings, documents their condition, identifies items that may be salvageable, and uses appropriate cleaning and restoration procedures based on the material and type of damage.",
         ]}
-        imageSrc="/images/services/content-restoration.jpg"
+        imageSrc="/images/services/content-restoration.webp"
         imageAlt="Technician documenting and evaluating damaged belongings"
         imagePosition="right"
       />
