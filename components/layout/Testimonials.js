@@ -69,7 +69,7 @@ export default function Testimonials() {
           >
             <Image
               src="/images/google-logo.webp"
-              alt=""
+              alt="Google logo"
               width={24}
               height={24}
               aria-hidden="true"
